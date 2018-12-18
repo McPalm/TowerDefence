@@ -1,0 +1,113 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Attack;
+using Attack.Projectile;
+
+namespace Building.Upgrades
+{
+    public class BouncingTowerUpgrade : AUpgrade
+    {
+        int level = 0;
+        int bounceRank;
+        int rangeRank;
+        int critRank = 0;
+
+        void Start() => SunkCost = 30;
+
+        internal override UpgradeFormat[] AvailableUpgrades
+        {
+            get
+            {
+                if (level == 1)
+                    return new UpgradeFormat[0];
+                if (bounceRank == 5 && critRank == 5 && rangeRank == 5)
+                    return FinalUpgrade();
+
+                var upgrades = new List<UpgradeFormat>();
+
+                if (bounceRank < 5)
+                    upgrades.Add(BounceUpgrade());
+                if (critRank < 5)
+                    upgrades.Add(CritUpgrade());
+                if (rangeRank < 5)
+                    upgrades.Add(RangeUpgrade());
+                return upgrades.ToArray();
+
+            }
+        }
+
+        UpgradeFormat BounceUpgrade()
+        {
+            return new UpgradeFormat()
+            {
+                name = "Bounce " + (bounceRank + 1),
+                cost = 10 * (bounceRank + 1),
+                Upgrade = () =>
+                {
+                    bounceRank++;
+                    GetComponent<Bouncing>().targets = bounceRank + 1;
+                },
+            };
+        }
+
+        UpgradeFormat CritUpgrade()
+        {
+            return new UpgradeFormat()
+            {
+                name = $"Crit",
+                cost = 10 * (critRank + 1),
+                Upgrade = () =>
+                {
+                    critRank++;
+                    GetComponent<DirectDamage>().critChance = critRank * .05f;
+                },
+            };
+        }
+
+        UpgradeFormat[] FinalUpgrade()
+        {
+            return new UpgradeFormat[]
+            {
+                new UpgradeFormat()
+                {
+                    name = "x3 Speed",
+                    cost = 500,
+                    Upgrade = () =>
+                    {
+                        GetComponent<Turret>().attackSpeed *= 3f;
+                        level++;
+                    },
+                },
+                new UpgradeFormat()
+                {
+                    name = "50% Splash damage",
+                    cost = 500,
+                    Upgrade = () =>
+                    {
+                        var splash = gameObject.AddComponent<SplashDamage>();
+                        splash.DirectDamage = 0;
+                        splash._SplashDamage = 50;
+                        splash.radius = .45f;
+                        GetComponent<Turret>().FindEffects();
+                        level++;
+                    },
+                },
+            };
+        }
+
+        UpgradeFormat RangeUpgrade()
+        {
+            return new UpgradeFormat()
+            {
+                name = "Range",
+                cost = 10 * (rangeRank + 1),
+                Upgrade = () =>
+                {
+                    rangeRank++;
+                    GetComponent<Turret>().distance = 2.5f + rangeRank * .2f;
+                }
+            };
+        }
+    }
+}

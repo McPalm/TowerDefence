@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 371888170741b9741829c12f75e6866b, type: 3}
+  m_Name: Hard3
+  m_EditorClassIdentifier: 
+  waves:
+  - expectedWealth: 1000
+    filler: {fileID: 114133504352747206, guid: 3269c4e2ae13ef74db046a405eb857a5, type: 2}
+    units:
+    - enemy: {fileID: 1660050466579086, guid: afae059b5f75ba14fa351f41ef65e86a, type: 2}
+      spawnRate: 2
+      qty: 40
+  - expectedWealth: 1200
+    filler: {fileID: 0}
+    units:
+    - enemy: {fileID: 1795535627582716, guid: 6e6c14a85ac40fc46a4187547b6194e8, type: 2}
+      spawnRate: 0
+      qty: 7
+  - expectedWealth: 1200
+    filler: {fileID: 114161559418543942, guid: afae059b5f75ba14fa351f41ef65e86a, type: 2}
+    units:
+    - enemy: {fileID: 1795535627582716, guid: 6e6c14a85ac40fc46a4187547b6194e8, type: 2}
+      spawnRate: 1
+      qty: 4
+    - enemy: {fileID: 1794608086430166, guid: 51f3b2453b929424cb4563e0c82ac0dc, type: 2}
+      spawnRate: 0
+      qty: 15
+  - expectedWealth: 1350
+    filler: {fileID: 114592932496333298, guid: d8b1d80df4cd8644f8e302ba7fc19c5a, type: 2}
+    units:
+    - enemy: {fileID: 1410183550651906, guid: e09e2ccd14ff85a459b54a10ac46dbc2, type: 2}
+      spawnRate: 1
+      qty: 20
+  - expectedWealth: 1550
+    filler: {fileID: 114161559418543942, guid: afae059b5f75ba14fa351f41ef65e86a, type: 2}
+    units:
+    - enemy: {fileID: 1500756144872880, guid: f4d2e45907a5bef49bc5998ea5d0448a, type: 2}
+      spawnRate: 1
+      qty: 20
+  - expectedWealth: 1550
+    filler: {fileID: 114161559418543942, guid: afae059b5f75ba14fa351f41ef65e86a, type: 2}
+    units:
+    - enemy: {fileID: 1093782019546926, guid: 5a34cfb1b235bda4bab06cad0c0cec54, type: 2}
+      spawnRate: 1
+      qty: 1
