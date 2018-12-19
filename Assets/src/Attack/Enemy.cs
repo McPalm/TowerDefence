@@ -18,12 +18,14 @@ namespace Attack
 
         int poisonLeft = 0;
 
+        Coroutine poisonRoutine;
+
         internal void Poison(int totalDamage, float duration)
         {
             if (poisonLeft < totalDamage)
             {
-                StopCoroutine("PoisonTick");
-                StartCoroutine(PoisonTick(totalDamage, duration));
+                if(poisonRoutine != null) StopCoroutine(poisonRoutine);
+                poisonRoutine = StartCoroutine(PoisonTick(totalDamage, duration));
             }
         }
 
