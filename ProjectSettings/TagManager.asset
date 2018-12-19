@@ -47,6 +47,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: hp
+    uniqueID: 3556535595
+    locked: 0
   - name: sfx
     uniqueID: 2529307909
     locked: 0
