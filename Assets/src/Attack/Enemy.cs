@@ -16,28 +16,45 @@ namespace Attack
         int hp;
         int maxhp;
 
-        internal void Poison(int totalDamage, int ticks)
+        int poisonLeft = 0;
+
+        internal void Poison(int totalDamage, float duration)
         {
-            int tickDamage = totalDamage / ticks;
-            StartCoroutine(PoisonTick(tickDamage, ticks));
+            if (poisonLeft < totalDamage)
+            {
+                StopCoroutine("PoisonTick");
+                StartCoroutine(PoisonTick(totalDamage, duration));
+            }
         }
 
         internal void Heal(int heal)
         {
             hp += heal;
             if (hp > maxhp) hp = maxhp;
-            var r = GetComponent<SpriteRenderer>();
-            if (r)
-                r.color = new Color(1f, HealthPercentage, HealthPercentage);
         }
 
-        public IEnumerator PoisonTick(int tickDamage, float ticks)
+        public IEnumerator PoisonTick(int totalDamage, float duration)
         {
-            for (int i = 0; i < ticks; i++)
+            var sprite = GetComponent<SpriteRenderer>();
+            sprite.color = new Color(0.2f, 1f, .1f);
+            int ticks = (int)(duration * 10);
+            int tickDamage = totalDamage / ticks;
+            int leftover = totalDamage - ticks * tickDamage;
+            poisonLeft = totalDamage;
+
+            for (int tick = 0; tick < ticks; tick++)
             {
-                yield return new WaitForSeconds(1f);
-                Strike(tickDamage, true);
+                yield return new WaitForSeconds(.1f);
+                int tikk = tickDamage;
+                if(leftover > 0)
+                {
+                    leftover--;
+                    tikk++;
+                }
+                Strike(tikk, true);
+                poisonLeft -= tikk;
             }
+            sprite.color = Color.white;
         }
 
         public float HealthPercentage
@@ -92,10 +109,6 @@ namespace Attack
             if(armor && ArmourPiercing == false) damage /= 2;
             if (damage <= 0) return;
             hp -= damage;
-            var r = GetComponent<SpriteRenderer>();
-            if(r)
-                r.color = new Color(1f, HealthPercentage, HealthPercentage);
-
 
             foreach (var item in GetComponents<IOnStruck>())
                 item.OnHurt(damage, HealthPercentage);

@@ -6,7 +6,7 @@ namespace Attack
 {
     public class PoisonEffect : MonoBehaviour, IHitEffect
     {
-        public int duration;
+        public float duration;
         public int damage;
         public float radius = 0f;
 
