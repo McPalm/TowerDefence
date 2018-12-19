@@ -19,15 +19,17 @@ namespace Building.Upgrades
                     return Level1();
                 if (level == 2)
                     return new UpgradeFormat[0];
-                if (durationRank == 5 && rangeRank == 5 && powerRank == 5)
+                if (durationRank + powerRank + rangeRank + splashRank == 15)
                     return UltimateUpgrade();
 
                 var upgrades = new List<UpgradeFormat>();
 
                 if (powerRank < 5)
                     upgrades.Add(PowerUpgrade());
-                if (durationRank < 5)
+                if (frostTower && durationRank < 5)
                     upgrades.Add(DurationUpgrade());
+                if (!frostTower && splashRank < 5)
+                    upgrades.Add(SplashUpgrade());
                 if (rangeRank < 5)
                     upgrades.Add(RangeUpgrade());
                 return upgrades.ToArray();
@@ -67,10 +69,6 @@ namespace Building.Upgrades
                 return $"Spd: {speed}\n" +
                     $"Dmg: {damage}";
 
-
-                    
-                    
-
             }
         }
 
@@ -89,7 +87,7 @@ namespace Building.Upgrades
                     {
                         var poison = gameObject.AddComponent<PoisonEffect>();
                         poison.damage = 100;
-                        poison.duration = 7;
+                        poison.duration = 5;
                         GetComponent<Turret>().FindEffects();
                         frostTower = false;
                         level++;
@@ -102,8 +100,8 @@ namespace Building.Upgrades
                     Upgrade = () =>
                     {
                         var slow = gameObject.AddComponent<SlowEffect>();
-                        slow.speedFactor = .85f;
-                        slow.duration = 4f;
+                        slow.speedFactor = .75f;
+                        slow.duration = 2f;
                         GetComponent<Turret>().FindEffects();
                         frostTower = true;
                         level++;
@@ -115,6 +113,7 @@ namespace Building.Upgrades
         int powerRank;
         int durationRank;
         int rangeRank;
+        int splashRank;
 
         UpgradeFormat PowerUpgrade()
         {
@@ -128,11 +127,13 @@ namespace Building.Upgrades
                     var slow = GetComponent<SlowEffect>();
                     if(slow)
                     {
-                        slow.speedFactor = .85f - .06f * powerRank;
+                        slow.speedFactor = .75f - .04f * powerRank;
                     }
                     else
                     {
-                        GetComponent<PoisonEffect>().damage = (10 + powerRank * 3) * (10  + durationRank * 2);
+                        var poison = GetComponent<PoisonEffect>();
+                        poison.damage = 100 + powerRank * 34;
+                        poison.duration = 5f + powerRank * .5f;
                     }
                 }
             };
@@ -152,6 +153,21 @@ namespace Building.Upgrades
             };
         }
 
+        UpgradeFormat SplashUpgrade()
+        {
+            return new UpgradeFormat
+            {
+                name = "Splash",
+                cost = 10 * (splashRank + 1),
+                Upgrade = () =>
+                {
+                    splashRank++;
+                    var poison = GetComponent<PoisonEffect>();
+                    poison.radius = .4f + splashRank * .25f;
+                }
+            };
+        }
+
         UpgradeFormat DurationUpgrade()
         {
             return new UpgradeFormat()
@@ -165,11 +181,6 @@ namespace Building.Upgrades
                     if (slow)
                     {
                         slow.duration = 4f + durationRank;
-                    }
-                    else
-                    {
-                        GetComponent<PoisonEffect>().damage = (10 + powerRank * 3) * (10 + durationRank * 2);
-                        GetComponent<PoisonEffect>().duration = 7 + durationRank;
                     }
                 }
             };
@@ -192,7 +203,7 @@ namespace Building.Upgrades
                         }
                         else
                         {
-                            GetComponent<PoisonEffect>().radius = 1.5f;
+                            GetComponent<PoisonEffect>().radius = 3f;
                         }
                         level++;
                     }
@@ -213,7 +224,8 @@ namespace Building.Upgrades
                         }
                         else
                         {
-                            GetComponent<PoisonEffect>().duration = 6;
+                            GetComponent<PoisonEffect>().duration = 3f;
+                            GetComponent<PoisonEffect>().damage = 400;
                         }
 
                         level++;
