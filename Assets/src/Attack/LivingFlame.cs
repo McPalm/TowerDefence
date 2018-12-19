@@ -24,7 +24,6 @@ namespace Attack
 
         void SetSize(float healthPercentage)
         {
-            GetComponent<SpriteRenderer>().color = Color.white;
             float size = .4f + healthPercentage * maxSize;
             transform.localScale = new Vector3(size, size, 1f);
             GetComponent<Movement.Mobile>().speed = Mathf.Lerp(minSpeed, maxSpeed, healthPercentage);
