@@ -26,6 +26,7 @@ namespace Attack.Projectile
             HashSet<GameObject> alreadyStruck = new HashSet<GameObject>();
             var projectile = Instantiate(prefab);
             projectile.transform.position = source;
+            projectile.AddComponent<KillAfterSeconds>().seconds = 6f;
             var tosser = source; // wont be replaced
 
             // funciton for finding more targets, dependednt on already struck

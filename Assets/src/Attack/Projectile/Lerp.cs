@@ -19,6 +19,7 @@ namespace Attack.Projectile
             Vector3 end = target.transform.position;
             float distance = (source - end).magnitude;
             var projectile = Instantiate(prefab);
+            projectile.AddComponent<KillAfterSeconds>().seconds = 6f;
             var progress = 0f;
 
             while (progress < 1f)
@@ -36,7 +37,6 @@ namespace Attack.Projectile
                     }
                 }
             }
-
             
             if(target)
                 action(target);
