@@ -226,7 +226,7 @@ namespace Building.Upgrades
                     cost = 500,
                     Upgrade = () =>
                     {
-                        GetComponent<DirectDamage>().critChance = -5f;
+                        GetComponent<DirectDamage>().critChance = .5f;
                         GetComponent<Turret>().distance = 20f;
                         level++;
                     },
