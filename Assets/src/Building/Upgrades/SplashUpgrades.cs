@@ -64,7 +64,7 @@ namespace Building.Upgrades
                     $"Dmg: {damage} + {poison.damage} for {poison.duration}s";
                 else if(slow)
                     return $"Spd: {speed}\n" +
-                    $"Dmg: {damage}%\n" +
+                    $"Dmg: {damage}\n" +
                     $"Slow: {(int)(100f - slow.speedFactor * 100f)}% for {slow.duration}s";
                 return $"Spd: {speed}\n" +
                     $"Dmg: {damage}";
@@ -88,7 +88,10 @@ namespace Building.Upgrades
                         var poison = gameObject.AddComponent<PoisonEffect>();
                         poison.damage = 100;
                         poison.duration = 5;
-                        GetComponent<Turret>().FindEffects();
+                        var turret = GetComponent<Turret>();
+                        turret.FindEffects();
+                        turret.targetPriority = Turret.TargetPriority.strongest;
+                        turret.LockTarget = false;
                         frostTower = false;
                         level++;
                     },
@@ -102,7 +105,10 @@ namespace Building.Upgrades
                         var slow = gameObject.AddComponent<SlowEffect>();
                         slow.speedFactor = .7f;
                         slow.duration = 2f;
-                        GetComponent<Turret>().FindEffects();
+                        var turret = GetComponent<Turret>();
+                        turret.FindEffects();
+                        turret.freezeTower = true;
+                        turret.LockTarget = false;
                         frostTower = true;
                         level++;
                     },

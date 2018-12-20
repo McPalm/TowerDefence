@@ -19,9 +19,17 @@ namespace Attack
             select.OnSelect.AddListener(OnSelect);
         }
 
+        private void Update()
+        {
+            if (Input.GetButtonDown("Cancel"))
+                Hide();
+        }
+
         public void OnSelect(GameObject turret)
         {
-            selected = turret.GetComponent<Turret>();
+            var s = turret.GetComponent<Turret>();
+            if (s)
+                selected = s;
             if (selected)
                 Show();
             else
@@ -42,16 +50,13 @@ namespace Attack
 
         void Hide()
         {
-
-
+            UiRoot.SetActive(false);
         }
 
         public void SetFirst()
         {
             if(selected)
                 selected.targetPriority = Turret.TargetPriority.first;
-            if (selected && selected.GetComponent<SlowEffect>())
-                selected.targetPriority = Turret.TargetPriority.notSlowed;
             FormatThing();
         }
 

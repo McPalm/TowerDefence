@@ -35,6 +35,14 @@ namespace Movement
             }
         }
 
+        public bool Slowed
+        {
+            get
+            {
+                return slowDuration > 0f;
+            }
+        }
+
         // Use this for initialization
         void Start()
         {

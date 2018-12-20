@@ -87,9 +87,6 @@ namespace Attack
                 case TargetPriority.last:
                     inRange.Sort(Last);
                     break;
-                case TargetPriority.notSlowed:
-                    inRange.Sort(UnSlowedOrFirst);
-                    break;
                 case TargetPriority.strongest:
                     inRange.Sort(Strongest);
                     break;
@@ -99,6 +96,19 @@ namespace Attack
                 case TargetPriority.random:
                     lastTarget = inRange[UnityEngine.Random.Range(0, inRange.Count)];
                     return lastTarget;
+            }
+            if(freezeTower)
+            {
+                Debug.Log("Freexe Tower!");
+                foreach (var enemy in inRange)
+                {
+                    var move = enemy.GetComponent<Mobile>();
+                    if(!move.Slowed)
+                    {
+                        lastTarget = enemy;
+                        return enemy;
+                    }
+                }
             }
             lastTarget = inRange.FirstOrDefault();
             return lastTarget;
@@ -127,11 +137,6 @@ namespace Attack
             if (a.HP == b.HP)
                 return (First(a, b));
             return a.HP - b.HP;
-        }
-
-        private int UnSlowedOrFirst(Enemy a, Enemy b)
-        {
-            return Mobile.CompareSlow(a.GetComponent<Mobile>(), b.GetComponent<Mobile>());
         }
 
         private int Last(Enemy a, Enemy b)
