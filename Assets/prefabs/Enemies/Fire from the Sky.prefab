@@ -72,9 +72,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43cfcff578ed61e48beeb446937e1905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hits: 6
+  hits: 3
   armor: 0
-  maxSize: 1
+  maxSize: 0.9
   minSpeed: 0.35
   maxSpeed: 4.5
 --- !u!114 &114353107194220808
@@ -113,6 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5738e35d39624ea41a4fb06e82c70918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mesh: {fileID: 0}
   speed: 3
   location: 0
 --- !u!114 &114966501178407216
