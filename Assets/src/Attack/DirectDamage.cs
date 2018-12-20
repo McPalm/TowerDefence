@@ -9,6 +9,7 @@ namespace Attack
         public int damage = 100;
         public float critChance = 0f;
         public bool armorPiercing = false;
+        public int offTargetDamage = 50;
 
         float CritChance
         {
@@ -29,5 +30,15 @@ namespace Attack
                 o.GetComponent<Enemy>().Strike(damage, armorPiercing);
         }
         
+        public void OnHit2(GameObject o)
+        {
+            Debug.Log("offtarget?");
+            if (Random.value < CritChance)
+            {
+                o.GetComponent<Enemy>().Strike(offTargetDamage * 3, armorPiercing);
+            }
+            else
+                o.GetComponent<Enemy>().Strike(offTargetDamage, armorPiercing);
+        }
     }
 }

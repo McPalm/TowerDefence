@@ -16,6 +16,7 @@ namespace Attack
                 o.GetComponent<Movement.Mobile>().Stun(duration);
             }
         }
+        public void OnHit2(GameObject o) => OnHit(o);
 
         int tick = 3;
 

@@ -5,7 +5,7 @@ namespace Attack
 {
     public class Regeration : MonoBehaviour
     {
-        public int hitsPerSecond;
+        public int hpPerSecond;
 
         private void Start()
         {
@@ -18,8 +18,8 @@ namespace Attack
 
             while(true)
             {
-                yield return new WaitForSeconds(1f);
-                enemy.Heal(hitsPerSecond * 100);
+                yield return new WaitForSeconds(.1f);
+                enemy.Heal(hpPerSecond / 10);
             }
         }
     }

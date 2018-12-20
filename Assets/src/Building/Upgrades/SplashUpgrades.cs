@@ -19,7 +19,7 @@ namespace Building.Upgrades
                     return Level1();
                 if (level == 2)
                     return new UpgradeFormat[0];
-                if (durationRank + powerRank + rangeRank + splashRank == 15)
+                if (durationRank + powerRank + rangeRank + splashRank + speedRank == 15)
                     return UltimateUpgrade();
 
                 var upgrades = new List<UpgradeFormat>();
@@ -27,7 +27,7 @@ namespace Building.Upgrades
                 if (powerRank < 5)
                     upgrades.Add(PowerUpgrade());
                 if (frostTower && durationRank < 5)
-                    upgrades.Add(DurationUpgrade());
+                    upgrades.Add(SpeedUpgrade());
                 if (!frostTower && splashRank < 5)
                     upgrades.Add(SplashUpgrade());
                 if (rangeRank < 5)
@@ -100,7 +100,7 @@ namespace Building.Upgrades
                     Upgrade = () =>
                     {
                         var slow = gameObject.AddComponent<SlowEffect>();
-                        slow.speedFactor = .75f;
+                        slow.speedFactor = .7f;
                         slow.duration = 2f;
                         GetComponent<Turret>().FindEffects();
                         frostTower = true;
@@ -114,6 +114,7 @@ namespace Building.Upgrades
         int durationRank;
         int rangeRank;
         int splashRank;
+        int speedRank;
 
         UpgradeFormat PowerUpgrade()
         {
@@ -127,7 +128,8 @@ namespace Building.Upgrades
                     var slow = GetComponent<SlowEffect>();
                     if(slow)
                     {
-                        slow.speedFactor = .75f - .04f * powerRank;
+                        slow.speedFactor = .7f - .02f * powerRank;
+                        slow.duration = 2f + .8f * powerRank;
                     }
                     else
                     {
@@ -182,6 +184,22 @@ namespace Building.Upgrades
                     {
                         slow.duration = 4f + durationRank;
                     }
+                }
+            };
+        }
+
+        
+        UpgradeFormat SpeedUpgrade()
+        {
+            return new UpgradeFormat()
+            {
+                name = "Speed",
+                cost = 10 * (speedRank + 1),
+                Upgrade = () =>
+                {
+                    speedRank++;
+                    var turret = GetComponent<Turret>();
+                    turret.attackSpeed = .65f + speedRank * .07f;
                 }
             };
         }

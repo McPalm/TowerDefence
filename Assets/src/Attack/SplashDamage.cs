@@ -21,5 +21,6 @@ namespace Attack
             }
             o.GetComponent<Enemy>().Strike(DirectDamage);
         }
+        public void OnHit2(GameObject o) => OnHit(o);
     }
 }

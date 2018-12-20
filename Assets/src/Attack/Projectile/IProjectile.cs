@@ -6,6 +6,6 @@ namespace Attack.Projectile
 {
     public interface IProjectile
     {
-        void Shoot(GameObject target, System.Action<GameObject> effect);
+        void Shoot(GameObject target, System.Action<GameObject> effect, System.Action<GameObject> effect2);
     }
 }

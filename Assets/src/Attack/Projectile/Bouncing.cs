@@ -16,12 +16,12 @@ namespace Attack.Projectile
         public bool greedyBounce = false;
         public bool returnToSender = false;
 
-        public void Shoot(GameObject target, System.Action<GameObject> action)
+        public void Shoot(GameObject target, Action<GameObject> action, Action<GameObject> action2)
         {
-            StartCoroutine(Shoot(transform.position, target, speed, action));
+            StartCoroutine(Shoot(transform.position, target, speed, action, action2));
         }
 
-        IEnumerator Shoot(Vector3 source, GameObject target, float speed, System.Action<GameObject> action)
+        IEnumerator Shoot(Vector3 source, GameObject target, float speed, Action<GameObject> action, Action<GameObject> action2)
         {
             HashSet<GameObject> alreadyStruck = new HashSet<GameObject>();
             var projectile = Instantiate(prefab);
@@ -102,6 +102,7 @@ namespace Attack.Projectile
                             action(e);
                             alreadyStruck.Add(e);
                             progress = 2f;
+                            action = action2;
                         }
                     }
                 }
@@ -110,6 +111,7 @@ namespace Attack.Projectile
                 {
                     alreadyStruck.Add(target);
                     action(target);
+                    action = action2;
                 }
 
                 

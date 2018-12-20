@@ -34,12 +34,13 @@ namespace Attack.Aura
 
         public void OnHit(GameObject o)
         {
-            if(procCooldown < 0f && Random.value < procChance)
+            if (procCooldown < 0f && Random.value < procChance)
             {
                 Activate(5f);
                 procCooldown = 15f;
             }
         }
+        public void OnHit2(GameObject o) { }
 
         private void Update()
         {

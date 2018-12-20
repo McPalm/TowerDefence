@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,12 +10,12 @@ namespace Attack.Projectile
         public GameObject prefab;
         public float speed = 20f;
 
-        public void Shoot(GameObject target, System.Action<GameObject> action)
+        public void Shoot(GameObject target, Action<GameObject> action, Action<GameObject> action2)
         {
             StartCoroutine(Shoot(transform.position, target, speed, action));
         }
 
-        IEnumerator Shoot(Vector3 source, GameObject target, float speed, System.Action<GameObject> action)
+        IEnumerator Shoot(Vector3 source, GameObject target, float speed, Action<GameObject> action)
         {
             Vector3 end = target.transform.position;
             float distance = (source - end).magnitude;

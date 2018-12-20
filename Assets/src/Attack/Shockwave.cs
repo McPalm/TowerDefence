@@ -21,6 +21,7 @@ namespace Attack
             else
                 chance += .4f;
         }
+        public void OnHit2(GameObject o) => OnHit(o);
 
         IEnumerator Dothething(GameObject target)
         {

@@ -10,7 +10,7 @@ namespace Attack.Projectile
         public GameObject prefab;
         public float range;
 
-        public void Shoot(GameObject target, System.Action<GameObject> action)
+        public void Shoot(GameObject target, Action<GameObject> action, Action<GameObject> action2)
         {
             StartCoroutine(ShowLine(target, action));
         }

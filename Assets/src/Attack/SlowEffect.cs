@@ -23,5 +23,7 @@ namespace Attack
                 }
             }
         }
+
+        public void OnHit2(GameObject o) => OnHit(o);
     }
 }

@@ -10,7 +10,7 @@ namespace Attack.Projectile
         public bool stretch = true;
         public bool flipY;
 
-        public void Shoot(GameObject target, System.Action<GameObject> action)
+        public void Shoot(GameObject target, System.Action<GameObject> action, System.Action<GameObject> action2)
         {
             action(target);
             StartCoroutine(ShowLine(target));

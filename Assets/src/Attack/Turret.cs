@@ -20,8 +20,9 @@ namespace Attack
         [HideInInspector]
         public bool freezeTower = false;
 
-        Action<GameObject, Action<GameObject>> shoot;
+        Action<GameObject, Action<GameObject>, Action<GameObject>> shoot;
         Action<GameObject> effect;
+        Action<GameObject> effect2;
 
         private void Start()
         {
@@ -36,15 +37,17 @@ namespace Attack
             if (projectile != null)
                 shoot = projectile.Shoot;
             else
-                shoot = (o, a) => effect(o);
+                shoot = (o, a, a2) => a(o);
         }
 
         public void FindEffects()
         {
             effect = null;
+            effect2 = null;
             foreach (var item in GetComponents<IHitEffect>())
             {
                 effect += item.OnHit;
+                effect2 += item.OnHit2;
             }
         }
 
@@ -56,7 +59,7 @@ namespace Attack
                 var target = FindTarget();
                 if (target)
                 {
-                    shoot(target.gameObject, o => effect(o));
+                    shoot(target.gameObject, o => effect(o), o => effect2(o));
                     var buf = GetComponent<IBuff>();
                     var buff = buf != null ? buf.Speed : 1f;
                     if (buff < 1f) buff = 1f;

@@ -5,4 +5,5 @@ using UnityEngine;
 public interface IHitEffect
 {
     void OnHit(GameObject o);
+    void OnHit2(GameObject o);
 }
