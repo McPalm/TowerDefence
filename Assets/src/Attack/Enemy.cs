@@ -38,7 +38,8 @@ namespace Attack
         public IEnumerator PoisonTick(int totalDamage, float duration)
         {
             var sprite = GetComponent<SpriteRenderer>();
-            sprite.color = new Color(0.2f, 1f, .1f);
+            if(sprite)
+                sprite.color = new Color(0.2f, 1f, .1f);
             int ticks = (int)(duration * 10);
             int tickDamage = totalDamage / ticks;
             int leftover = totalDamage - ticks * tickDamage;
@@ -56,7 +57,8 @@ namespace Attack
                 Strike(tikk, true);
                 poisonLeft -= tikk;
             }
-            sprite.color = Color.white;
+            if (sprite)
+                sprite.color = Color.white;
         }
 
         public float HealthPercentage

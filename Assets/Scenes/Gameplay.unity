@@ -3249,7 +3249,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8be749bf00324fe428809f7b86631f62, type: 2}
   - {fileID: 11400000, guid: abcebb22c85d4a74883be27f348ab954, type: 2}
   - {fileID: 11400000, guid: 4397d47f731390547b8a216ab41adc78, type: 2}
-  debugStart: 0
+  debugStart: 12
   OnStartWave:
     m_PersistentCalls:
       m_Calls:
