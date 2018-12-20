@@ -26,7 +26,7 @@ namespace Building.Upgrades
 
                 if (powerRank < 5)
                     upgrades.Add(PowerUpgrade());
-                if (frostTower && durationRank < 5)
+                if (frostTower && speedRank < 5)
                     upgrades.Add(SpeedUpgrade());
                 if (!frostTower && splashRank < 5)
                     upgrades.Add(SplashUpgrade());
