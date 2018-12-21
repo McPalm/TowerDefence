@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using WaveManagement;
+using UnityEngine.SceneManagement;
 
 namespace Analytics
 {
@@ -46,9 +47,10 @@ namespace Analytics
 
         void FinalReport()
         {
-            string text = "";
+            
+            string text = SceneManager.GetActiveScene().name;
             waves.Sort();
-            waves.ForEach(w => text += w.ToString() + "\n");
+            waves.ForEach(w => text += "\n" + w.ToString());
             finalReport.text = text;
         }
 
