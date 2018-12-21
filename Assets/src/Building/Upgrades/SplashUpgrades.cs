@@ -212,184 +212,65 @@ namespace Building.Upgrades
 
         UpgradeFormat[] UltimateUpgrade()
         {
-            return new UpgradeFormat[]
-            {
-                new UpgradeFormat()
+            var list = new List<UpgradeFormat>();
+            var slow = GetComponent<SlowEffect>();
+            var poison = GetComponent<PoisonEffect>();
+
+            if (poison)
+                list.Add(new UpgradeFormat()
+                {
+                    name = "Rapid Working Poison",
+                    cost = 500,
+                    Upgrade = () =>
+                    {
+                        poison.duration = 2.5f;
+                        level++;
+                    },
+                });
+            if (slow)
+                list.Add(new UpgradeFormat()
                 {
                     name = "Splash Vial",
                     cost = 500,
                     Upgrade = () =>
                     {
-                        var slow = GetComponent<SlowEffect>();
-                        if (slow)
-                        {
-                            slow.radius = 1.5f;
-                        }
-                        else
-                        {
-                            GetComponent<PoisonEffect>().radius = 3f;
-                        }
+                        slow.radius = 1.5f;
                         level++;
                     }
-                },
-                new UpgradeFormat()
+                });
+            
+                list.Add(new UpgradeFormat()
                 {
                     name = "Express Delivery",
                     cost = 500,
                     Upgrade = () =>
                     {
-                        GetComponent<Turret>().attackSpeed *= 2f;
-                        GetComponent<Turret>().distance = 5.5f;
+                        var turret = GetComponent<Turret>();
+                        turret.attackSpeed *= 2f;
+                        turret.distance = 5.5f;
+                        var lerp = GetComponent<Attack.Projectile.Lerp>();
+                        lerp.speed *= 2f;
 
-                        var slow = GetComponent<SlowEffect>();
                         if (slow)
                         {
                             slow.speedFactor = .5f;
+                            slow.radius = .1f;
                         }
                         else
                         {
-                            GetComponent<PoisonEffect>().duration = 3f;
-                            GetComponent<PoisonEffect>().damage = 400;
+                            poison.radius += 1f;
+                            poison.damage += 30;
+                            turret.distance += 1f;
+                            
                         }
-
+                        GetComponent<DirectDamage>().damage += 50;
                         level++;
                     }
-                }
-            };
-        }
+                });
 
 
-        UpgradeFormat[] Poison2()
-        {
-            return new UpgradeFormat[]
-            {
-                new UpgradeFormat()
-                {
-                    name = "Splash Vial",
-                    cost = 160,
-                    Upgrade = () =>
-                    {
-                        GetComponent<PoisonEffect>().radius = .5f;
-                        splash = true;
-                        level++;
-                    },
-                },
-                new UpgradeFormat()
-                {
-                    name = "x3 Poison Damage",
-                    cost = 100,
-                    Upgrade = () =>
-                    {
-                        GetComponent<PoisonEffect>().damage *= 3;
-                        level++;
-                    },
-                }
-            };
-        }
 
-        UpgradeFormat[] Frost2()
-        {
-            return new UpgradeFormat[]
-            {
-                new UpgradeFormat()
-                {
-                    name = "Splash Vial",
-                    cost = 480,
-                    Upgrade = () =>
-                    {
-                        GetComponent<SlowEffect>().radius = .5f;
-                        splash = true;
-                        level++;
-                    },
-                },
-                new UpgradeFormat()
-                {
-                    name = "Better Slow",
-                    cost = 350,
-                    Upgrade = () =>
-                    {
-                        GetComponent<SlowEffect>().speedFactor = .5f;
-                        GetComponent<SlowEffect>().duration = 8f;
-                        level++;
-                    },
-                }
-            };
-        }
-
-        UpgradeFormat[] Splash3()
-        {
-            return new UpgradeFormat[]
-            {
-                new UpgradeFormat()
-                {
-                    name = "Larger Area",
-                    cost = 1000,
-                    Upgrade = () =>
-                    {
-                        var slow = GetComponent<SlowEffect>();
-                        var poison = GetComponent<PoisonEffect>();
-                        if(slow)
-                            slow.radius += .5f;
-                        if(poison)
-                            poison.radius += .5f;
-                        level++;
-                    },
-                },
-                new UpgradeFormat()
-                {
-                    name = "Double Duration",
-                    cost = 1000,
-                    Upgrade = () =>
-                    {
-                        var slow = GetComponent<SlowEffect>();
-                        var poison = GetComponent<PoisonEffect>();
-                        if(slow)
-                            slow.duration += 2f;
-                        if(poison)
-                        {
-                            poison.duration *=2;
-                            poison.damage *= 2;
-                        }
-                        level++;
-                    },
-                }
-            };
-        }
-
-        UpgradeFormat[] Direct3()
-        {
-            return new UpgradeFormat[]
-            {
-                new UpgradeFormat()
-                {
-                    name = "x2 Speed and Range",
-                    cost = 1000,
-                    Upgrade = () =>
-                    {
-                        GetComponent<Turret>().distance *= 2f;
-                        GetComponent<Turret>().attackSpeed *= 2f;
-                        level++;
-                    },
-                },
-                new UpgradeFormat()
-                {
-                    name = "Double Duration",
-                    cost = 1000,
-                    Upgrade = () =>
-                    {
-                        var slow = GetComponent<SlowEffect>();
-                        var poison = GetComponent<PoisonEffect>();
-                        if(slow)
-                            slow.duration += 2f;
-                        if(poison)
-                        {
-                            poison.duration *=2;
-                            poison.damage *= 2;
-                        }
-                        level++;
-                    },
-                }
-            };
+            return list.ToArray();
         }
     }
 }
