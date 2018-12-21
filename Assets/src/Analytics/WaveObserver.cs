@@ -56,7 +56,8 @@ namespace Analytics
                 foreach (Enemy enemy in Enemy.Enemies)
                 {
                     var mobile = enemy.GetComponent<Mobile>();
-                    BestDistance = mobile.location > BestDistance ? mobile.location : BestDistance;
+                    if(mobile)
+                        BestDistance = mobile.location > BestDistance ? mobile.location : BestDistance;
                 }
                 if (HudOutput)
                 {

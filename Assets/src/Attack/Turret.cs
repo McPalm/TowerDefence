@@ -99,7 +99,6 @@ namespace Attack
             }
             if(freezeTower)
             {
-                Debug.Log("Freexe Tower!");
                 foreach (var enemy in inRange)
                 {
                     var move = enemy.GetComponent<Mobile>();

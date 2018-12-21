@@ -32,7 +32,6 @@ namespace Attack
         
         public void OnHit2(GameObject o)
         {
-            Debug.Log("offtarget?");
             if (Random.value < CritChance)
             {
                 o.GetComponent<Enemy>().Strike(offTargetDamage * 3, armorPiercing);

@@ -29,8 +29,6 @@ namespace Score
                     Debug.Log("GAME OVER " + FindObjectOfType<WaveManagement.WaveManager>().CurrentWave);
                     FindObjectOfType<Menu.GameOver>().Lose();
                 }
-                else
-                    Debug.Log("Lost a life at wave " + FindObjectOfType<WaveManagement.WaveManager>().CurrentWave);
             }
         }
 

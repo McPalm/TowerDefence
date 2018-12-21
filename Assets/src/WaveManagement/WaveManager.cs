@@ -24,7 +24,6 @@ namespace WaveManagement
             get
             {
                 int count = currentWave - 1;
-                Debug.Log(count);
 
                 foreach (var army in armies)
                 {
