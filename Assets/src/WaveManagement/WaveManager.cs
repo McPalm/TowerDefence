@@ -86,6 +86,7 @@ namespace WaveManagement
         {
             var wallet = FindObjectOfType<Score.Wallet>();
             wallet.Add(waves[currentWave].expectedWealth - wallet.Money);
+            OnStartDowntime.AddListener(() => wallet.Add(waves[currentWave].expectedWealth - wallet.TotalWorth));
         }
 
         void Update()
@@ -110,7 +111,10 @@ namespace WaveManagement
                     FindObjectOfType<Menu.GameOver>().Win();
                 }
                 else
+                {
                     OnStartDowntime.Invoke();
+                    
+                }
             }
         }
 
@@ -134,8 +138,9 @@ namespace WaveManagement
         IEnumerator SpawnWave(Army.Wave wave, int bonusCash)
         {
             runningSpawns++;
-            int need = 0;
 
+            /*
+            int need = 0;
             if (wave.filler != null && bonusCash > 0)
             {
                 need = wave.filler.nickle ? bonusCash * 2 : bonusCash / wave.filler.worth;
@@ -147,7 +152,7 @@ namespace WaveManagement
                 need -= 10;
                 yield return new WaitForSeconds(5f);
             }
-
+            */
             foreach (var unit in wave.units)
             {
                 for (int i = 0; i < unit.qty; i++)
@@ -157,12 +162,13 @@ namespace WaveManagement
                     yield return new WaitForSeconds(delayFor(unit.spawnRate));
                 }
             }
-
+            /*
             if(need > 0)
             {
                 yield return new WaitForSeconds(2f);
                 StartCoroutine(SimpleSpawnRoutine(wave.filler.gameObject, .25f, need));
             }
+            */
             
             runningSpawns--;
         }

@@ -75,11 +75,16 @@ namespace Attack
 
         public void RefreshSpawnPoints()
         {
-            var mesh = FindObjectOfType<Movement.WaypointMesh>();
-            SpawnPoints = mesh.trackNodes
-                .Where(o => (o.transform.position - transform.position).sqrMagnitude <= range * range)
-                .Select(o => o.transform)
-                .ToList();
+            var meshManager = FindObjectOfType<Movement.MeshManager>();
+            SpawnPoints = new List<Transform>();
+            foreach (var mesh in meshManager.waypointMeshes)
+            {
+                SpawnPoints.AddRange(
+                    mesh.trackNodes
+                    .Where(o => (o.transform.position - transform.position).sqrMagnitude <= range * range)
+                    .Select(o => o.transform)
+                    );
+            }
         }
 
         Vector3 RandomSpawnPoint()
