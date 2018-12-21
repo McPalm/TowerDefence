@@ -12,6 +12,7 @@ namespace Building.Upgrades
         int bounceRank;
         int rangeRank;
         int critRank = 0;
+        int damageRank;
 
         void Start() => SunkCost = 30;
 
@@ -21,15 +22,15 @@ namespace Building.Upgrades
             {
                 if (level == 1)
                     return new UpgradeFormat[0];
-                if (bounceRank == 5 && critRank == 5 && rangeRank == 5)
+                if (bounceRank + critRank + damageRank + rangeRank == 15)
                     return FinalUpgrade();
 
                 var upgrades = new List<UpgradeFormat>();
 
                 if (bounceRank < 5)
                     upgrades.Add(BounceUpgrade());
-                if (critRank < 5)
-                    upgrades.Add(CritUpgrade());
+                if (damageRank < 5)
+                    upgrades.Add(DamageUpgrade());
                 if (rangeRank < 5)
                     upgrades.Add(RangeUpgrade());
                 return upgrades.ToArray();
@@ -46,7 +47,7 @@ namespace Building.Upgrades
                 Upgrade = () =>
                 {
                     bounceRank++;
-                    GetComponent<Bouncing>().targets = bounceRank + 1;
+                    GetComponent<Bouncing>().targets = bounceRank + 2;
                 },
             };
         }
@@ -62,6 +63,22 @@ namespace Building.Upgrades
                     critRank++;
                     GetComponent<DirectDamage>().critChance = critRank * .05f;
                 },
+            };
+        }
+
+        UpgradeFormat DamageUpgrade()
+        {
+            return new UpgradeFormat()
+            {
+                name = "Damage",
+                cost = 10 * (damageRank + 1),
+                Upgrade = () =>
+                {
+                    damageRank++;
+                    var damage = GetComponent<DirectDamage>();
+                    damage.damage = 100 + damageRank * 20;
+                    damage.offTargetDamage = 50 + damageRank * 10;
+                }
             };
         }
 
@@ -81,14 +98,13 @@ namespace Building.Upgrades
                 },
                 new UpgradeFormat()
                 {
-                    name = "50% Splash damage",
+                    name = "Stunning",
                     cost = 500,
                     Upgrade = () =>
                     {
-                        var splash = gameObject.AddComponent<SplashDamage>();
-                        splash.DirectDamage = 0;
-                        splash._SplashDamage = 50;
-                        splash.radius = .45f;
+                        var stun = gameObject.AddComponent<Stun>();
+                        stun.frequency = 4;
+                        stun.duration = 4f;
                         GetComponent<Turret>().FindEffects();
                         level++;
                     },

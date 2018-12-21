@@ -25,6 +25,7 @@ namespace Movement
         {
             if (stunResistance <= 0f)
             {
+                Debug.Log("Full Stun");
                 stun = duration;
                 stunResistance = 24f;
             }
@@ -32,7 +33,10 @@ namespace Movement
             {
                 stun = duration/2;
                 stunResistance += 12f;
+                Debug.Log("Diminished Stun");
             }
+            else
+                Debug.Log("Stun Immune");
         }
 
         public bool Slowed
