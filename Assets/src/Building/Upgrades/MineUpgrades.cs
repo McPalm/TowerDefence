@@ -8,6 +8,7 @@ namespace Building.Upgrades
     public class MineUpgrades : AUpgrade
     {
         int level = 0;
+        public GameObject TheBigOne;
 
         internal override UpgradeFormat[] AvailableUpgrades
         {
@@ -110,11 +111,18 @@ namespace Building.Upgrades
                 },
                 new UpgradeFormat()
                 {
-                name = "x3 Mines",
+                name = "The Big One",
                 cost = 500,
                 Upgrade = () =>
                     {
-                        GetComponent<MineLayer>().minesPerWave *= 3;
+                        var big = gameObject.AddComponent<MineLayer>();
+                        big.damage = 1000;
+                        big.explosionRadius = 6f;
+                        big.prefab = TheBigOne;
+                        big.maxTargets = 9999;
+                        big.minesPerWave = 1;
+
+
                         level++;
                     },
                 }

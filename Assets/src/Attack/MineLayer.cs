@@ -8,6 +8,7 @@ namespace Attack
     public class MineLayer : MonoBehaviour {
 
         public GameObject prefab;
+        
 
         public int minesPerWave = 6;
         public float range = 2.1f;
