@@ -20,6 +20,7 @@ namespace Score
         public int TotalWorth { get; private set; }
         public void Add(int money)
         {
+            if (money < 1) return;
             Money += money;
             TotalWorth += money;
         }
