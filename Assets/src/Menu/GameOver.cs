@@ -30,6 +30,7 @@ namespace Menu
             {
                 won = true;
                 GoodBackground.SetActive(true);
+                PlayerPrefs.SetInt(SceneManager.GetActiveScene().name, 1);
             }
         }
 
