@@ -18,13 +18,17 @@ namespace Building.Upgrades
                     return Level1();
                 if (level == 2)
                     return new UpgradeFormat[0];
-                if (speedRank < 5 && rangeRank < 5)
-                    return new UpgradeFormat[] { SpeedUpgrade(), RangeUpgrade() };
-                if (speedRank < 5)
-                    return new UpgradeFormat[] { SpeedUpgrade() };
+                if (rangeRank + speedRank + critRank == 15)
+                    return UltimateUpgrade();
+
+                var list = new List<UpgradeFormat>();
                 if (rangeRank < 5)
-                    return new UpgradeFormat[] { RangeUpgrade() };
-                return UltimateUpgrade();
+                    list.Add(RangeUpgrade());
+                if (speedRank < 5)
+                    list.Add(SpeedUpgrade());
+                if (critRank < 5)
+                    list.Add(CritUpgrade());
+                return list.ToArray();
             }
         }
 
@@ -48,20 +52,37 @@ namespace Building.Upgrades
             };
         }
 
+        public override string Attributes
+        {
+            get
+            {
+                var buffer = GetComponent<Buffer>();
+
+                float speed = buffer.speed - 1f + .005f;
+                float crit = buffer.crit + .005f;
+
+                string buffs = $"\nSpeed Buff {(int)(speed * 100f)}%";
+                if(crit > .005f)
+                    buffs += $"\nCrit Buff {(int)(crit * 100f)}%";
+                return base.Attributes + buffs;
+            }
+        }
+
         int speedRank;
         int rangeRank;
+        int critRank;
 
         UpgradeFormat SpeedUpgrade()
         {
             return new UpgradeFormat()
             {
-                name = "Attack Speed",
+                name = "Speed Buff",
                 cost = 10 * (speedRank + 1),
                 Upgrade = () =>
                 {
                     speedRank++;
                     GetComponent<Turret>().attackSpeed = 1.5f + speedRank * .1f;
-                    GetComponent<Buffer>().speed = 1.15f + rangeRank * .05f;
+                    GetComponent<Buffer>().speed = 1.10f + speedRank * .04f;
                 },
             };
         }
@@ -75,9 +96,29 @@ namespace Building.Upgrades
                 Upgrade = () =>
                 {
                     rangeRank++;
-                    GetComponent<Buffer>().range = 1.5f + rangeRank * .2f;
+                    if (rangeRank == 1)
+                        GetComponent<Buffer>().range = 1.5f;
+                    if (rangeRank == 3)
+                        GetComponent<Buffer>().range = 2.1f;
+                    if (rangeRank == 5)
+                        GetComponent<Buffer>().range = 2.5f;
                     GetComponent<Turret>().distance = 2.5f + rangeRank * .2f;
                 },
+            };
+        }
+
+        UpgradeFormat CritUpgrade()
+        {
+            return new UpgradeFormat()
+            {
+                name = "Crit Buff",
+                cost = 10 * (critRank + 1),
+                Upgrade = () =>
+                {
+                    critRank++;
+                    var buffer = GetComponent<Buffer>();
+                    buffer.crit = .02f * critRank;
+                }
             };
         }
 
@@ -87,11 +128,14 @@ namespace Building.Upgrades
             {
                 new UpgradeFormat()
                 {
-                    name = "Also Buff Crit",
+                    name = "Better Buffs",
                     cost = 500,
                     Upgrade = () =>
                     {
-                        GetComponent<Buffer>().crit = .2f;
+                        var buffer = GetComponent<Buffer>();
+                        buffer.crit = .2f;
+                        buffer.speed = 1.44f;
+
                         level++;
                     }
                 },
@@ -105,73 +149,6 @@ namespace Building.Upgrades
                         GetComponent<Turret>().FindEffects();
                         level++;
                     },
-                }
-            };
-        }
-
-        UpgradeFormat[] Level2()
-        {
-            return new UpgradeFormat[]
-            {
-                new UpgradeFormat()
-                {
-                    name = "Base buff at 40%",
-                    cost = 140,
-                    Upgrade = () =>
-                    {
-                        GetComponent<Buffer>().speed = 1.4f;
-                        GetComponent<Turret>().attackSpeed *= 1.2f;
-                        level++;
-                    }
-                },
-                new UpgradeFormat()
-                {
-                    name = "Bigger Area",
-                    cost = 210,
-                    Upgrade = () =>
-                    {
-                        GetComponent<Buffer>().range = 2.5f;
-                        GetComponent<Turret>().attackSpeed *= 1.2f;
-                        GetComponent<Turret>().distance += 1f;
-                        level++;
-                    },
-                }
-            };
-        }
-
-        UpgradeFormat[] Level3()
-        {
-            return new UpgradeFormat[]
-            {
-                new UpgradeFormat()
-                {
-                    name = "Grant 20% crit",
-                    cost = 1000,
-                    Upgrade = () =>
-                    {
-                        GetComponent<Buffer>().crit = .2f;
-                        GetComponent<Turret>().attackSpeed *= 1.2f;
-                        level++;
-                    },
-                }
-            };
-        }
-
-        UpgradeFormat[] Level4()
-        {
-            return new UpgradeFormat[]
-            {
-                new UpgradeFormat()
-                {
-                    name = "Chance on hit to activate boost",
-                    cost = 2500,
-                    Upgrade = () =>
-                    {
-                        GetComponent<HyperSpeed>().procChance = .15f;
-                        GetComponent<Turret>().attackSpeed *= 1.2f;
-                        GetComponent<Turret>().FindEffects();
-                        level++;
-                    }
                 }
             };
         }

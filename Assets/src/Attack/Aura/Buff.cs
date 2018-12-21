@@ -62,7 +62,7 @@ namespace Attack.Aura
                 Speed = speed;
 
                 this.duration = duration;
-                if (speed > 1.1f)
+                if (speed > 1.05f)
                     icons[0].SetActive(true);
                 if (speed > 1.35f)
                     icons[1].SetActive(true);
