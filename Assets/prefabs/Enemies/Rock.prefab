@@ -187,7 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae76498205920a24fa1828fef1cfd35a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  worth: 13
+  worth: 5
   nickle: 0
 --- !u!114 &114570314955191832
 MonoBehaviour:

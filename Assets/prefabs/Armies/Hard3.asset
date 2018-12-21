@@ -18,6 +18,9 @@ MonoBehaviour:
     - enemy: {fileID: 1660050466579086, guid: afae059b5f75ba14fa351f41ef65e86a, type: 2}
       spawnRate: 2
       qty: 40
+    - enemy: {fileID: 1795535627582716, guid: 6e6c14a85ac40fc46a4187547b6194e8, type: 2}
+      spawnRate: 2
+      qty: 1
   - expectedWealth: 1200
     filler: {fileID: 0}
     units:
