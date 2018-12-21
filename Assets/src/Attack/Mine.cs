@@ -7,6 +7,7 @@ namespace Attack
     {
         public int damage = 100;
         public float radius = 1f;
+        public int maxTargets = 1;
         bool active = true;
         public float lifetime = 60f;
 
@@ -30,29 +31,32 @@ namespace Attack
                 }
                 else
                 {
-                    Explode();
+                    Explode(hit.transform.gameObject);
                 }
             }
-            if(lifetime < 0f)
+            if (lifetime < 0f)
             {
                 Destroy(gameObject);
             }
         }
 
-        IEnumerator ExplodeIn(float seconds)
+        public void Explode(GameObject target)
         {
-            yield return new WaitForSeconds(seconds);
-            Explode();
-        }
-
-        public void Explode()
-        {
+            var struck = new HashSet<GameObject>();
+            struck.Add(target);
             var hits = Physics2D.CircleCastAll(transform.position, radius, Vector2.zero);
             foreach (var hit in hits)
             {
-                hit.transform.GetComponent<Enemy>().Strike(damage, true);
+                if (hit.transform.gameObject != target)
+                    struck.Add(hit.transform.gameObject);
+                if (struck.Count >= maxTargets)
+                    break;
+            }
+            foreach (var item in struck)
+            {
+                item.GetComponent<Enemy>().Strike(damage, true);
                 if (slowDuration > 0f)
-                    hit.transform.GetComponent<Movement.Mobile>().ApplySlow(slowFactor, slowDuration);
+                    item.GetComponent<Movement.Mobile>().ApplySlow(slowFactor, slowDuration);
             }
             Destroy(gameObject);
         }

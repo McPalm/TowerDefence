@@ -13,6 +13,7 @@ namespace Attack
         public float range = 2.1f;
         public int damage;
         public float explosionRadius;
+        public int maxTargets = 1;
 
         public float slowDuration = 0f;
         public float slowFactor = 1f;
@@ -68,6 +69,7 @@ namespace Attack
             mine.slowDuration = slowDuration;
             mine.slowFactor = slowFactor;
             mines.Add(mine);
+            mine.maxTargets = maxTargets;
             minesPlaced++;
         }
 

@@ -15,14 +15,19 @@ namespace Building.Upgrades
             {
                 if (level == 1)
                     return new UpgradeFormat[0];
-                if (damageRank < 5 && rateRank < 5)
-                    return new UpgradeFormat[] { DamageUpgrade(), RateUpgrade() };
+                if (damageRank + rateRank + explosionRank == 15)
+                    return FinalUpgrade();
+
+                var list = new List<UpgradeFormat>();
+
                 if (damageRank < 5)
-                    return new UpgradeFormat[] { DamageUpgrade() };
+                    list.Add(DamageUpgrade());
                 if (rateRank < 5)
-                    return new UpgradeFormat[] { RateUpgrade() };
-                return FinalUpgrade();
-                    
+                    list.Add(RateUpgrade());
+                if (explosionRank < 5)
+                    list.Add(ExplosionUpgrade());
+
+                return list.ToArray();    
             }
         }
 
@@ -39,6 +44,9 @@ namespace Building.Upgrades
 
 
         int damageRank = 0;
+        int rateRank = 0;
+        int explosionRank = 0;
+
         UpgradeFormat DamageUpgrade()
         {
             return new UpgradeFormat()
@@ -53,7 +61,22 @@ namespace Building.Upgrades
             };
         }
 
-        int rateRank = 0;
+        UpgradeFormat ExplosionUpgrade()
+        {
+            return new UpgradeFormat()
+            {
+                name = "Area",
+                cost = 10 * (explosionRank + 1),
+                Upgrade = () =>
+                {
+                    explosionRank++;
+                    var layer = GetComponent<MineLayer>();
+                    layer.explosionRadius = 1f + explosionRank * .3f;
+                    layer.maxTargets = 2 + explosionRank / 2;
+                },
+            };
+        }
+
         UpgradeFormat RateUpgrade()
         {
             return new UpgradeFormat()
@@ -63,9 +86,8 @@ namespace Building.Upgrades
                 Upgrade = () =>
                 {
                     rateRank++;
-                    GetComponent<MineLayer>().minesPerWave = 6 + rateRank * 2;
-                    GetComponent<MineLayer>().range = 2.5f + rateRank * .2f;
-                    GetComponent<MineLayer>().RefreshSpawnPoints();
+                    GetComponent<MineLayer>().minesPerWave = 5 + rateRank;
+                    GetComponent<MineLayer>().range = 2.5f;
                 },
             };
         }
