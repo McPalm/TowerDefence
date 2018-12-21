@@ -19,6 +19,25 @@ namespace WaveManagement
             }
         }
 
+        public string WaveName
+        {
+            get
+            {
+                int count = currentWave - 1;
+                Debug.Log(count);
+
+                foreach (var army in armies)
+                {
+                    if(count < army.waves.Count)
+                    {
+                        return $"{army.name}:{count}";
+                    }
+                    count -= army.waves.Count;
+                }
+
+                return "N/A";
+            }
+        }
 
         public string StateToString
         {
