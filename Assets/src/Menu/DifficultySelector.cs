@@ -25,14 +25,14 @@ public class DifficultySelector : MonoBehaviour
         });
         Medium.onClick.AddListener(() =>
         {
-            Difficulty = Difficulty.easy;
+            Difficulty = Difficulty.medium;
             Easy.interactable = true;
             Medium.interactable = false;
             Hard.interactable = true;
         });
         Hard.onClick.AddListener(() =>
         {
-            Difficulty = Difficulty.easy;
+            Difficulty = Difficulty.hard;
             Easy.interactable = true;
             Medium.interactable = true;
             Hard.interactable = false;
