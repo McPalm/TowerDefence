@@ -23,23 +23,23 @@ MonoBehaviour:
     - enemy: {fileID: 1763959516369846, guid: 1b209bf0b3c94a04c836acc03b9da937, type: 2}
       spawnRate: 1
       qty: 20
-  - expectedWealth: 170
+  - expectedWealth: 190
     BackgroundWaves: 0
     BackgroundQty: 0
     BackgroundOffset: 0
     units:
     - enemy: {fileID: 1653666631205130, guid: d8b1d80df4cd8644f8e302ba7fc19c5a, type: 2}
-      spawnRate: 0
+      spawnRate: -1
       qty: 20
-  - expectedWealth: 210
+  - expectedWealth: 230
     BackgroundWaves: 0
     BackgroundQty: 4
     BackgroundOffset: -3
     units:
     - enemy: {fileID: 1653666631205130, guid: d8b1d80df4cd8644f8e302ba7fc19c5a, type: 2}
       spawnRate: 0
-      qty: 20
-  - expectedWealth: 210
+      qty: 14
+  - expectedWealth: 270
     BackgroundWaves: 0
     BackgroundQty: 3
     BackgroundOffset: -2.3
@@ -47,15 +47,15 @@ MonoBehaviour:
     - enemy: {fileID: 1234060311863718, guid: ba91b3ca643cc594a819da34816dc001, type: 2}
       spawnRate: -1
       qty: 15
-  - expectedWealth: 250
+  - expectedWealth: 300
     BackgroundWaves: 1
     BackgroundQty: 1
     BackgroundOffset: 2.8
     units:
     - enemy: {fileID: 1234060311863718, guid: ba91b3ca643cc594a819da34816dc001, type: 2}
       spawnRate: 0
-      qty: 15
-  - expectedWealth: 300
+      qty: 13
+  - expectedWealth: 320
     BackgroundWaves: 0
     BackgroundQty: 1
     BackgroundOffset: 0

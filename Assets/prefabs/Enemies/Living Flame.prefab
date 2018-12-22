@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43cfcff578ed61e48beeb446937e1905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hits: 6
+  hits: 8
   armor: 0
   maxSize: 1
   minSpeed: 0.5

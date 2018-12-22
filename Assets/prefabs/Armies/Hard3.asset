@@ -53,8 +53,8 @@ MonoBehaviour:
     BackgroundOffset: 0
     units:
     - enemy: {fileID: 1500756144872880, guid: f4d2e45907a5bef49bc5998ea5d0448a, type: 2}
-      spawnRate: 0
-      qty: 10
+      spawnRate: -1
+      qty: 5
   - expectedWealth: 2300
     BackgroundWaves: 3
     BackgroundQty: 4

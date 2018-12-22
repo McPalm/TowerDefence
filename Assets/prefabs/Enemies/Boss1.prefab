@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 286a23d75ecc48b4ba6fc75f6cc35487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hits: 35
+  hits: 36
   armor: 0
 --- !u!114 &114317754254033530
 MonoBehaviour:
@@ -229,7 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae76498205920a24fa1828fef1cfd35a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  worth: 70
+  worth: 35
   nickle: 0
 --- !u!212 &212022413480552416
 SpriteRenderer:

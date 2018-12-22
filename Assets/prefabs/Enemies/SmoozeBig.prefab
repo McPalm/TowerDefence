@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 58831421580976798}
   - component: {fileID: 114117743036952914}
   - component: {fileID: 114640370717510034}
+  - component: {fileID: 114385589583350060}
   m_Layer: 8
   m_Name: SmoozeBig
   m_TagString: Untagged
@@ -178,6 +179,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hits: 175
   armor: 0
+--- !u!114 &114385589583350060
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1093782019546926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43187df8df619c14783261429e0de8a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1426143310799746, guid: 360ddb451a56ac946883d1c19d7a0982, type: 2}
+  spawns: 20
 --- !u!114 &114414864821472800
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -203,7 +217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1810231261853994, guid: a66a65a5d336fcb49a2c22d79f187770, type: 2}
-  qty: 6
+  qty: 3
   spread: 0.2
   boost: 1
 --- !u!114 &114640370717510034

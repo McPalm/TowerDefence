@@ -60,6 +60,7 @@ GameObject:
   - component: {fileID: 58928758036488360}
   - component: {fileID: 114011386034377458}
   - component: {fileID: 114702728911622624}
+  - component: {fileID: 114762348315860920}
   m_Layer: 8
   m_Name: SmoozeMedium
   m_TagString: Untagged
@@ -218,7 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 286a23d75ecc48b4ba6fc75f6cc35487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hits: 9
+  hits: 20
   armor: 0
 --- !u!114 &114702728911622624
 MonoBehaviour:
@@ -232,6 +233,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hpPerSecond: 100
+--- !u!114 &114762348315860920
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1810231261853994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43187df8df619c14783261429e0de8a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1426143310799746, guid: 360ddb451a56ac946883d1c19d7a0982, type: 2}
+  spawns: 6
 --- !u!114 &114975406394035658
 MonoBehaviour:
   m_ObjectHideFlags: 1

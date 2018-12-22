@@ -163,8 +163,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   frequency: 3
-  MinSpeed: 2.4
-  MaxSpeed: 3
+  MinSpeed: 2.6
+  MaxSpeed: 3.1
   slowSprite: {fileID: 0}
   fastSprite: {fileID: 0}
 --- !u!114 &114330144061687844
