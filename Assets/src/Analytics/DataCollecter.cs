@@ -25,7 +25,11 @@ namespace Analytics
             observer.OnReport.AddListener(CompileWave);
 
             manager = FindObjectOfType<WaveManager>();
-            manager.OnFinalWaveDefeated.AddListener(FinalReport);
+            manager.OnFinalWaveDefeated.AddListener(() =>
+            {
+                CompileWave();
+                FinalReport();
+            });
 
             lives = FindObjectOfType<Score.Lives>();
 
