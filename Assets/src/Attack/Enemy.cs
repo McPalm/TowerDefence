@@ -123,7 +123,7 @@ namespace Attack
 
         public void Strike(int damage, bool ArmourPiercing = false)
         {
-            if(armor && ArmourPiercing == false) damage /= 2;
+            if(armor && ArmourPiercing == false) damage /= 3;
             if (damage <= 0) return;
             hp -= damage;
 
