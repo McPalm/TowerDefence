@@ -25,18 +25,14 @@ namespace Movement
         {
             if (stunResistance <= 0f)
             {
-                Debug.Log("Full Stun");
                 stun = duration;
-                stunResistance = 24f;
+                stunResistance = duration * 3f;
             }
-            else if(stunResistance < 24f)
+            else if(stunResistance < duration * 6f * UnityEngine.Random.value)
             {
-                stun = duration/2;
-                stunResistance += 12f;
-                Debug.Log("Diminished Stun");
+                stun = duration;
+                stunResistance += duration * 3f;
             }
-            else
-                Debug.Log("Stun Immune");
         }
 
         public bool Slowed

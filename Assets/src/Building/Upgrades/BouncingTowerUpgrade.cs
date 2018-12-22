@@ -103,7 +103,7 @@ namespace Building.Upgrades
                     Upgrade = () =>
                     {
                         var stun = gameObject.AddComponent<Stun>();
-                        stun.frequency = 4;
+                        stun.frequency = 5;
                         stun.duration = 4f;
                         GetComponent<Turret>().FindEffects();
                         level++;

@@ -162,8 +162,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distance: 2.5
-  attackSpeed: 0.65
+  attackSpeed: 0.7
   targetPriority: 0
+  freezeTower: 0
 --- !u!114 &114428285738817092
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -216,7 +217,7 @@ MonoBehaviour:
   speed: 20
   bounceSpeed: 12
   bounceRange: 3
-  targets: 1
+  targets: 2
   greedyBounce: 0
   returnToSender: 1
 --- !u!114 &114845492679725336
@@ -233,6 +234,7 @@ MonoBehaviour:
   damage: 100
   critChance: 0
   armorPiercing: 0
+  offTargetDamage: 50
 --- !u!212 &212037968285512976
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -266,7 +268,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1765659387
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: a2089d1a568ea4d4b88bfc3826ec0a8f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -311,7 +313,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1765659387
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: -3
   m_Sprite: {fileID: 21300000, guid: a2089d1a568ea4d4b88bfc3826ec0a8f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -356,7 +358,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1765659387
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: a2089d1a568ea4d4b88bfc3826ec0a8f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
