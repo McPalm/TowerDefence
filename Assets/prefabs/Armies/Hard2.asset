@@ -13,35 +13,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - expectedWealth: 700
-    filler: {fileID: 0}
+    BackgroundWaves: 0
+    BackgroundQty: 0
+    BackgroundOffset: 0
     units:
     - enemy: {fileID: 1060707410076018, guid: 243b7c41150d7d74ba550718f76d45c7, type: 2}
-      spawnRate: 1
-      qty: 10
-  - expectedWealth: 800
-    filler: {fileID: 0}
-    units:
-    - enemy: {fileID: 1069520302569302, guid: 18b0e87b3ffbae54ba8c78674877f360, type: 2}
       spawnRate: 0
-      qty: 10
-  - expectedWealth: 900
-    filler: {fileID: 114885559565770226, guid: 243b7c41150d7d74ba550718f76d45c7, type: 2}
-    units:
+      qty: 20
     - enemy: {fileID: 1794608086430166, guid: 51f3b2453b929424cb4563e0c82ac0dc, type: 2}
       spawnRate: 0
-      qty: 30
+      qty: 20
+  - expectedWealth: 850
+    BackgroundWaves: 1
+    BackgroundQty: 2
+    BackgroundOffset: 0
+    units:
+    - enemy: {fileID: 1069520302569302, guid: 18b0e87b3ffbae54ba8c78674877f360, type: 2}
+      spawnRate: -1
+      qty: 5
   - expectedWealth: 950
-    filler: {fileID: 114404833367683012, guid: 51f3b2453b929424cb4563e0c82ac0dc, type: 2}
+    BackgroundWaves: 1
+    BackgroundQty: 2
+    BackgroundOffset: 0
+    units:
+    - enemy: {fileID: 1794608086430166, guid: 51f3b2453b929424cb4563e0c82ac0dc, type: 2}
+      spawnRate: 1
+      qty: 30
+  - expectedWealth: 1035
+    BackgroundWaves: 1
+    BackgroundQty: 1
+    BackgroundOffset: 0
     units:
     - enemy: {fileID: 1060707410076018, guid: 243b7c41150d7d74ba550718f76d45c7, type: 2}
-      spawnRate: 1
+      spawnRate: -1
       qty: 10
-  - expectedWealth: 850
-    filler: {fileID: 0}
+  - expectedWealth: 1200
+    BackgroundWaves: 2
+    BackgroundQty: 3
+    BackgroundOffset: 10
     units:
     - enemy: {fileID: 1455701637717344, guid: f261563ece6e6b243ad61ee3e0a6a13d, type: 2}
       spawnRate: 1
       qty: 1
-    - enemy: {fileID: 1794608086430166, guid: 51f3b2453b929424cb4563e0c82ac0dc, type: 2}
-      spawnRate: -1
-      qty: 25
