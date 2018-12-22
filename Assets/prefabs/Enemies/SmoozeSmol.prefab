@@ -25,7 +25,6 @@ GameObject:
   - component: {fileID: 114263876707495462}
   - component: {fileID: 58554994355160352}
   - component: {fileID: 114778544015427356}
-  - component: {fileID: 114843632624624836}
   m_Layer: 8
   m_Name: SmoozeSmol
   m_TagString: Untagged
@@ -86,7 +85,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 286a23d75ecc48b4ba6fc75f6cc35487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hits: 3
+  hits: 2
   armor: 0
 --- !u!114 &114263876707495462
 MonoBehaviour:
@@ -113,19 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   worth: 1
-  nickle: 0
---- !u!114 &114843632624624836
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1426143310799746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9d5786b9e1b77949a45b8f7fcad1424, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hpPerSecond: 50
+  nickle: 1
 --- !u!212 &212963086906796194
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 286a23d75ecc48b4ba6fc75f6cc35487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hits: 40
+  hits: 175
   armor: 0
 --- !u!114 &114414864821472800
 MonoBehaviour:
@@ -203,7 +203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1810231261853994, guid: a66a65a5d336fcb49a2c22d79f187770, type: 2}
-  qty: 5
+  qty: 6
   spread: 0.2
   boost: 1
 --- !u!114 &114640370717510034
@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d5786b9e1b77949a45b8f7fcad1424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpPerSecond: 300
+  hpPerSecond: 250
 --- !u!114 &114841043975074234
 MonoBehaviour:
   m_ObjectHideFlags: 1
