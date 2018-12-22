@@ -90,7 +90,20 @@ namespace Attack
         // Use this for initialization
         protected void Start()
         {
-            hp = hits * 100;
+            switch(DifficultySelector.Difficulty)
+            {
+                case Difficulty.easy:
+                    hp = hits * 75;
+                    break;
+                case Difficulty.medium:
+                    hp = hits * 90;
+                    break;
+                case Difficulty.hard:
+                default:
+                    hp = hits * 100;
+                    break;
+            }
+            
             maxhp = hp;
         }
 
