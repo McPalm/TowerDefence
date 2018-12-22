@@ -57,7 +57,7 @@ namespace Building.Upgrades
                 Upgrade = () =>
                 {
                     damageRank++;
-                    GetComponent<MineLayer>().damage = 300  + damageRank * 60;
+                    GetComponent<MineLayer>().damage = 300  + RankRank(damageRank) * 60;
                 },
             };
         }
@@ -73,7 +73,7 @@ namespace Building.Upgrades
                     explosionRank++;
                     var layer = GetComponent<MineLayer>();
                     layer.explosionRadius = 1f + explosionRank * .3f;
-                    layer.maxTargets = 2 + explosionRank / 2;
+                    layer.maxTargets = 2 + RankRank(explosionRank) / 2;
                 },
             };
         }
