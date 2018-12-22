@@ -24,9 +24,9 @@ namespace Attack
             {
                 yield return Spawn(tank, 1, 0);
                 yield return new WaitForSecondsRealtime(3f + Random.value);
-                yield return Spawn(flyer, 3, 1f);
+                yield return Spawn(flyer, 6, .6f);
                 yield return new WaitForSecondsRealtime(3f + Random.value);
-                yield return Spawn(swarmer, 12, .4f);
+                yield return Spawn(swarmer, 12, .25f);
                 yield return new WaitForSecondsRealtime(3f + Random.value);
             }
         }
