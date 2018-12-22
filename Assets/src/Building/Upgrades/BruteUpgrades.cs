@@ -83,7 +83,7 @@ namespace Building.Upgrades
                 Upgrade = () =>
                 {
                     damageRank++;
-                    GetComponent<DirectDamage>().damage = 100 + RankRank(damageRank) * 20;
+                    GetComponent<DirectDamage>().damage = 100 + RankRank(damageRank) * 25;
                 }
             };
         }
@@ -109,7 +109,7 @@ namespace Building.Upgrades
                     Upgrade = () =>
                     {
                         var shock = gameObject.AddComponent<Shockwave>();
-                        shock.damage = 200;
+                        shock.damage = 300;
                         shock.size = .9f;
                         shock.prefab = ShockEffect;
                         GetComponent<Turret>().FindEffects();

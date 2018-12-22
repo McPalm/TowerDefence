@@ -89,11 +89,11 @@ namespace Building.Upgrades
             {
                 new UpgradeFormat()
                 {
-                    name = "x3 Speed",
+                    name = "x2 Speed",
                     cost = 500,
                     Upgrade = () =>
                     {
-                        GetComponent<Turret>().attackSpeed *= 3f;
+                        GetComponent<Turret>().attackSpeed *= 2f;
                         var bounce = GetComponent<Bouncing>();
                         bounce.speed *= 1.5f;
                         bounce.bounceSpeed *= 1.5f;

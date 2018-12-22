@@ -104,8 +104,7 @@ namespace Building.Upgrades
                     Upgrade = () =>
                     {
                         var layer = GetComponent<MineLayer>();
-                        layer.stunDuration = 6f;
-                        layer.slowFactor = .0f;
+                        layer.stunDuration = 4f;
                         level++;
                     },
                 },
