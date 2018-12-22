@@ -13,6 +13,14 @@ namespace Score
 
         public LifeEvent OnChangeLife;
 
+        private void Start()
+        {
+            if (DifficultySelector.Difficulty == Difficulty.easy)
+                lives *= 2;
+            if (DifficultySelector.Difficulty == Difficulty.medium)
+                lives = lives * 3 / 2;
+        }
+
         public int HP
         {
             get
