@@ -211,11 +211,11 @@ namespace Building.Upgrades
             {
                 new UpgradeFormat()
                 {
-                    name = "x3 Attack Speed",
+                    name = "x2 Attack Speed",
                     cost = 500,
                     Upgrade = () =>
                     {
-                        GetComponent<Turret>().attackSpeed *= 3f;
+                        GetComponent<Turret>().attackSpeed *= 2f;
                         level++;
                     },
 
@@ -226,8 +226,8 @@ namespace Building.Upgrades
                     cost = 500,
                     Upgrade = () =>
                     {
-                        GetComponent<DirectDamage>().damage = 1000;
-                        GetComponent<DirectDamage>().critChance = .4f;
+                        GetComponent<DirectDamage>().damage = 1200;
+                        GetComponent<DirectDamage>().critChance = .2f;
                         GetComponent<Turret>().distance = 20f;
                         level++;
                     },
