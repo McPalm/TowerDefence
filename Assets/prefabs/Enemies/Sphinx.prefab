@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 286a23d75ecc48b4ba6fc75f6cc35487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hits: 65
+  hits: 200
   armor: 0
 --- !u!114 &114232765232371044
 MonoBehaviour:
@@ -200,8 +200,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cccb64a51e4917947a863016233c231f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threshold: 0.5
-  speed: 2.2
+  threshold: 0.613
+  speed: 2.6
   armor: 0
   sprite: {fileID: 21300000, guid: 801d24df621c54d4e8807b068b0b5c0a, type: 3}
 --- !u!114 &114402636656285550

@@ -61,12 +61,26 @@ MonoBehaviour:
     BackgroundQty: 1
     BackgroundOffset: 0
     units:
-    - enemy: {fileID: 1324174833363512, guid: cc6e39228a52bfc4395d87fc21e2761b, type: 2}
-      spawnRate: 0
+    - enemy: {fileID: 1045474355256696, guid: 80b8c90eb49583c4abe40d56158488f5, type: 2}
+      spawnRate: -1
       qty: 5
+    - enemy: {fileID: 1865833684371742, guid: e81cd35106d6a754395109dd65702a69, type: 2}
+      spawnRate: 1
+      qty: 15
+  - expectedWealth: 0
+    BackgroundWaves: 0
+    BackgroundQty: 1
+    BackgroundOffset: 0
+    units:
+    - enemy: {fileID: 1045474355256696, guid: 80b8c90eb49583c4abe40d56158488f5, type: 2}
+      spawnRate: -1
+      qty: 5
+    - enemy: {fileID: 1865833684371742, guid: e81cd35106d6a754395109dd65702a69, type: 2}
+      spawnRate: 2
+      qty: 15
     - enemy: {fileID: 1060707410076018, guid: 243b7c41150d7d74ba550718f76d45c7, type: 2}
-      spawnRate: 0
-      qty: 5
+      spawnRate: 1
+      qty: 10
     - enemy: {fileID: 1500756144872880, guid: f4d2e45907a5bef49bc5998ea5d0448a, type: 2}
       spawnRate: 0
-      qty: 5
+      qty: 10

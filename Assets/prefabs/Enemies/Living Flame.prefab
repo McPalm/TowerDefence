@@ -84,6 +84,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5738e35d39624ea41a4fb06e82c70918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mesh: {fileID: 0}
   speed: 3
   location: 0
 --- !u!114 &114720069986202458
@@ -113,7 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae76498205920a24fa1828fef1cfd35a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  worth: 5
+  worth: 3
   nickle: 0
 --- !u!212 &212496447159232998
 SpriteRenderer:

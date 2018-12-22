@@ -149,9 +149,9 @@ namespace WaveManagement
                 {
 
                     if(wave.BackgroundWaves < BackgroundWaves.waves.Count)    
-                        StartCoroutine(SpawnWave(wave.BackgroundOffset, BackgroundWaves.waves[wave.BackgroundWaves], .5f, wave.BackgroundQty));
+                        StartCoroutine(SpawnWave(wave.BackgroundOffset, BackgroundWaves.waves[wave.BackgroundWaves], .7f, wave.BackgroundQty));
                     else
-                        StartCoroutine(SpawnWave(wave.BackgroundOffset, BackgroundWaves.waves[BackgroundWaves.waves.Count-1], .5f, wave.BackgroundQty));
+                        StartCoroutine(SpawnWave(wave.BackgroundOffset, BackgroundWaves.waves[BackgroundWaves.waves.Count-1], .7f, wave.BackgroundQty));
                 }
                 currentWave++;
                 State = S_RunningWave;
@@ -164,10 +164,11 @@ namespace WaveManagement
             runningSpawns++;
             if (startDelay > 0f)
                 yield return new WaitForSeconds(startDelay);
-            foreach (var unit in wave.units)
+            for (int r = 0; r < repetitions; r++)
             {
-                for (int r = 0; r < repetitions; r++)
+                foreach (var unit in wave.units)
                 {
+
 
                     for (int i = 0; i < unit.qty; i++)
                     {
