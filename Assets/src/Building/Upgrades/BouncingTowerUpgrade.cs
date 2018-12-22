@@ -47,7 +47,8 @@ namespace Building.Upgrades
                 Upgrade = () =>
                 {
                     bounceRank++;
-                    GetComponent<Bouncing>().targets = bounceRank + 2;
+                    GetComponent<Bouncing>().targets = RankRank(bounceRank) + 3;
+                    GetComponent<Bouncing>().bounceSpeed = 12f + RankRank(bounceRank);
                 },
             };
         }
@@ -76,8 +77,8 @@ namespace Building.Upgrades
                 {
                     damageRank++;
                     var damage = GetComponent<DirectDamage>();
-                    damage.damage = 100 + damageRank * 20;
-                    damage.offTargetDamage = 50 + damageRank * 10;
+                    damage.damage = 50 + RankRank(damageRank) * 10;
+                    damage.offTargetDamage = 50 + RankRank(damageRank) * 10;
                 }
             };
         }
@@ -93,6 +94,9 @@ namespace Building.Upgrades
                     Upgrade = () =>
                     {
                         GetComponent<Turret>().attackSpeed *= 3f;
+                        var bounce = GetComponent<Bouncing>();
+                        bounce.speed *= 1.5f;
+                        bounce.bounceSpeed *= 1.5f;
                         level++;
                     },
                 },

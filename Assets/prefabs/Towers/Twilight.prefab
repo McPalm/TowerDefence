@@ -217,7 +217,7 @@ MonoBehaviour:
   speed: 20
   bounceSpeed: 12
   bounceRange: 3
-  targets: 2
+  targets: 3
   greedyBounce: 0
   returnToSender: 1
 --- !u!114 &114845492679725336
@@ -231,7 +231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a977b36f2b354c74480f00bdf3b4f8c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 100
+  damage: 50
   critChance: 0
   armorPiercing: 0
   offTargetDamage: 50
