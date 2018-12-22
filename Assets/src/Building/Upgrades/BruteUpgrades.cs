@@ -47,7 +47,7 @@ namespace Building.Upgrades
                 Upgrade = () =>
                 {
                     critRank++;
-                    GetComponent<DirectDamage>().critChance = critRank * .05f;
+                    GetComponent<DirectDamage>().critChance = RankRank(critRank) * .05f;
                 },
             };
         }
@@ -83,7 +83,7 @@ namespace Building.Upgrades
                 Upgrade = () =>
                 {
                     damageRank++;
-                    GetComponent<DirectDamage>().damage = 100 + damageRank * 20;
+                    GetComponent<DirectDamage>().damage = 100 + RankRank(damageRank) * 20;
                 }
             };
         }
