@@ -20,6 +20,14 @@ namespace Building.Upgrades
 
         protected string summary = "";
         
+        static protected int RankRank(int rank)
+        {
+            /* I should not name methods 3 AM */
+            if (rank < 3)
+                return rank;
+            return rank * 2 - 2;
+        }
+
         public virtual string Attributes
         {
             get
