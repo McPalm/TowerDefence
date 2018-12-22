@@ -48,6 +48,10 @@ namespace Movement
         {
             if(!mesh)
                 mesh = FindObjectOfType<MeshManager>().GetMesh();
+            if (DifficultySelector.Difficulty == Difficulty.easy)
+                speed *= .7f;
+            if (DifficultySelector.Difficulty == Difficulty.medium)
+                speed *= .85f;
         }
 
         internal void ApplySlow(float speedFactor, float duration)
