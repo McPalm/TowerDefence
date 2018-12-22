@@ -16,8 +16,14 @@ MonoBehaviour:
     filler: {fileID: 114732102626337646, guid: e09e2ccd14ff85a459b54a10ac46dbc2, type: 2}
     units:
     - enemy: {fileID: 1234060311863718, guid: ba91b3ca643cc594a819da34816dc001, type: 2}
+      spawnRate: 2
+      qty: 10
+    - enemy: {fileID: 1324174833363512, guid: cc6e39228a52bfc4395d87fc21e2761b, type: 2}
+      spawnRate: 2
+      qty: 10
+    - enemy: {fileID: 1410183550651906, guid: e09e2ccd14ff85a459b54a10ac46dbc2, type: 2}
       spawnRate: 1
-      qty: 30
+      qty: 10
   - expectedWealth: 1900
     filler: {fileID: 114732102626337646, guid: e09e2ccd14ff85a459b54a10ac46dbc2, type: 2}
     units:
