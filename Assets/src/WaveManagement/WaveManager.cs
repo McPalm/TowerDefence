@@ -8,6 +8,7 @@ namespace WaveManagement
     public class WaveManager : MonoBehaviour
     {
         public Army[] armies;
+        public Army BackgroundWaves;
         List<Army.Wave> waves;
 
         float SpawnRateFactor = 1f;
@@ -145,30 +146,17 @@ namespace WaveManagement
                     bonusCash = waves[currentWave + 1].expectedWealth - wave.Bounty - FindObjectOfType<Score.Wallet>().TotalWorth;
                 }
                 StartCoroutine(SpawnWave(wave, bonusCash));
+                StartCoroutine(SpawnWave(BackgroundWaves.waves[currentWave / 5], 0, .5f));
                 currentWave++;
                 State = S_RunningWave;
                 OnStartWave.Invoke();
             }
         }
 
-        IEnumerator SpawnWave(Army.Wave wave, int bonusCash)
+        IEnumerator SpawnWave(Army.Wave wave, int bonusCash, float waveGap = 0f)
         {
             runningSpawns++;
 
-            /*
-            int need = 0;
-            if (wave.filler != null && bonusCash > 0)
-            {
-                need = wave.filler.nickle ? bonusCash * 2 : bonusCash / wave.filler.worth;
-                if(need > 10)
-                    Debug.Log("Need " + need + " at wave " + currentWave);
-                float rate = 5f / need;
-                if (rate < .75f) rate = .75f;
-                StartCoroutine(SimpleSpawnRoutine(wave.filler.gameObject, rate, 10));
-                need -= 10;
-                yield return new WaitForSeconds(5f);
-            }
-            */
             foreach (var unit in wave.units)
             {
                 for (int i = 0; i < unit.qty; i++)
@@ -177,14 +165,9 @@ namespace WaveManagement
                     enemy.transform.position = new Vector3(-25, -25);
                     yield return new WaitForSeconds(delayFor(unit.spawnRate) * SpawnRateFactor);
                 }
+                if (waveGap > 0f)
+                    yield return new WaitForSeconds(waveGap);
             }
-            /*
-            if(need > 0)
-            {
-                yield return new WaitForSeconds(2f);
-                StartCoroutine(SimpleSpawnRoutine(wave.filler.gameObject, .25f, need));
-            }
-            */
             
             runningSpawns--;
         }
