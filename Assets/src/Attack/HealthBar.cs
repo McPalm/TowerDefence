@@ -12,7 +12,8 @@ namespace Attack
         // Use this for initialization
         void Update()
         {
-            transform.localScale = new Vector3(client.HealthPercentage, 1f, 1f);
+            if(client.HP > 0)
+                transform.localScale = new Vector3(client.HealthPercentage, 1f, 1f);
         }
         
     }
