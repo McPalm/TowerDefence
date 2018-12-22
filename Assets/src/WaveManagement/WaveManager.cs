@@ -140,33 +140,40 @@ namespace WaveManagement
             if (currentWave < waves.Count)
             {
                 var wave = waves[currentWave];
-                int bonusCash = 0;
-                if(currentWave+1 < waves.Count && wave.filler != null)
+                StartCoroutine(SpawnWave(-wave.BackgroundOffset, wave)); // Main Wave
+                if (wave.BackgroundWaves >= 0 && wave.BackgroundQty > 0)
                 {
-                    bonusCash = waves[currentWave + 1].expectedWealth - wave.Bounty - FindObjectOfType<Score.Wallet>().TotalWorth;
+
+                    if(wave.BackgroundWaves < BackgroundWaves.waves.Count)    
+                        StartCoroutine(SpawnWave(wave.BackgroundOffset, BackgroundWaves.waves[wave.BackgroundWaves], .5f, wave.BackgroundQty));
+                    else
+                        StartCoroutine(SpawnWave(wave.BackgroundOffset, BackgroundWaves.waves[BackgroundWaves.waves.Count-1], .5f, wave.BackgroundQty));
                 }
-                StartCoroutine(SpawnWave(wave, bonusCash));
-                StartCoroutine(SpawnWave(BackgroundWaves.waves[currentWave / 5], 0, .5f));
                 currentWave++;
                 State = S_RunningWave;
                 OnStartWave.Invoke();
             }
         }
 
-        IEnumerator SpawnWave(Army.Wave wave, int bonusCash, float waveGap = 0f)
+        IEnumerator SpawnWave(float startDelay, Army.Wave wave, float waveGap = 0f, int repetitions = 1)
         {
             runningSpawns++;
-
+            if (startDelay > 0f)
+                yield return new WaitForSeconds(startDelay);
             foreach (var unit in wave.units)
             {
-                for (int i = 0; i < unit.qty; i++)
+                for (int r = 0; r < repetitions; r++)
                 {
-                    var enemy = Instantiate(unit.enemy);
-                    enemy.transform.position = new Vector3(-25, -25);
-                    yield return new WaitForSeconds(delayFor(unit.spawnRate) * SpawnRateFactor);
+
+                    for (int i = 0; i < unit.qty; i++)
+                    {
+                        var enemy = Instantiate(unit.enemy);
+                        enemy.transform.position = new Vector3(-25, -25);
+                        yield return new WaitForSeconds(delayFor(unit.spawnRate) * SpawnRateFactor);
+                    }
+                    if (waveGap > 0f)
+                        yield return new WaitForSeconds(waveGap);
                 }
-                if (waveGap > 0f)
-                    yield return new WaitForSeconds(waveGap);
             }
             
             runningSpawns--;

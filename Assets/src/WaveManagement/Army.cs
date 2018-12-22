@@ -25,7 +25,12 @@ namespace WaveManagement
                 }
             }
             public int expectedWealth;
-            public Score.Bounty filler;
+            [Range(0, 5)]
+            public int BackgroundWaves = 0;
+            [Range(0, 4)]
+            public int BackgroundQty = 1;
+            [Range(-10f, 10f)]
+            public float BackgroundOffset = 0f;
             public List<Unit> units = new List<Unit>();
         }
 
