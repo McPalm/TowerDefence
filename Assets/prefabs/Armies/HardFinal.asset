@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Name: HardFinal
   m_EditorClassIdentifier: 
   waves:
-  - expectedWealth: 5500
-    filler: {fileID: 0}
+  - expectedWealth: 7950
+    BackgroundWaves: 0
+    BackgroundQty: 0
+    BackgroundOffset: 0
     units:
-    - enemy: {fileID: 1064761335895832, guid: a0f7224b1708a5744905291b47414065, type: 2}
+    - enemy: {fileID: 1332296728842358, guid: 877d5d9ac9335ae4ea4f39caf32559b1, type: 2}
       spawnRate: 0
       qty: 1
