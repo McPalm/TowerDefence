@@ -47,11 +47,11 @@ namespace Building.Upgrades
                 new UpgradeFormat()
                 {
                     name = "Turret",
-                    cost = 120,
+                    cost = 80,
                     Upgrade = () =>
                     {
                         Destroy(GetComponent<Turret>());
-                        GetComponent<DirectDamage>().damage = 25;
+                        GetComponent<DirectDamage>().damage = 20;
                         var turret = gameObject.AddComponent<AimedTurret>();
                         turret.speed = 3f;
                         turret.spread = .8f;
@@ -89,7 +89,7 @@ namespace Building.Upgrades
                 Upgrade = () =>
                 {
                     accuracyRank++;
-                    GetComponent<AimedTurret>().spread = .7f - accuracyRank * .12f;
+                    GetComponent<AimedTurret>().spread = .7f - RankRank(accuracyRank) * .0875f;
                     GetComponent<AimedTurret>().projectileSpeed = 15f + accuracyRank * 2.5f;
                 },
             };
@@ -104,7 +104,7 @@ namespace Building.Upgrades
                 Upgrade = () =>
                 {
                     damageRank++;
-                    GetComponent<DirectDamage>().damage = 25 + damageRank * 5;
+                    GetComponent<DirectDamage>().damage = 20 + RankRank(damageRank) * 5;
                 },
             };
         }
@@ -134,7 +134,7 @@ namespace Building.Upgrades
                 new UpgradeFormat()
                 {
                     name = "Piercing",
-                    cost = 500,
+                    cost = 750,
                     Upgrade = () =>
                     {
                         GetComponent<AimedTurret>().piercing = 2;
@@ -185,7 +185,7 @@ namespace Building.Upgrades
                 Upgrade = () =>
                 {
                     rangeRank++;
-                    GetComponent<Turret>().distance = 4.5f + rangeRank * .6f;
+                    GetComponent<Turret>().distance = 4.5f + rangeRank * .6f + ((rangeRank == 5) ? 1f : 0f);
                 },
             };
         }
@@ -200,7 +200,7 @@ namespace Building.Upgrades
                 Upgrade = () =>
                 {
                     damageRank++;
-                    GetComponent<DirectDamage>().damage = 200 + damageRank * 50;
+                    GetComponent<DirectDamage>().damage = 200 + RankRank(damageRank) * 50;
                 },
             };
         }
@@ -222,11 +222,12 @@ namespace Building.Upgrades
                 },
                 new UpgradeFormat()
                 {
-                    name = "50% crit, Max Range",
+                    name = "Devastating Accuracy",
                     cost = 500,
                     Upgrade = () =>
                     {
-                        GetComponent<DirectDamage>().critChance = .5f;
+                        GetComponent<DirectDamage>().damage = 1000;
+                        GetComponent<DirectDamage>().critChance = .4f;
                         GetComponent<Turret>().distance = 20f;
                         level++;
                     },
