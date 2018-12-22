@@ -94,11 +94,12 @@ namespace Building.Upgrades
             {
                 new UpgradeFormat()
                 {
-                    name = "x3 Damage",
+                    name = "Devastating Blow",
                     cost = 500,
                     Upgrade = () =>
                     {
-                        GetComponent<DirectDamage>().damage *= 3;
+                        GetComponent<DirectDamage>().damage *= 2;
+                        GetComponent<DirectDamage>().critChance += .1f;
                         level++;
                     },
                 },

@@ -47,11 +47,11 @@ namespace Building.Upgrades
                 new UpgradeFormat()
                 {
                     name = "Turret",
-                    cost = 80,
+                    cost = 70,
                     Upgrade = () =>
                     {
                         Destroy(GetComponent<Turret>());
-                        GetComponent<DirectDamage>().damage = 20;
+                        GetComponent<DirectDamage>().damage = 25;
                         var turret = gameObject.AddComponent<AimedTurret>();
                         turret.speed = 3f;
                         turret.spread = .8f;
@@ -104,7 +104,7 @@ namespace Building.Upgrades
                 Upgrade = () =>
                 {
                     damageRank++;
-                    GetComponent<DirectDamage>().damage = 20 + RankRank(damageRank) * 5;
+                    GetComponent<DirectDamage>().damage = 25 + RankRank(damageRank) * 5;
                 },
             };
         }

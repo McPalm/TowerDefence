@@ -106,7 +106,6 @@ namespace WaveManagement
             OnStartDowntime.AddListener(() => {
                 Debug.Log("Expected Worth - Total Worth = " + (waves[currentWave].expectedWealth - wallet.TotalWorth) + " (" + WaveName + ")");
                 wallet.Add(waves[currentWave].expectedWealth - wallet.TotalWorth);
-
                 });
         }
 
