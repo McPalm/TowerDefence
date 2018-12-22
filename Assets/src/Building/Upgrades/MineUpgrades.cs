@@ -99,12 +99,12 @@ namespace Building.Upgrades
             {
                 new UpgradeFormat
                 {
-                name = "Snaring",
+                name = "Concussive Blast",
                     cost = 500,
                     Upgrade = () =>
                     {
                         var layer = GetComponent<MineLayer>();
-                        layer.slowDuration = 6f;
+                        layer.stunDuration = 6f;
                         layer.slowFactor = .0f;
                         level++;
                     },

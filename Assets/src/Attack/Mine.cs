@@ -11,8 +11,7 @@ namespace Attack
         bool active = true;
         public float lifetime = 60f;
 
-        public float slowFactor = 1f;
-        public float slowDuration = 0f;
+        public float stunDuration = 0f;
 
         private void FixedUpdate()
         {
@@ -25,8 +24,8 @@ namespace Attack
                 if (radius == 0f)
                 {
                     hit.transform.GetComponent<Enemy>().Strike(damage, true);
-                    if (slowDuration > 0f)
-                        hit.transform.GetComponent<Movement.Mobile>().ApplySlow(slowFactor, slowDuration);
+                    if (stunDuration > 0f)
+                        hit.transform.GetComponent<Movement.Mobile>().Stun(stunDuration);
                     Destroy(gameObject);
                 }
                 else
@@ -55,8 +54,11 @@ namespace Attack
             foreach (var item in struck)
             {
                 item.GetComponent<Enemy>().Strike(damage, true);
-                if (slowDuration > 0f)
-                    item.GetComponent<Movement.Mobile>().ApplySlow(slowFactor, slowDuration);
+                if (stunDuration > 0f)
+                    if(item == target)
+                        item.GetComponent<Movement.Mobile>().Stun(stunDuration);
+                    else
+                        item.GetComponent<Movement.Mobile>().Stun(stunDuration/2f);
             }
             Destroy(gameObject);
         }

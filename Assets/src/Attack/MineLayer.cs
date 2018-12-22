@@ -16,7 +16,7 @@ namespace Attack
         public float explosionRadius;
         public int maxTargets = 1;
 
-        public float slowDuration = 0f;
+        public float stunDuration = 0f;
         public float slowFactor = 1f;
 
 
@@ -67,8 +67,7 @@ namespace Attack
             mine.radius = explosionRadius;
             mine.lifetime = mineLifeTime;
             mine.transform.position = RandomSpawnPoint() + Scatter();
-            mine.slowDuration = slowDuration;
-            mine.slowFactor = slowFactor;
+            mine.stunDuration = stunDuration;
             mines.Add(mine);
             mine.maxTargets = maxTargets;
             minesPlaced++;
