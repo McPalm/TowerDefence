@@ -135,12 +135,12 @@ namespace Building.Upgrades
                     if(slow)
                     {
                         slow.speedFactor = .7f - .02f * powerRank;
-                        slow.duration = 2f + .8f * powerRank;
+                        slow.duration = 2f + .5f * RankRank(powerRank);
                     }
                     else
                     {
                         var poison = GetComponent<PoisonEffect>();
-                        poison.damage = 100 + powerRank * 34;
+                        poison.damage = 100 + RankRank(powerRank) * 25;
                         poison.duration = 5f + powerRank * .5f;
                     }
                 }
@@ -156,7 +156,7 @@ namespace Building.Upgrades
                 Upgrade = () =>
                 {
                     rangeRank++;
-                    GetComponent<Turret>().distance = 2.5f + rangeRank * .2f;
+                    GetComponent<Turret>().distance = 2.5f + RankRank(rangeRank) * .2f;
                 }
             };
         }
@@ -205,7 +205,7 @@ namespace Building.Upgrades
                 {
                     speedRank++;
                     var turret = GetComponent<Turret>();
-                    turret.attackSpeed = .65f + speedRank * .07f;
+                    turret.attackSpeed = .65f + RankRank(speedRank) * .07f;
                 }
             };
         }
