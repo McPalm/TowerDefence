@@ -10,6 +10,8 @@ namespace WaveManagement
         public Army[] armies;
         List<Army.Wave> waves;
 
+        float SpawnRateFactor = 1f;
+
         public int debugStart = 0;
         public int CurrentWave
         {
@@ -77,6 +79,20 @@ namespace WaveManagement
                 {
                     waves.Add(wave);
                 }
+            }
+
+            switch(DifficultySelector.Difficulty)
+            {
+                case Difficulty.easy:
+                    SpawnRateFactor = 1.35f;
+                    break;
+                case Difficulty.medium:
+                    SpawnRateFactor = 1.2f;
+                    break;
+                case Difficulty.hard:
+                default:
+                    SpawnRateFactor = 1f;
+                    break;
             }
 
             currentWave = debugStart;
@@ -159,7 +175,7 @@ namespace WaveManagement
                 {
                     var enemy = Instantiate(unit.enemy);
                     enemy.transform.position = new Vector3(-25, -25);
-                    yield return new WaitForSeconds(delayFor(unit.spawnRate));
+                    yield return new WaitForSeconds(delayFor(unit.spawnRate) * SpawnRateFactor);
                 }
             }
             /*
