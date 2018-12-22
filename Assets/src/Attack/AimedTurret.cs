@@ -22,6 +22,7 @@ namespace Attack
         bool downtime = false;
 
         System.Action<GameObject> effect;
+        System.Action<GameObject> effect2;
 
         private void Start()
         {
@@ -37,9 +38,11 @@ namespace Attack
         public void FindEffects()
         {
             effect = null;
+            effect2 = null;
             foreach (var item in GetComponents<IHitEffect>())
             {
                 effect += item.OnHit;
+                effect2 += item.OnHit2;
             }
         }
 
@@ -85,6 +88,7 @@ namespace Attack
         IEnumerator BulletLerp(Vector2 target)
         {
             var struck = new HashSet<GameObject>();
+            var effect = this.effect;
 
             Vector2 source = transform.position;
             var bullet = Instantiate(this.bullet);
@@ -103,6 +107,7 @@ namespace Attack
                     if (struck.Contains(hit.transform.gameObject))
                         continue;
                     effect(hit.transform.gameObject);
+                    effect = effect2;
                     struck.Add(hit.transform.gameObject);
                     if (struck.Count > piercing)
                     {

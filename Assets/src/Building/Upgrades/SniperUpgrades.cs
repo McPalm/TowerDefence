@@ -47,11 +47,12 @@ namespace Building.Upgrades
                 new UpgradeFormat()
                 {
                     name = "Turret",
-                    cost = 70,
+                    cost = 50,
                     Upgrade = () =>
                     {
                         Destroy(GetComponent<Turret>());
-                        GetComponent<DirectDamage>().damage = 25;
+                        GetComponent<DirectDamage>().damage = 20;
+                        GetComponent<DirectDamage>().offTargetDamage = 10;
                         var turret = gameObject.AddComponent<AimedTurret>();
                         turret.speed = 3f;
                         turret.spread = .8f;
@@ -84,27 +85,30 @@ namespace Building.Upgrades
         {
             return new UpgradeFormat()
             {
-                name = "Accuracy",
+                name = "Accuracy & Damage",
                 cost = 20 * (accuracyRank + 1),
                 Upgrade = () =>
                 {
                     accuracyRank++;
                     GetComponent<AimedTurret>().spread = .7f - RankRank(accuracyRank) * .0875f;
                     GetComponent<AimedTurret>().projectileSpeed = 15f + accuracyRank * 2.5f;
+                    GetComponent<DirectDamage>().damage = 20 + RankRank(accuracyRank) * 5;
+                    GetComponent<DirectDamage>().offTargetDamage = 10 + accuracyRank * 3 + RankRank(damageRank) * 2;
                 },
             };
         }
 
-        UpgradeFormat AimedDamageUpgrade()
+        UpgradeFormat AimedPiercingUpgrade()
         {
             return new UpgradeFormat()
             {
-                name = "Damage",
+                name = "Piercing",
                 cost = 20 * (damageRank + 1),
                 Upgrade = () =>
                 {
                     damageRank++;
-                    GetComponent<DirectDamage>().damage = 25 + RankRank(damageRank) * 5;
+                    GetComponent<AimedTurret>().piercing = 1f + damageRank * .5f;
+                    GetComponent<DirectDamage>().offTargetDamage = 10 + accuracyRank * 3 + RankRank(damageRank) * 2;
                 },
             };
         }
@@ -113,8 +117,6 @@ namespace Building.Upgrades
         {
             if (speedRank == 5 && accuracyRank == 5 && damageRank == 5)
             {
-                if (level == 1)
-                    return UltimateTurretUpgrade();
                 return new UpgradeFormat[0];
             }
             var upgrades = new List<UpgradeFormat>();
@@ -123,25 +125,8 @@ namespace Building.Upgrades
             if (accuracyRank < 5)
                 upgrades.Add(AimedAccuracyUpgrade());
             if (damageRank < 5)
-                upgrades.Add(AimedDamageUpgrade());
+                upgrades.Add(AimedPiercingUpgrade());
             return upgrades.ToArray();
-        }
-
-        UpgradeFormat[] UltimateTurretUpgrade()
-        {
-            return new UpgradeFormat[]
-            {
-                new UpgradeFormat()
-                {
-                    name = "Piercing",
-                    cost = 750,
-                    Upgrade = () =>
-                    {
-                        GetComponent<AimedTurret>().piercing = 2;
-                        level++;
-                    },
-                }
-            };
         }
 
         UpgradeFormat[] SniperStuffs()

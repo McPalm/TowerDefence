@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: HardFinal
   m_EditorClassIdentifier: 
   waves:
-  - expectedWealth: 7950
+  - expectedWealth: 8150
     BackgroundWaves: 0
     BackgroundQty: 0
     BackgroundOffset: 0
