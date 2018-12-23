@@ -56,6 +56,9 @@ namespace Movement
         {
             if(speedFactor <= slowFactor)
             {
+                var sprite = GetComponent<SpriteRenderer>();
+                if (sprite)
+                    sprite.color = new Color(0.2f, .2f, 1f);
                 slowFactor = speedFactor;
                 slowDuration = duration;
             }
@@ -65,9 +68,19 @@ namespace Movement
         void FixedUpdate()
         {
             if (slowDuration > 0f)
+            {
                 slowDuration -= Time.fixedDeltaTime;
+                if (slowDuration <= 0f)
+                {
+                    var sprite = GetComponent<SpriteRenderer>();
+                    if (sprite)
+                        sprite.color = Color.white;
+                }
+            }
             else
+            {
                 slowFactor = 1f;
+            }
             if (Stunned == false)
             {
                 location += slowFactor * speed / 60f;
