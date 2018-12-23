@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 114655839796133992}
   - component: {fileID: 114674628973387744}
   - component: {fileID: 114487180727449632}
+  - component: {fileID: 114151385099985244}
   m_Layer: 0
   m_Name: Sniper
   m_TagString: Untagged
@@ -151,6 +152,22 @@ MonoBehaviour:
   damage: 175
   critChance: 0
   armorPiercing: 1
+  offTargetDamage: 50
+--- !u!114 &114151385099985244
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1531716171280818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1ff090fe38c48942be5bc922c01141d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HitSound:
+  - {fileID: 8300000, guid: 42ac82e7851f7e445addd67d522877f2, type: 3}
+  SecondaryHitSound: []
+  volume: 0.838
 --- !u!114 &114320590435850452
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -231,7 +248,6 @@ MonoBehaviour:
   distance: 3.5
   attackSpeed: 0.3
   targetPriority: 2
-  freezeTower: 0
 --- !u!212 &212059663520156786
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -265,7 +281,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1765659387
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: -3
   m_Sprite: {fileID: 21300000, guid: a2089d1a568ea4d4b88bfc3826ec0a8f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -310,7 +326,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1765659387
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: a2089d1a568ea4d4b88bfc3826ec0a8f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -400,7 +416,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1765659387
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: a2089d1a568ea4d4b88bfc3826ec0a8f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

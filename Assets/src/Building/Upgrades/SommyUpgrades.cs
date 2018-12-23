@@ -9,6 +9,7 @@ namespace Building.Upgrades
     public class SommyUpgrades : AUpgrade
     {
         int level = 0;
+        public AudioClip BoostSound;
 
         internal override UpgradeFormat[] AvailableUpgrades
         {
@@ -46,6 +47,7 @@ namespace Building.Upgrades
                     {
                         var boost = gameObject.AddComponent<HyperSpeed>();
                         boost.power = 2.1f;
+                        boost.audioClip = BoostSound;
                         level++;
                     },
                 }

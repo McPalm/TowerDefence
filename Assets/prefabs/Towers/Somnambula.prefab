@@ -179,6 +179,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 1499388301349902, guid: 051d7f5aeb2a72c4ab8619c01bf32f22, type: 2}
   speed: 20
+  fireSound: {fileID: 8300000, guid: 24a73b74a87f6d44bb0beaf583b8d14d, type: 3}
+  volume: 0.207
 --- !u!114 &114230968707758506
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -205,6 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf2ee3322da950b468a1f834cf07e30b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BoostSound: {fileID: 8300000, guid: 46132cde87140a643a98d77f19a497ae, type: 3}
 --- !u!114 &114501538758112042
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -243,7 +246,6 @@ MonoBehaviour:
   distance: 2.5
   attackSpeed: 1.5
   targetPriority: 0
-  freezeTower: 0
 --- !u!212 &212264126863798520
 SpriteRenderer:
   m_ObjectHideFlags: 1

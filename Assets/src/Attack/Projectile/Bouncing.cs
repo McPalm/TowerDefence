@@ -16,6 +16,13 @@ namespace Attack.Projectile
         public bool greedyBounce = false;
         public bool returnToSender = false;
 
+        public AudioClip twang;
+        public AudioClip smack;
+        [Range(0f, 1f)]
+        public float twangVolume = .5f;
+        [Range(0f, 1f)]
+        public float smackVolume = .5f;
+
         public void Shoot(GameObject target, Action<GameObject> action, Action<GameObject> action2)
         {
             StartCoroutine(Shoot(transform.position, target, speed, action, action2));
@@ -28,9 +35,11 @@ namespace Attack.Projectile
             projectile.transform.position = source;
             projectile.AddComponent<KillAfterSeconds>().seconds = 6f;
             var tosser = source; // wont be replaced
-
+            float pitch = .65f + UnityEngine.Random.value * .2f;
+            float lastTwang = 0f;
+             
             // funciton for finding more targets, dependednt on already struck
-            Func<GameObject> nextTarget;
+            Func <GameObject> nextTarget;
             if (greedyBounce)
             {
                 
@@ -99,6 +108,14 @@ namespace Attack.Projectile
                         var e = HitscanUtility.At(projectile.transform.position, 0.1f);
                         if (e)
                         {
+                            if (bounce % 2 == 0)
+                            {
+                                e.PlaySound(twang, twangVolume, pitch);
+                                lastTwang = Time.realtimeSinceStartup;
+                                pitch *= 1.1f;
+                            }
+                            e.PlaySound(smack, smackVolume * .6f);
+                            
                             action(e);
                             alreadyStruck.Add(e);
                             progress = 2f;
@@ -109,6 +126,13 @@ namespace Attack.Projectile
 
                 if (target)
                 {
+                    if (bounce % 2 == 0)
+                    {
+                        target.PlaySound(twang, twangVolume, pitch);
+                        lastTwang = Time.realtimeSinceStartup;
+                        pitch *= 1.1f;
+                    }
+                    target.PlaySound(smack, smackVolume);
                     alreadyStruck.Add(target);
                     action(target);
                     action = action2;

@@ -164,7 +164,6 @@ MonoBehaviour:
   distance: 2.5
   attackSpeed: 0.7
   targetPriority: 0
-  freezeTower: 0
 --- !u!114 &114428285738817092
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -220,6 +219,10 @@ MonoBehaviour:
   targets: 3
   greedyBounce: 0
   returnToSender: 1
+  twang: {fileID: 8300000, guid: 62039ac6c4bd87140b3d46dce78a7a86, type: 3}
+  smack: {fileID: 8300000, guid: a849b9b09d3ad9b4693df0f8b7dc1e23, type: 3}
+  twangVolume: 0.4
+  smackVolume: 1
 --- !u!114 &114845492679725336
 MonoBehaviour:
   m_ObjectHideFlags: 1

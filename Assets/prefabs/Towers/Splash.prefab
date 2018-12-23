@@ -162,6 +162,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 1994612083091186, guid: 704f27223166aaf4797b917b2f8612fb, type: 2}
   speed: 10
+  fireSound: {fileID: 0}
+  volume: -5
 --- !u!114 &114634877473391808
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -177,7 +179,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: fa3034b0506950146876bac588348353, type: 3}
   - {fileID: 8300000, guid: eec133f545d961240bc2a0db6f8b205f, type: 3}
   SecondaryHitSound: []
-  volume: 0.508
+  volume: 0.74
 --- !u!114 &114690546120293310
 MonoBehaviour:
   m_ObjectHideFlags: 1

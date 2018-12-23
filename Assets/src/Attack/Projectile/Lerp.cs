@@ -9,6 +9,9 @@ namespace Attack.Projectile
     {
         public GameObject prefab;
         public float speed = 20f;
+        public AudioClip fireSound;
+        [Range(0f,1f)]
+        public float volume = -5f;
 
         public void Shoot(GameObject target, Action<GameObject> action, Action<GameObject> action2)
         {
@@ -17,6 +20,8 @@ namespace Attack.Projectile
 
         IEnumerator Shoot(Vector3 source, GameObject target, float speed, Action<GameObject> action)
         {
+            if (fireSound)
+                this.PlaySound(fireSound);
             Vector3 end = target.transform.position;
             float distance = (source - end).magnitude;
             var projectile = Instantiate(prefab);

@@ -9,6 +9,7 @@ namespace Attack.Aura
         public float power;
         public float procChance = 0f;
         float procCooldown;
+        public AudioClip audioClip;
 
         SpriteRenderer Sprot;
         float active = 0f;
@@ -30,6 +31,7 @@ namespace Attack.Aura
             var buffer = GetComponent<Buffer>();
             buffer.Apply(buffer.range, power, duration);
             active = duration;
+            this.PlaySound(audioClip);
         }
 
         public void OnHit(GameObject o)
