@@ -20,7 +20,9 @@ namespace WaveManagement
             {
                 return currentWave;
             }
+
         }
+        public int WaveCount => waves.Count;
 
         public string WaveName
         {
@@ -138,8 +140,9 @@ namespace WaveManagement
             }
         }
 
-        void StartWave()
+        internal void StartWave()
         {
+            if (State != S_Downtime) return; // reject if not in the correct state
             if (currentWave < waves.Count)
             {
                 var wave = waves[currentWave];
