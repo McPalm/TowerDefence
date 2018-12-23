@@ -30,7 +30,9 @@ namespace Menu
             {
                 won = true;
                 GoodBackground.SetActive(true);
-                PlayerPrefs.SetInt(SceneManager.GetActiveScene().name, (int)DifficultySelector.Difficulty);
+                int score = PlayerPrefs.GetInt(SceneManager.GetActiveScene().name);
+                if(score < (int)DifficultySelector.Difficulty)
+                    PlayerPrefs.SetInt(SceneManager.GetActiveScene().name, (int)DifficultySelector.Difficulty);
             }
         }
 

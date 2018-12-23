@@ -7,9 +7,7 @@ namespace Movement
 {
     public class Mobile : MonoBehaviour
     {
-
-        [HideInInspector]
-        public WaypointMesh mesh;
+        public WaypointMesh mesh { set; get; }
         [Range(0.2f, 6f)]
         public float speed = 1f;
         public float location = 0f;
@@ -46,7 +44,7 @@ namespace Movement
         // Use this for initialization
         void Start()
         {
-            if(!mesh)
+            if (!mesh)
                 mesh = FindObjectOfType<MeshManager>().GetMesh();
             if (DifficultySelector.Difficulty == Difficulty.easy)
                 speed *= .7f;
