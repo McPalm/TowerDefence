@@ -25,11 +25,13 @@ namespace Movement
             {
                 stun = duration;
                 stunResistance = duration * 3f;
+                ObjectPooling.ConcussionPool.Spawn(transform.position, duration);
             }
             else if(stunResistance < duration * 6f * UnityEngine.Random.value)
             {
                 stun = duration;
                 stunResistance += duration * 3f;
+                ObjectPooling.ConcussionPool.Spawn(transform.position, duration);
             }
         }
 

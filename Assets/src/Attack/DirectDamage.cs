@@ -25,6 +25,7 @@ namespace Attack
             if (Random.value < CritChance)
             {
                 o.GetComponent<Enemy>().Strike(damage * 3, armorPiercing);
+                ObjectPooling.CritPool.Spawn(o.transform.position);
             }
             else
                 o.GetComponent<Enemy>().Strike(damage, armorPiercing);
@@ -35,6 +36,7 @@ namespace Attack
             if (Random.value < CritChance)
             {
                 o.GetComponent<Enemy>().Strike(offTargetDamage * 3, armorPiercing);
+                ObjectPooling.CritPool.Spawn(o.transform.position);
             }
             else
                 o.GetComponent<Enemy>().Strike(offTargetDamage, armorPiercing);
