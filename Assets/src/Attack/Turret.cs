@@ -17,8 +17,8 @@ namespace Attack
 
         Enemy lastTarget;
 
-        [HideInInspector]
-        public bool freezeTower = false;
+        public bool FreezeTower { set; get; } = false;
+        public bool PoisonTower { set; get; } = false;
 
         Action<GameObject, Action<GameObject>, Action<GameObject>> shoot;
         Action<GameObject> effect;
@@ -97,12 +97,23 @@ namespace Attack
                     lastTarget = inRange[UnityEngine.Random.Range(0, inRange.Count)];
                     return lastTarget;
             }
-            if(freezeTower)
+            if(FreezeTower)
             {
                 foreach (var enemy in inRange)
                 {
                     var move = enemy.GetComponent<Mobile>();
                     if(!move.Slowed)
+                    {
+                        lastTarget = enemy;
+                        return enemy;
+                    }
+                }
+            }
+            if(PoisonTower)
+            {
+                foreach (var enemy in inRange)
+                {
+                    if (!enemy.Poisoned)
                     {
                         lastTarget = enemy;
                         return enemy;

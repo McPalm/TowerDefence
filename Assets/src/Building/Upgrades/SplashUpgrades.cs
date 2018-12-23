@@ -76,7 +76,11 @@ namespace Building.Upgrades
         }
 
         // Use this for initialization
-        void Start() => SunkCost = 35;
+        void Start()
+        {
+            GetComponent<Turret>().LockTarget = false;
+            SunkCost = 40;
+        }
 
         UpgradeFormat[] Level1()
         {
@@ -93,8 +97,7 @@ namespace Building.Upgrades
                         poison.duration = 5;
                         var turret = GetComponent<Turret>();
                         turret.FindEffects();
-                        turret.targetPriority = Turret.TargetPriority.strongest;
-                        turret.LockTarget = false;
+                        turret.PoisonTower = true;
                         frostTower = false;
                         GetComponent<Attack.Projectile.Lerp>().prefab = PoisonProjectile;
                         level++;
@@ -111,8 +114,7 @@ namespace Building.Upgrades
                         slow.duration = 2f;
                         var turret = GetComponent<Turret>();
                         turret.FindEffects();
-                        turret.freezeTower = true;
-                        turret.LockTarget = false;
+                        turret.FreezeTower = true;
                         frostTower = true;
                         GetComponent<Attack.Projectile.Lerp>().prefab = IceProjectile;
                         level++;
