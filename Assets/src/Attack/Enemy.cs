@@ -20,6 +20,8 @@ namespace Attack
 
         Coroutine poisonRoutine;
 
+        public bool Poisoned => poisonLeft > 0;
+
         internal void Poison(int totalDamage, float duration)
         {
             if (poisonLeft < totalDamage)
@@ -37,9 +39,6 @@ namespace Attack
 
         public IEnumerator PoisonTick(int totalDamage, float duration)
         {
-            var sprite = GetComponent<SpriteRenderer>();
-            if(sprite)
-                sprite.color = new Color(0.2f, 1f, .1f);
             int ticks = (int)(duration * 10);
             int tickDamage = totalDamage / ticks;
             int leftover = totalDamage - ticks * tickDamage;
@@ -57,8 +56,6 @@ namespace Attack
                 Strike(tikk, true);
                 poisonLeft -= tikk;
             }
-            if (sprite)
-                sprite.color = Color.white;
         }
 
         public float HealthPercentage
