@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b6c1db53360f84449cd067769f62b66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1499388301349902, guid: 051d7f5aeb2a72c4ab8619c01bf32f22, type: 2}
+  prefab: {fileID: 1994612083091186, guid: 704f27223166aaf4797b917b2f8612fb, type: 2}
   speed: 10
 --- !u!114 &114690546120293310
 MonoBehaviour:
@@ -230,6 +230,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b96a0f77444f3469347a9a649ba861, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IceProjectile: {fileID: 1135091504674392, guid: 85b06410e33a7b64381e53f61cfe0d24,
+    type: 2}
+  PoisonProjectile: {fileID: 1960426168613448, guid: 586bec012e5410647a83940974b1a325,
+    type: 2}
 --- !u!212 &212384900021598334
 SpriteRenderer:
   m_ObjectHideFlags: 1

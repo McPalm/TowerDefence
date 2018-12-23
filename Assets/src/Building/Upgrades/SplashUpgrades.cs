@@ -7,6 +7,9 @@ namespace Building.Upgrades
 {
     public class SplashUpgrades : AUpgrade
     {
+        public GameObject IceProjectile;
+        public GameObject PoisonProjectile;
+
         int level = 0;
         bool frostTower;
         bool splash;
@@ -93,6 +96,7 @@ namespace Building.Upgrades
                         turret.targetPriority = Turret.TargetPriority.strongest;
                         turret.LockTarget = false;
                         frostTower = false;
+                        GetComponent<Attack.Projectile.Lerp>().prefab = PoisonProjectile;
                         level++;
                     },
                 },
@@ -110,6 +114,7 @@ namespace Building.Upgrades
                         turret.freezeTower = true;
                         turret.LockTarget = false;
                         frostTower = true;
+                        GetComponent<Attack.Projectile.Lerp>().prefab = IceProjectile;
                         level++;
                     },
                 }
