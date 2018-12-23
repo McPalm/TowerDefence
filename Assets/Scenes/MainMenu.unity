@@ -1192,7 +1192,7 @@ GameObject:
   - component: {fileID: 939929625}
   - component: {fileID: 939929624}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Version
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1248,9 +1248,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'v0.2
+  m_Text: 'in-dev
 
-    18-12-20'
+    18-12-23'
 --- !u!222 &939929625
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1507,7 +1507,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Shitty TD
+  m_Text: Pillars TD
 --- !u!222 &1127003695
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1905,8 +1905,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.3, y: 0.125}
   m_AnchorMax: {x: 0.7, y: 0.27762368}
-  m_AnchoredPosition: {x: -0.000030517578, y: 2}
-  m_SizeDelta: {x: 0, y: 2.300003}
+  m_AnchoredPosition: {x: -0.000030517578, y: -19.9}
+  m_SizeDelta: {x: 0, y: 46.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1437265011
 MonoBehaviour:
@@ -1940,9 +1940,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Sprites from the Desktop Pony team.
+  m_Text: 'Special Thanks to the Desktop Pony team.
 
-    Botchan, Anonycat, Spritefag, M00nlightmagic, hazimaitsuru, emeralddarkness, nightguardian800
+    Sprites by Botchan, Anonycat, Spritefag, M00nlightmagic, hazimaitsuru, emeralddarkness,
+    nightguardian800.
+
+    Sounds by Jett Rifkin, rhumphires, bizniss, snardin42, sandyrb, hodomostvarujemritam,
+    suspensiondigital etc.
+
+    <size=11>(and also some shit stolen from starwars)</size>
 
     This is some non-profit shenangians, plz be nice.'
 --- !u!222 &1437265012

@@ -10,6 +10,8 @@ namespace Attack
         public AudioClip[] SecondaryHitSound;
         [Range(0f,1f)]
         public float volume = 1f;
+        [Range(0f, 1f)]
+        public float secondaryVolume = 1f;
 
         public void OnHit(GameObject o)
         {
@@ -27,9 +29,9 @@ namespace Attack
             if (SecondaryHitSound.Length > 0)
             {
                 if (o)
-                    o.PlaySound(SecondaryHitSound[Random.Range(0, SecondaryHitSound.Length)], volume);
+                    o.PlaySound(SecondaryHitSound[Random.Range(0, SecondaryHitSound.Length)], secondaryVolume);
                 else
-                    gameObject.PlaySound(SecondaryHitSound[Random.Range(0, SecondaryHitSound.Length)], volume);
+                    gameObject.PlaySound(SecondaryHitSound[Random.Range(0, SecondaryHitSound.Length)], secondaryVolume);
             }
         }
     }

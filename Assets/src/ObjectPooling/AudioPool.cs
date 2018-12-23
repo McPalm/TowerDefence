@@ -29,7 +29,6 @@ namespace ObjectPooling
                         audio.pitch = pitch * Mathf.Min((.5f + Time.timeScale * .5f), 1.25f);
                     yield return null;
                 }
-                Debug.Log("done");
                 Dispose(audio.gameObject);
             }
         }

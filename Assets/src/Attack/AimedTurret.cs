@@ -18,6 +18,7 @@ namespace Attack
         float myPerlin = 0f;
 
         public GameObject bullet;
+        public AudioClip SoundEffect;
 
         bool downtime = false;
 
@@ -75,6 +76,8 @@ namespace Attack
 
         void Fire()
         {
+            if (SoundEffect)
+                this.PlaySound(SoundEffect, .16f, 2.3f + Random.value * .38f);
             var target = AimAt;
             if(spread > 0f)
             {

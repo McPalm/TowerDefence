@@ -19,13 +19,17 @@ public class UnwalkableTile : TileBase
 
     public override bool StartUp(Vector3Int location, ITilemap tilemap, GameObject go)
     {
+#if UNITY_EDITOR
         if (EditorApplication.isPlaying)
         {
+#endif
             GameObject o = new GameObject("Obstruction");
             o.transform.position = location + new Vector3(.5f, .5f);
             o.AddComponent<Building.Obstruction>();
+#if UNITY_EDITOR
         }
-        
+#endif
+
         return true;
     }
 

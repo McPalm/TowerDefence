@@ -59,6 +59,8 @@ GameObject:
   - component: {fileID: 58522706473760236}
   - component: {fileID: 114717457060643014}
   - component: {fileID: 114967281571752996}
+  - component: {fileID: 114846537560599400}
+  - component: {fileID: 114046069456739858}
   m_Layer: 8
   m_Name: Pony of Shadows
   m_TagString: Untagged
@@ -151,6 +153,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.6}
   serializedVersion: 2
   m_Radius: 0.7
+--- !u!114 &114046069456739858
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1332296728842358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61b94aaed0051614585d01bff0aea66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114474015024524672
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -202,6 +215,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   worth: 1000
   nickle: 0
+--- !u!114 &114846537560599400
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1332296728842358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f224b032612fc6a42a79ea60dbce5fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1767968830467742, guid: d6e352b29bd47d245990a2822dc2a46b, type: 2}
+  qty: 1
+  spread: 0.1
+  boost: 1
 --- !u!114 &114900135954977470
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -213,7 +241,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5738e35d39624ea41a4fb06e82c70918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mesh: {fileID: 0}
   speed: 0.65
   location: 0
 --- !u!114 &114967281571752996

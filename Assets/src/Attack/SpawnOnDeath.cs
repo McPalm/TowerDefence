@@ -22,14 +22,15 @@ namespace Attack
             for (int i = 0; i < qty; i++)
             {
                 var fab = Instantiate(prefab);
-                fab.GetComponent<Mobile>().location = position;
-                fab.GetComponent<Mobile>().mesh = mesh;
+                var mobile = fab.GetComponent<Mobile>();
+                if (mobile)
+                {
+                    mobile.location = position;
+                    mobile.mesh = mesh;
+                }
                 fab.transform.position = transform.position;
                 position -= spread;
-                fab.GetComponent<Enemy>()?.Boost(boost);
-
             }
-            
         }
     }
 }

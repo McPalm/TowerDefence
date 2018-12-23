@@ -11,6 +11,9 @@ namespace Building.Upgrades
         bool aimedTurret = false;
         public GameObject turretParticle;
 
+        public AudioClip TurretAudio;
+        public AudioClip TurretHitAudio;
+
         internal override UpgradeFormat[] AvailableUpgrades
         {
             get
@@ -58,6 +61,15 @@ namespace Building.Upgrades
                         turret.spread = .8f;
                         turret.projectileSpeed = 15f;
                         turret.bullet = turretParticle;
+
+                        turret.SoundEffect = TurretAudio;
+
+                        var audio = GetComponent<OnHitSound>();
+                        audio.HitSound[0] = TurretHitAudio;
+                        audio.volume *= .15f;
+                        audio.SecondaryHitSound = new AudioClip[] {TurretHitAudio};
+                        audio.secondaryVolume = audio.volume * .66f;
+
                         aimedTurret = true;
                         level++;
                     },

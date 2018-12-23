@@ -168,6 +168,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 42ac82e7851f7e445addd67d522877f2, type: 3}
   SecondaryHitSound: []
   volume: 0.838
+  secondaryVolume: 1
 --- !u!114 &114320590435850452
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -206,6 +207,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turretParticle: {fileID: 1005330763382616, guid: 3d037a07b5f66924097796391ccae123,
     type: 2}
+  TurretAudio: {fileID: 8300000, guid: 42ac82e7851f7e445addd67d522877f2, type: 3}
+  TurretHitAudio: {fileID: 8300000, guid: 328cf365b67ea524c8b87dcf1b31a329, type: 3}
 --- !u!114 &114506826777720788
 MonoBehaviour:
   m_ObjectHideFlags: 1

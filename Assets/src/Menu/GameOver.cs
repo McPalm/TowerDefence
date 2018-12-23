@@ -14,9 +14,6 @@ namespace Menu
         bool lost = false;
         bool won = false;
 
-        public AudioClip GameOverSound;
-        public AudioClip VictorySound;
-
 
         public void Lose()
         {
@@ -24,7 +21,6 @@ namespace Menu
             {
                 lost = true;
                 BadBackground.SetActive(true);
-                Camera.main.PlaySoundUnscaled(GameOverSound);
             }
         }
 
@@ -33,13 +29,10 @@ namespace Menu
             if(lost == false)
             {
                 won = true;
-                GoodBackground.SetActive(true);
+                StartCoroutine(ShowAfterSeconds(GoodBackground, 5f));
                 int score = PlayerPrefs.GetInt(SceneManager.GetActiveScene().name);
                 if(score < (int)DifficultySelector.Difficulty)
                     PlayerPrefs.SetInt(SceneManager.GetActiveScene().name, (int)DifficultySelector.Difficulty);
-
-                gameObject.AddComponent<AudioSource>().clip = VictorySound;
-                Camera.main.PlaySoundUnscaled(VictorySound);
             }
         }
 
@@ -51,6 +44,12 @@ namespace Menu
         public void Retry()
         {
             FindObjectOfType<PauseMenu>().ReloadScene();
+        }
+
+        IEnumerator ShowAfterSeconds(GameObject o, float seconds)
+        {
+            yield return new WaitForSeconds(seconds);
+            o.SetActive(true);
         }
     }
 }
