@@ -90,10 +90,10 @@ namespace Attack
             switch(DifficultySelector.Difficulty)
             {
                 case Difficulty.easy:
-                    hp = hits * 75;
+                    hp = hits * 70;
                     break;
                 case Difficulty.medium:
-                    hp = hits * 90;
+                    hp = hits * 80;
                     break;
                 case Difficulty.hard:
                 default:
