@@ -60,6 +60,8 @@ GameObject:
   - component: {fileID: 114399761370184788}
   - component: {fileID: 114732102626337646}
   - component: {fileID: 114345644249723706}
+  - component: {fileID: 95024559880616986}
+  - component: {fileID: 114324647678345488}
   m_Layer: 8
   m_Name: Panic Pony
   m_TagString: Untagged
@@ -152,6 +154,24 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.1}
   serializedVersion: 2
   m_Radius: 0.35
+--- !u!95 &95024559880616986
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1410183550651906}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6c01ece305bd6f543ad4fab07c716dfe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114068960532320456
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -165,6 +185,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hits: 8
   armor: 0
+--- !u!114 &114324647678345488
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1410183550651906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8be13a929a0e854485731e4cd33cac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114339943102717836
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -207,6 +238,7 @@ MonoBehaviour:
   speed: 6
   armor: 0
   sprite: {fileID: 21300000, guid: 361215de98de0974bb3fb9f4c2a007af, type: 3}
+  animationFlag: Panic
 --- !u!114 &114732102626337646
 MonoBehaviour:
   m_ObjectHideFlags: 1

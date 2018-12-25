@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: 0149a0e2d5ff8a0498a28b439a094b8a
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_0
+    21300002: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_1
+    21300004: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_2
+    21300006: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_3
+    21300008: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_4
+    21300010: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_5
+    21300012: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_6
+    21300014: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_7
+    21300016: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_8
+    21300018: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_9
+    21300020: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_10
+    21300022: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_11
+    21300024: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_12
+    21300026: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_13
+    21300028: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_14
+    21300030: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_15
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 104
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a72c4b5cebc124d4f83e100c256b03e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_1
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 100
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e41490ae9305517419b250648fe8aa9b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_2
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 100
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad829f536d23c54e82e98ddee5c7324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_3
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 100
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0888c41b7dafa847932d74828aa7ab2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_4
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 100
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0450a36ca881deb429301f3218d55181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_5
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 100
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71e8efc86fab7784db3f329b4edf6df8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_6
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 100
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890e976726cac194f9adf9ea7858fb23
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_7
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 100
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9af1b8c4497b043b17bd88fdbded9c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672a9c8bb31cc004b9ad4c0884948dae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_9
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 0
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072ca933969fdae429d2162688080544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_10
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 0
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 788a9425f9cea95478405f6d5e014610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_11
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 0
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9faef6611f3cd1e44be8eee0c75a70a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_12
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 0
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65aa9eebc6e8b0b44a5c1c642dc19bf7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_13
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 0
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56288473dfe5ea4db7e4262234ab84c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_14
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 0
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04634b62e190b0e418dc7bbb67789eb8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 122010__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_background+pony_desktop+ponies_earth+pony_female_flower_flower+in+hair_mare_pony_s.gif_15
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 0
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3e91e812c95d34b8bfea4fc4f40fc4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 23bf3ee2707acb346ae33c0bc11a2061
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

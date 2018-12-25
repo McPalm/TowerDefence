@@ -12,6 +12,7 @@ namespace Attack
         public float speed = 0f;
         public bool armor;
         public Sprite sprite;
+        public string animationFlag;
 
 
         bool active = false;
@@ -27,6 +28,8 @@ namespace Attack
                     GetComponent<SpriteRenderer>().sprite = sprite;
                 GetComponent<Enemy>().armor = armor;
                 active = true;
+                if (animationFlag != "")
+                    GetComponent<Animator>().SetBool(animationFlag, true);
             }
         }
     }
