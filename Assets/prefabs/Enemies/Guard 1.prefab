@@ -42,6 +42,8 @@ GameObject:
   - component: {fileID: 114776307969214676}
   - component: {fileID: 58320148658500758}
   - component: {fileID: 114293956922436742}
+  - component: {fileID: 95012905516175802}
+  - component: {fileID: 114613487233395616}
   m_Layer: 8
   m_Name: Guard 1
   m_TagString: Untagged
@@ -150,6 +152,24 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.1}
   serializedVersion: 2
   m_Radius: 0.35
+--- !u!95 &95012905516175802
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1234060311863718}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1ea696a84ffa2b5479dfda55da43af9c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114293956922436742
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -163,6 +183,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   worth: 3
   nickle: 0
+--- !u!114 &114613487233395616
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1234060311863718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8be13a929a0e854485731e4cd33cac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114675071848993068
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -200,7 +231,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5738e35d39624ea41a4fb06e82c70918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mesh: {fileID: 0}
   speed: 2
   location: 0
 --- !u!114 &114929019037957724
