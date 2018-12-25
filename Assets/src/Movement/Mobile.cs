@@ -43,6 +43,18 @@ namespace Movement
             }
         }
 
+        public float RealSpeed
+        {
+            get
+            {
+                if (Stunned)
+                    return 0f;
+                if (Slowed)
+                    return speed * slowFactor;
+                return speed;
+            }
+        }
+
         // Use this for initialization
         void Start()
         {

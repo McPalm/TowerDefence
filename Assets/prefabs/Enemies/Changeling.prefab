@@ -41,6 +41,8 @@ GameObject:
   - component: {fileID: 114995693220574246}
   - component: {fileID: 58011915238714456}
   - component: {fileID: 114592932496333298}
+  - component: {fileID: 95025465136393290}
+  - component: {fileID: 114918437105255400}
   m_Layer: 8
   m_Name: Changeling
   m_TagString: Untagged
@@ -121,6 +123,24 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.29}
   serializedVersion: 2
   m_Radius: 0.4
+--- !u!95 &95025465136393290
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1653666631205130}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 95ede3245c5d6a443b00c59d62b764d0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114177219778267832
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -170,9 +190,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5738e35d39624ea41a4fb06e82c70918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mesh: {fileID: 0}
   speed: 3
   location: 0
+--- !u!114 &114918437105255400
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1653666631205130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8be13a929a0e854485731e4cd33cac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114995693220574246
 MonoBehaviour:
   m_ObjectHideFlags: 1
