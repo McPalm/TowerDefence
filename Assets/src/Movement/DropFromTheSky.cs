@@ -7,7 +7,6 @@ namespace Movement
 {
     public class DropFromTheSky : MonoBehaviour
     {
-
         public float spawnDuration;
 
         // Use this for initialization
@@ -34,10 +33,13 @@ namespace Movement
             var sprite = GetComponent<SpriteRenderer>();
             sprite.flipY = true;
             transform.position = origin;
+            var origLayer = sprite.sortingLayerID;
+            sprite.sortingLayerID = SortingLayer.NameToID("Sky");
 
             var enemy = GetComponent<Attack.Enemy>();
             var mobile = GetComponent<Mobile>();
             var collider = GetComponent<Collider2D>();
+            
             collider.enabled = false;
             enemy.enabled = false;
             mobile.enabled = false;
@@ -50,6 +52,7 @@ namespace Movement
                 yield return new WaitForFixedUpdate();
             }
             sprite.flipY = false;
+            sprite.sortingLayerID = origLayer;
 
             yield return new WaitForSeconds(.2f + Random.value * .35f);
 
@@ -58,6 +61,7 @@ namespace Movement
             enemy.enabled = true;
             collider.enabled = true;
             Destroy(dummy);
+            
         }
     }
 }

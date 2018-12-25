@@ -25,6 +25,8 @@ GameObject:
   - component: {fileID: 58405028646579380}
   - component: {fileID: 114885559565770226}
   - component: {fileID: 114720069986202458}
+  - component: {fileID: 114159364546473846}
+  - component: {fileID: 95304492449402022}
   m_Layer: 8
   m_Name: Living Flame
   m_TagString: Untagged
@@ -60,6 +62,24 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.29}
   serializedVersion: 2
   m_Radius: 0.4
+--- !u!95 &95304492449402022
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1060707410076018}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7febc00c800c0014daff61496bb56c60, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114005151825260398
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -73,6 +93,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mod: 0
   startOnly: 0
+--- !u!114 &114159364546473846
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1060707410076018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1632df71e231544a9540e914c9e193b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114646541145844904
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -84,7 +115,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5738e35d39624ea41a4fb06e82c70918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mesh: {fileID: 0}
   speed: 3
   location: 0
 --- !u!114 &114720069986202458
