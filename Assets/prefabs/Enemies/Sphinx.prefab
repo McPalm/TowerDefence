@@ -25,6 +25,8 @@ GameObject:
   - component: {fileID: 114401403545080568}
   - component: {fileID: 58162476594276538}
   - component: {fileID: 114402636656285550}
+  - component: {fileID: 95276687769879312}
+  - component: {fileID: 114649885740366158}
   m_Layer: 0
   m_Name: Sphinx
   m_TagString: Untagged
@@ -150,6 +152,24 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.5}
   serializedVersion: 2
   m_Radius: 0.6
+--- !u!95 &95276687769879312
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1005100136391458}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 633793c05165be841926b108f7fc573e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114111209672294962
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -186,7 +206,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5738e35d39624ea41a4fb06e82c70918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mesh: {fileID: 0}
   speed: 4.23
   location: 0
 --- !u!114 &114401403545080568
@@ -204,6 +223,7 @@ MonoBehaviour:
   speed: 2.6
   armor: 0
   sprite: {fileID: 21300000, guid: 801d24df621c54d4e8807b068b0b5c0a, type: 3}
+  animationFlag: 
 --- !u!114 &114402636656285550
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -217,6 +237,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   worth: 50
   nickle: 0
+--- !u!114 &114649885740366158
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1005100136391458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8be13a929a0e854485731e4cd33cac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212063615146705890
 SpriteRenderer:
   m_ObjectHideFlags: 1
