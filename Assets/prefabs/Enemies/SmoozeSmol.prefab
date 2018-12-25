@@ -25,6 +25,9 @@ GameObject:
   - component: {fileID: 114263876707495462}
   - component: {fileID: 58554994355160352}
   - component: {fileID: 114778544015427356}
+  - component: {fileID: 95768314621685744}
+  - component: {fileID: 114913286201932020}
+  - component: {fileID: 114879142245950966}
   m_Layer: 8
   m_Name: SmoozeSmol
   m_TagString: Untagged
@@ -60,6 +63,24 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.3}
   serializedVersion: 2
   m_Radius: 0.6
+--- !u!95 &95768314621685744
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1426143310799746}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ad4cbd1abb4c3ea46b9ea3a6691ca605, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114225924412961350
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -71,7 +92,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5738e35d39624ea41a4fb06e82c70918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mesh: {fileID: 0}
   speed: 1
   location: 0
 --- !u!114 &114261780398445004
@@ -113,6 +133,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   worth: 1
   nickle: 1
+--- !u!114 &114879142245950966
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1426143310799746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ac4500923889242935e0acbb7c3ffe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frequency: 4
+  MinSpeed: 1
+  MaxSpeed: 1.2
+  slowSprite: {fileID: 0}
+  fastSprite: {fileID: 0}
+--- !u!114 &114913286201932020
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1426143310799746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1632df71e231544a9540e914c9e193b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212963086906796194
 SpriteRenderer:
   m_ObjectHideFlags: 1

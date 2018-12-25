@@ -28,6 +28,8 @@ GameObject:
   - component: {fileID: 114117743036952914}
   - component: {fileID: 114640370717510034}
   - component: {fileID: 114385589583350060}
+  - component: {fileID: 95206156364135210}
+  - component: {fileID: 114259461369555126}
   m_Layer: 8
   m_Name: SmoozeBig
   m_TagString: Untagged
@@ -153,6 +155,24 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.3}
   serializedVersion: 2
   m_Radius: 0.6
+--- !u!95 &95206156364135210
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1093782019546926}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ad4cbd1abb4c3ea46b9ea3a6691ca605, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114117743036952914
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -166,6 +186,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   worth: 10
   nickle: 0
+--- !u!114 &114259461369555126
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1093782019546926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1632df71e231544a9540e914c9e193b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114340713849451004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -255,7 +286,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5738e35d39624ea41a4fb06e82c70918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mesh: {fileID: 0}
   speed: 0.7
   location: 0
 --- !u!212 &212464605148897230
