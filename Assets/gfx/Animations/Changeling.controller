@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_0
+  m_Name: Changeling
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Speed
@@ -13,7 +13,7 @@ AnimatorController:
     m_DefaultFloat: 1
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
