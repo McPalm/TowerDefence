@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace Movement
 {
+    [RequireComponent(typeof(Animator))]
     public class MovementAnimator : MonoBehaviour {
 
         float speed;
