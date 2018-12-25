@@ -57,6 +57,8 @@ GameObject:
   - component: {fileID: 58582611306820436}
   - component: {fileID: 114342640441639770}
   - component: {fileID: 114678008575579206}
+  - component: {fileID: 95121678662472700}
+  - component: {fileID: 114118877433210170}
   m_Layer: 8
   m_Name: Regen
   m_TagString: Untagged
@@ -151,6 +153,35 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.29}
   serializedVersion: 2
   m_Radius: 0.4
+--- !u!95 &95121678662472700
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1500756144872880}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ec303d58ec4dab340916f02e14835043, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114118877433210170
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1500756144872880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8be13a929a0e854485731e4cd33cac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114273213770228622
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -162,7 +193,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5738e35d39624ea41a4fb06e82c70918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mesh: {fileID: 0}
   speed: 3
   location: 0
 --- !u!114 &114342640441639770
@@ -263,9 +293,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 6356
-  m_Sprite: {fileID: 21300000, guid: 3892ecaf1b7ad9948bd5a31336e9c66f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3b911168c6f55f8498831b3ddd09e225, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.88, y: 0.94}

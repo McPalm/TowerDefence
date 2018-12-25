@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: c50de26817f3aa24f965770027ae0010
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_0
+    21300002: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_1
+    21300004: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_2
+    21300006: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_3
+    21300008: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_4
+    21300010: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_5
+    21300012: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_6
+    21300014: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_7
+    21300016: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_8
+    21300018: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_9
+    21300020: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_10
+    21300022: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_11
+    21300024: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_12
+    21300026: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_13
+    21300028: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_14
+    21300030: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_15
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 104
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 94
+        width: 112
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68996bdc3d3186d45bbf8fb767263168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 94
+        width: 112
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 870f95a730509854083bf9ae132880ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_2
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 94
+        width: 112
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f45aaab021d63b4292ad7bd7ecd6fd5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_3
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 94
+        width: 112
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b381286474db843b15cd0d104c9d7c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_4
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 94
+        width: 112
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ada6fd52812b04287ad0f574127c35
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_5
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 94
+        width: 112
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c74ab34146d06144850b0535ed6bf23
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_6
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 94
+        width: 112
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5e9434a9c53f64ea2d2bf0b73a5b45
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_7
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 94
+        width: 112
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40245e55364a0c646bcc96c852572264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 112
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bcbaf6db82e86142af944cb68c93d60
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_9
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 112
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a2f78eea68d8514a9ae3c44a1187d22
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_10
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 112
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f852c445bc954c244bdf13e1a2d9306a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_11
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 112
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 914422f7f18282341ace7882d4e05706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_12
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 112
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a1c47fdf8e63143b47a030e6856aa8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_13
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 112
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2872a0c0bf423e40a699e8706a1a1c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_14
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 112
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2063ac5734d551478fb74082ba63f70
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1707145__safe_artist-colon-botchan-dash-mlp_fluttershy_animated_bat+pony_desktop+ponies_female_flutterbat_flying_gif_mare_pixel+art_pony_race+swap_simp.gif_15
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 0
+        width: 112
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 312c7cac82f73844e9ea8ded085c492d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ec49c71ae1edb1f4eb30a183d8ea54f4
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
