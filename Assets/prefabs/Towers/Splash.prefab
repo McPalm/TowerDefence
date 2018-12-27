@@ -60,6 +60,7 @@ GameObject:
   - component: {fileID: 114796699953244736}
   - component: {fileID: 114913091786050346}
   - component: {fileID: 114634877473391808}
+  - component: {fileID: 95819203137594474}
   m_Layer: 0
   m_Name: Splash
   m_TagString: Untagged
@@ -138,6 +139,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &95819203137594474
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1586047315510126}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b017f88e50cc511458f9d256a762901e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114249290401528512
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -180,6 +199,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: eec133f545d961240bc2a0db6f8b205f, type: 3}
   SecondaryHitSound: []
   volume: 0.74
+  secondaryVolume: 1
 --- !u!114 &114690546120293310
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -377,9 +397,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2817
-  m_Sprite: {fileID: 21300000, guid: 59788011e7612e34f8d70324d279e538, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3e0a4719abcab83478559908fe76b1f2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.98, y: 0.82}

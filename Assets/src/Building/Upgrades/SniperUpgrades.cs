@@ -19,12 +19,7 @@ namespace Building.Upgrades
             get
             {
                 if (level == 0)
-                    return EarlyChoice();
-                if (level == 1 && aimedTurret)
-                    return TurretUpgrades();
-                if (level == 1 && aimedTurret == false)
                     return SniperStuffs();
-
                 return new UpgradeFormat[0]; // empty default;
             }
         }
@@ -197,7 +192,7 @@ namespace Building.Upgrades
                 Upgrade = () =>
                 {
                     damageRank++;
-                    GetComponent<DirectDamage>().damage = 200 + RankRank(damageRank) * 50;
+                    GetComponent<DirectDamage>().damage = 175 + RankRank(damageRank) * 55;
                 },
             };
         }
