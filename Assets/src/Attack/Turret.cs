@@ -24,11 +24,14 @@ namespace Attack
         Action<GameObject> effect;
         Action<GameObject> effect2;
 
+        Animator animator;
+
         private void Start()
         {
             cooldown = 1f / attackSpeed;
             FindEffects();
             SetProjectile(GetComponent<Projectile.IProjectile>());
+            animator = GetComponent<Animator>();
         }
 
         public void SetProjectile(Projectile.IProjectile projectile)
@@ -65,6 +68,8 @@ namespace Attack
                     if (buff < 1f) buff = 1f;
                     cooldown += 1f / attackSpeed / buff;
                     GetComponent<SpriteRenderer>().flipX = transform.position.x > target.transform.position.x;
+                    if (animator)
+                        animator.SetTrigger("Attack");
                 }
                 else
                     cooldown = 0f;
