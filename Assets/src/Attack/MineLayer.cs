@@ -24,6 +24,7 @@ namespace Attack
         float mineLifeTime = 500f;
 
         int minesPlaced = 0;
+        Animator animator;
 
         HashSet<Mine> mines;
 
@@ -33,6 +34,7 @@ namespace Attack
             var waveManager = FindObjectOfType<WaveManagement.WaveManager>();
             waveManager.OnStartWave.AddListener(StartWave);
             waveManager.OnStartDowntime.AddListener( () => minesPlaced = 99999999);
+            animator = GetComponent<Animator>();
         }
 
         void StartWave()
@@ -71,6 +73,8 @@ namespace Attack
             mines.Add(mine);
             mine.maxTargets = maxTargets;
             minesPlaced++;
+            if (animator)
+                animator.SetTrigger("Attack");
         }
 
         List<Transform> SpawnPoints;
