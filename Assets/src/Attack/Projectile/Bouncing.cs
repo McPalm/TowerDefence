@@ -154,6 +154,9 @@ namespace Attack.Projectile
                     projectile.transform.position = Vector3.Lerp(source, tosser, progress);
                     yield return null;
                 }
+                var animator = GetComponent<Animator>();
+                if (animator)
+                    animator.SetTrigger("Catch");
             }
                     
 
