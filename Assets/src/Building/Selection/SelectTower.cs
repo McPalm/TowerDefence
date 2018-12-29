@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
 namespace Building.Selection
@@ -9,6 +10,8 @@ namespace Building.Selection
     {
 
         public GameObjectEvent OnSelect;
+        // invoked on an empty click
+        public UnityEvent OnDeselect;
 
         /// <summary>
         /// True if the mouse is hovering over an UI component.
@@ -53,6 +56,9 @@ namespace Building.Selection
                 var o = FindObjectOfType<BuildGrid>().ObjectAt(MousePosition);
                 if (o)
                     OnSelect.Invoke(o);
+                else
+                    OnDeselect.Invoke();
+
             }
         }
     }

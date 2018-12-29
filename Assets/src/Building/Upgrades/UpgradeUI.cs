@@ -17,7 +17,10 @@ namespace Building.Upgrades
 
         void Start()
         {
-            FindObjectOfType<Selection.SelectTower>().OnSelect.AddListener(Select);
+            var select = FindObjectOfType<Selection.SelectTower>();
+            select.OnSelect.AddListener(Select);
+            select.OnDeselect.AddListener(Deselect);
+            Deselect();
         }
 
         void Select(GameObject o)
@@ -25,6 +28,8 @@ namespace Building.Upgrades
             var app = o.GetComponent<AUpgrade>();
             if (app)
                 Show(app);
+            else
+                Deselect();
         }
 
         public void Sell()

@@ -34,6 +34,7 @@ namespace Menu
                 if (o.GetComponent<Building.Upgrades.AUpgrade>())
                     selectionStack = true;
             });
+            selection.OnDeselect.AddListener(() => { selectionStack = false; });
         }
 
         public bool Paused

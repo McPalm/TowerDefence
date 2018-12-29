@@ -17,6 +17,8 @@ namespace Attack
         {
             var select = FindObjectOfType<Building.Selection.SelectTower>();
             select.OnSelect.AddListener(OnSelect);
+            select.OnDeselect.AddListener(Hide);
+            Hide();
         }
 
         private void Update()
@@ -29,9 +31,11 @@ namespace Attack
         {
             var s = turret.GetComponent<Turret>();
             if (s)
+            {
                 selected = s;
-            if (selected)
-                Show();
+                if (selected)
+                    Show();
+            }
             else
                 Hide();
         }
