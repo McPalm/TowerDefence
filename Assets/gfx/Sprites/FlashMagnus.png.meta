@@ -118,7 +118,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 144
+        y: 96
         width: 53
         height: 48
       alignment: 0
@@ -128,7 +128,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0590d81d9a97d5458f056cc116d6bf3
+      spriteID: 07be1bad560887046af4b017609a73d5
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 53
-        y: 144
+        y: 96
         width: 53
         height: 48
       alignment: 0
@@ -148,7 +148,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24ece2b5c83382a439b37f8a3f503539
+      spriteID: 82b3b9dc55dc1ba46bdcd8ca729927b0
       vertices: []
       indices: 
       edges: []
@@ -158,7 +158,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 106
-        y: 144
+        y: 96
         width: 53
         height: 48
       alignment: 0
@@ -168,7 +168,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b291d63920b5774fae05955c946905e
+      spriteID: 643aa6fc5452e74409f7655a6357198c
       vertices: []
       indices: 
       edges: []
@@ -178,7 +178,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 159
-        y: 144
+        y: 96
         width: 53
         height: 48
       alignment: 0
@@ -188,7 +188,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a314d7471902624581532fabc60e95e
+      spriteID: 914e1e7152b7cce48ae137d076d507cb
       vertices: []
       indices: 
       edges: []
@@ -198,7 +198,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 212
-        y: 144
+        y: 96
         width: 53
         height: 48
       alignment: 0
@@ -208,7 +208,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98d815ee1eca9ec4ea539dc85bc5f1ac
+      spriteID: 59713834d531f2d4fa84b672548f222c
       vertices: []
       indices: 
       edges: []
@@ -218,7 +218,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 265
-        y: 144
+        y: 96
         width: 53
         height: 48
       alignment: 0
@@ -228,7 +228,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9d9f3c506dab3644a0cb945303bf7be
+      spriteID: b56defdded8a9b741bb347c11f0048f3
       vertices: []
       indices: 
       edges: []
@@ -238,7 +238,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 318
-        y: 144
+        y: 96
         width: 53
         height: 48
       alignment: 0
@@ -248,7 +248,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62c8a60dc72c0c349bd0e123d78c4988
+      spriteID: 4ccab44b2c7870746b29877860b5ff6e
       vertices: []
       indices: 
       edges: []
@@ -258,7 +258,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 371
-        y: 144
+        y: 96
         width: 53
         height: 48
       alignment: 0
@@ -268,7 +268,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab1a7ca0d45b39a42bc4709cd2d3af3e
+      spriteID: 2bf26b11b3edeee47b8fddf34790cca5
       vertices: []
       indices: 
       edges: []
@@ -278,7 +278,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
+        y: 48
         width: 53
         height: 48
       alignment: 0
@@ -288,7 +288,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ac2017c0b377184e9b9eb303b818bcf
+      spriteID: b2f2b95e007bcf240915b793b30a54e4
       vertices: []
       indices: 
       edges: []
@@ -298,7 +298,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 53
-        y: 96
+        y: 48
         width: 53
         height: 48
       alignment: 0
@@ -308,7 +308,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85d4765c47e4b5e4a8facbd0487d2d1f
+      spriteID: 03e92fa871139004aad7598dbdbad3d8
       vertices: []
       indices: 
       edges: []
@@ -318,7 +318,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 106
-        y: 96
+        y: 48
         width: 53
         height: 48
       alignment: 0
@@ -328,7 +328,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7ec3a0623931184989864cff775af4b
+      spriteID: a5fc30b0353577b489ba39610cc712eb
       vertices: []
       indices: 
       edges: []
@@ -338,7 +338,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 159
-        y: 96
+        y: 48
         width: 53
         height: 48
       alignment: 0
@@ -348,7 +348,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 884475dfe8863564884bc6b5fbfa5292
+      spriteID: 4c6591034332e2b4184cfcbd7db7e621
       vertices: []
       indices: 
       edges: []
@@ -358,7 +358,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 212
-        y: 96
+        y: 48
         width: 53
         height: 48
       alignment: 0
@@ -368,7 +368,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc9947d1aebcbb74cbf7ebe34225c226
+      spriteID: fcfd6ab0dfaa79d4c97ab484cbedb009
       vertices: []
       indices: 
       edges: []
@@ -378,7 +378,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 265
-        y: 96
+        y: 48
         width: 53
         height: 48
       alignment: 0
@@ -388,7 +388,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7aa6e2b0c5026d541b637446f396749e
+      spriteID: dc292daecf964fd45a9cf31c6f0f3676
       vertices: []
       indices: 
       edges: []
@@ -398,7 +398,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 318
-        y: 96
+        y: 48
         width: 53
         height: 48
       alignment: 0
@@ -408,7 +408,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cab9ae49cd2ba284199ca749d89b4be7
+      spriteID: 97c5a42c395e19a47a622bb6f6ffed50
       vertices: []
       indices: 
       edges: []
@@ -418,7 +418,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 371
-        y: 96
+        y: 48
         width: 53
         height: 48
       alignment: 0
@@ -428,93 +428,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 991b4981b3876334888503f4ea8c8d75
+      spriteID: 6e60b14111e2afc499750f6031e9635f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: FlashMagnus_16
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 48
-        width: 53
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b9f4a26312ec32d4cbd010fcd537a17b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlashMagnus_17
-      rect:
-        serializedVersion: 2
-        x: 53
-        y: 48
-        width: 53
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 250c8b6caf4ed9242bb2bff84a1dcdfe
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlashMagnus_18
-      rect:
-        serializedVersion: 2
-        x: 106
-        y: 48
-        width: 53
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d69d2f7b7bd55d842ac5c2af5f290207
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlashMagnus_19
-      rect:
-        serializedVersion: 2
-        x: 159
-        y: 48
-        width: 53
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78f1c23c07288b947bac193c24700c9d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlashMagnus_20
       rect:
         serializedVersion: 2
         x: 0
@@ -528,7 +448,87 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2af6c4cac9cb36d42a5caa560bd0f017
+      spriteID: 4dc56d1c317a3e242ac115d13502c78b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlashMagnus_17
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 0
+        width: 53
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d5e3d505e7182648ad7f6b502b0f2a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlashMagnus_18
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 0
+        width: 53
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3765990d3bc050045933040427671cbe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlashMagnus_19
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 0
+        width: 53
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e538e125bfdfc2949bdc47dbecda0029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlashMagnus_20
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 0
+        width: 53
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f974773516994442a711ca10563ae20
       vertices: []
       indices: 
       edges: []

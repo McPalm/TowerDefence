@@ -75,6 +75,7 @@ namespace Attack
             minesPlaced++;
             if (animator)
                 animator.SetTrigger("Attack");
+            GetComponent<SpriteRenderer>().flipX = mine.transform.position.x < transform.position.x;
         }
 
         List<Transform> SpawnPoints;

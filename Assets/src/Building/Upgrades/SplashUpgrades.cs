@@ -88,7 +88,7 @@ namespace Building.Upgrades
             {
                 new UpgradeFormat()
                 {
-                    name = "Poison Milk",
+                    name = "Venom Splash",
                     cost = 10,
                     Upgrade = () =>
                     {
@@ -105,7 +105,7 @@ namespace Building.Upgrades
                 },
                 new UpgradeFormat()
                 {
-                    name = "Frosty Milk",
+                    name = "Frost Potion",
                     cost = 10,
                     Upgrade = () =>
                     {

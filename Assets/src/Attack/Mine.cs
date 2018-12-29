@@ -10,33 +10,45 @@ namespace Attack
         public int maxTargets = 1;
         bool active = true;
         public float lifetime = 60f;
-
         public float stunDuration = 0f;
 
-        private void FixedUpdate()
+
+        private void Start()
         {
-            lifetime -= Time.fixedDeltaTime;
-            if (active == false)
-                return;
-            var hit = Physics2D.BoxCast(transform.position, Vector2.one, 0f, Vector2.zero);
-            if (hit.transform)
+            StartCoroutine(Routine());
+        }
+
+        IEnumerator Routine()
+        {
+            float killTime = Time.timeSinceLevelLoad + lifetime;
+            while(Time.timeSinceLevelLoad < killTime)
             {
-                if (radius == 0f)
+                yield return new WaitForFixedUpdate();
+                var hit = Physics2D.BoxCast(transform.position, Vector2.one, 0f, Vector2.zero);
+                if (hit.transform)
                 {
-                    hit.transform.GetComponent<Enemy>().Strike(damage, true);
-                    if (stunDuration > 0f)
-                        hit.transform.GetComponent<Movement.Mobile>().Stun(stunDuration);
-                    Destroy(gameObject);
-                }
-                else
-                {
-                    Explode(hit.transform.gameObject);
+                    var animator = GetComponent<Animator>();
+                    if (animator)
+                        animator.SetTrigger("Explode");
+
+                    if (radius == 0f)
+                    {
+                        
+
+                        hit.transform.GetComponent<Enemy>().Strike(damage, true);
+                        if (stunDuration > 0f)
+                            hit.transform.GetComponent<Movement.Mobile>().Stun(stunDuration);
+                        break;
+                    }
+                    else
+                    {
+                        Explode(hit.transform.gameObject);
+                        break;
+                    }
                 }
             }
-            if (lifetime < 0f)
-            {
-                Destroy(gameObject);
-            }
+            yield return new WaitForSeconds(.5f);
+            Destroy(gameObject);
         }
 
         public void Explode(GameObject target)
@@ -60,7 +72,7 @@ namespace Attack
                     else
                         item.GetComponent<Movement.Mobile>().Stun(stunDuration/2f);
             }
-            Destroy(gameObject);
+            
         }
     }
 }

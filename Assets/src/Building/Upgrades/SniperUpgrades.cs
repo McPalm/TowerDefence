@@ -211,18 +211,6 @@ namespace Building.Upgrades
                         level++;
                     },
 
-                },
-                new UpgradeFormat()
-                {
-                    name = "Devastating Accuracy",
-                    cost = 500,
-                    Upgrade = () =>
-                    {
-                        GetComponent<DirectDamage>().damage = 1200;
-                        GetComponent<DirectDamage>().critChance = .2f;
-                        GetComponent<Turret>().distance = 20f;
-                        level++;
-                    },
                 }
             };
         }

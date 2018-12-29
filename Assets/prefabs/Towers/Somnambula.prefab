@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b6c1db53360f84449cd067769f62b66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1499388301349902, guid: 051d7f5aeb2a72c4ab8619c01bf32f22, type: 2}
+  prefab: {fileID: 1415635094261844, guid: 2bb3c3ba84af9c94681744bb8311771a, type: 2}
   speed: 20
   fireSound: {fileID: 8300000, guid: 24a73b74a87f6d44bb0beaf583b8d14d, type: 3}
   volume: 0.207

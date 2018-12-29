@@ -215,7 +215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   critChance: 0
-  armorPiercing: 1
+  armorPiercing: 0
   offTargetDamage: 50
 --- !u!114 &114491639281693596
 MonoBehaviour:
