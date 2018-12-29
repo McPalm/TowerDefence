@@ -101,6 +101,9 @@ namespace Building.Upgrades
                         frostTower = false;
                         GetComponent<Attack.Projectile.Lerp>().prefab = PoisonProjectile;
                         level++;
+                        var animator = GetComponent<Animator>();
+                        animator.SetBool("Masked", true);
+                        animator.SetTrigger("Upgrade");
                     },
                 },
                 new UpgradeFormat()
