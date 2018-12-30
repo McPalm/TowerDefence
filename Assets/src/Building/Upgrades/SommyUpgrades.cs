@@ -15,15 +15,13 @@ namespace Building.Upgrades
         {
             get
             {
-                if (level == 0)
-                    return Level1();
-                if (level == 2)
+                if (level == 1)
                     return new UpgradeFormat[0];
-                if (rangeRank + speedRank + critRank == 15)
+                if (boostRank + speedRank + critRank == 15)
                     return UltimateUpgrade();
 
                 var list = new List<UpgradeFormat>();
-                if (rangeRank < 5)
+                if (boostRank < 5)
                     list.Add(RangeUpgrade());
                 if (speedRank < 5)
                     list.Add(SpeedUpgrade());
@@ -71,7 +69,7 @@ namespace Building.Upgrades
         }
 
         int speedRank;
-        int rangeRank;
+        int boostRank;
         int critRank;
 
         UpgradeFormat SpeedUpgrade()
@@ -93,18 +91,19 @@ namespace Building.Upgrades
         {
             return new UpgradeFormat()
             {
-                name = "Range",
-                cost = 10 * (rangeRank + 1),
+                name = "Active Boost",
+                cost = 10 * (boostRank + 1),
                 Upgrade = () =>
                 {
-                    rangeRank++;
-                    if (rangeRank == 1)
-                        GetComponent<Buffer>().range = 1.5f;
-                    if (rangeRank == 3)
-                        GetComponent<Buffer>().range = 2.1f;
-                    if (rangeRank == 5)
-                        GetComponent<Buffer>().range = 2.5f;
-                    GetComponent<Turret>().distance = 2.5f + rangeRank * .2f;
+                    boostRank++;
+                    // GetComponent<Turret>().distance = 2.5f + RankRank(boostRank) * .25f;
+                    HyperSpeed boost;
+                    if (boostRank == 1)
+                        boost = gameObject.AddComponent<HyperSpeed>();
+                    else
+                        boost = GetComponent<HyperSpeed>();
+                    boost.power = 1.6f + RankRank(boostRank) * .2f;
+                    boost.audioClip = BoostSound;
                 },
             };
         }
@@ -130,13 +129,12 @@ namespace Building.Upgrades
             {
                 new UpgradeFormat()
                 {
-                    name = "Better Buffs",
+                    name = "Buff Radius",
                     cost = 500,
                     Upgrade = () =>
                     {
                         var buffer = GetComponent<Buffer>();
-                        buffer.crit = .2f;
-                        buffer.speed = 1.44f;
+                        buffer.range = 2.5f;
 
                         level++;
                     }
