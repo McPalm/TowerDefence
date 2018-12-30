@@ -204,9 +204,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1733202894755036, guid: 8859e36d3bb90f14cb5b10ca05e0c8cf, type: 2}
-  minesPerWave: 5
+  minesPerWave: 3
   range: 2.4
-  damage: 300
+  damage: 200
   explosionRadius: 0
   maxTargets: 1
   stunDuration: 0

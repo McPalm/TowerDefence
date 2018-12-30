@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+
 namespace Attack
 {
     public class Mine : MonoBehaviour
@@ -11,6 +13,8 @@ namespace Attack
         bool active = true;
         public float lifetime = 60f;
         public float stunDuration = 0f;
+
+        public MineEvent OnExplode;
 
 
         private void Start()
@@ -28,6 +32,7 @@ namespace Attack
                 if (hit.transform)
                 {
                     var animator = GetComponent<Animator>();
+                    OnExplode.Invoke(this);
                     if (animator)
                         animator.SetTrigger("Explode");
 
@@ -74,5 +79,7 @@ namespace Attack
             }
             
         }
+        [System.Serializable]
+        public class MineEvent : UnityEvent<Mine> { }
     }
 }

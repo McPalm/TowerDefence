@@ -19,60 +19,80 @@ namespace Attack
         public float stunDuration = 0f;
         public float slowFactor = 1f;
 
-
         float cooldown = 2f;
         float mineLifeTime = 500f;
 
-        int minesPlaced = 0;
         Animator animator;
-
         HashSet<Mine> mines;
+        bool downTime = false;
+
+        int quickMines = 0;
+        float CoolDown
+        {
+            get
+            {
+                if(quickMines > 0)
+                { 
+                    quickMines--;
+                    return 1.2f;
+                }
+                var buff = GetComponent<IBuff>();
+                if (buff != null)
+                    return 8f / buff.Speed;
+                return 8f;
+            }
+        }
 
         private void Start()
         {
             mines = new HashSet<Mine>();
             var waveManager = FindObjectOfType<WaveManagement.WaveManager>();
             waveManager.OnStartWave.AddListener(StartWave);
-            waveManager.OnStartDowntime.AddListener( () => minesPlaced = 99999999);
+            waveManager.OnStartDowntime.AddListener( () => downTime = true);
             animator = GetComponent<Animator>();
         }
 
         void StartWave()
         {
-            minesPlaced = 0;
-            cooldown = .5f;
-            foreach (var mine in mines)
-                if(mine)
-                    Destroy(mine.gameObject);
-            mines.Clear();
+            quickMines = minesPerWave - mines.Count;
+            downTime = false;
         }
 
         // Update is called once per frame
         void Update()
         {
-            if (minesPlaced < minesPerWave)
+            if (false == downTime)
             {
                 if (cooldown < 0f)
                 {
-                    cooldown += minesPerWave > 60 ? .3f : 1.2f;
-                    PlaceMine();
+                    if (mines.Count < minesPerWave)
+                    {
+                        cooldown += CoolDown;
+                        PlaceMine();
+                    }
                 }
-                cooldown -= Time.deltaTime;
+                else
+                    cooldown -= Time.deltaTime;
             }
+            else
+                cooldown = 1f;
         }
 
         void PlaceMine()
         {
             var fab = Instantiate(prefab);
+
             var mine = fab.GetComponent<Mine>();
             mine.damage = damage;
             mine.radius = explosionRadius;
             mine.lifetime = mineLifeTime;
             mine.transform.position = RandomSpawnPoint() + Scatter();
             mine.stunDuration = stunDuration;
-            mines.Add(mine);
             mine.maxTargets = maxTargets;
-            minesPlaced++;
+
+            mines.Add(mine);
+            mine.OnExplode.AddListener((m) => mines.Remove(m));
+
             if (animator)
                 animator.SetTrigger("Attack");
             GetComponent<SpriteRenderer>().flipX = mine.transform.position.x < transform.position.x;

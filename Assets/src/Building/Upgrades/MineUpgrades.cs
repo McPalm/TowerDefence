@@ -57,7 +57,7 @@ namespace Building.Upgrades
                 Upgrade = () =>
                 {
                     damageRank++;
-                    GetComponent<MineLayer>().damage = 300  + RankRank(damageRank) * 60;
+                    GetComponent<MineLayer>().damage = 200  + RankRank(damageRank) * 50;
                 },
             };
         }
@@ -87,8 +87,7 @@ namespace Building.Upgrades
                 Upgrade = () =>
                 {
                     rateRank++;
-                    GetComponent<MineLayer>().minesPerWave = 5 + rateRank;
-                    GetComponent<MineLayer>().range = 2.5f;
+                    GetComponent<MineLayer>().minesPerWave = 3 + rateRank;
                 },
             };
         }
@@ -108,23 +107,6 @@ namespace Building.Upgrades
                         level++;
                     },
                 },
-                new UpgradeFormat()
-                {
-                name = "The Big One",
-                cost = 500,
-                Upgrade = () =>
-                    {
-                        var big = gameObject.AddComponent<MineLayer>();
-                        big.damage = 1000;
-                        big.explosionRadius = 6f;
-                        big.prefab = TheBigOne;
-                        big.maxTargets = 9999;
-                        big.minesPerWave = 1;
-
-
-                        level++;
-                    },
-                }
             };
         }
     }
