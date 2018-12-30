@@ -414,6 +414,8 @@ GameObject:
   - component: {fileID: 95952750}
   - component: {fileID: 95952753}
   - component: {fileID: 95952754}
+  - component: {fileID: 95952755}
+  - component: {fileID: 95952756}
   m_Layer: 5
   m_Name: Winner
   m_TagString: Untagged
@@ -583,6 +585,29 @@ MonoBehaviour:
   StartColor: {r: 0.54509807, g: 0.49803922, b: 0.5372549, a: 0}
   FinalColor: {r: 0.54509807, g: 0.49803922, b: 0.5372549, a: 1}
   time: 3
+--- !u!114 &95952755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 95952749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0b88d51fa65fb408ad5b833ee54d62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &95952756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 95952749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5d54f46a30be884595e9a5ade09ee31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 3
 --- !u!1 &104268635
 GameObject:
   m_ObjectHideFlags: 0
@@ -7568,6 +7593,8 @@ GameObject:
   - component: {fileID: 1795195029}
   - component: {fileID: 1795195032}
   - component: {fileID: 1795195033}
+  - component: {fileID: 1795195034}
+  - component: {fileID: 1795195035}
   m_Layer: 5
   m_Name: Faildure
   m_TagString: Untagged
@@ -7738,6 +7765,29 @@ MonoBehaviour:
   StartColor: {r: 0.54509807, g: 0.49803922, b: 0.5372549, a: 0}
   FinalColor: {r: 0.54509807, g: 0.49803922, b: 0.5372549, a: 1}
   time: 3
+--- !u!114 &1795195034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1795195028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0b88d51fa65fb408ad5b833ee54d62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1795195035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1795195028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5d54f46a30be884595e9a5ade09ee31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 3
 --- !u!1 &1800882772
 GameObject:
   m_ObjectHideFlags: 0
@@ -8989,6 +9039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1567752894346960, guid: b441e4234d452a64882ea4536e3a4b01, type: 2}
+  mute: 0
 --- !u!1 &1965230152
 GameObject:
   m_ObjectHideFlags: 0
