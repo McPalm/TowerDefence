@@ -1,0 +1,274 @@
+fileFormatVersion: 2
+guid: 84aaea465b11a1148872da5bc6e6679e
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PonyOfShadowsWalk_0
+    21300002: PonyOfShadowsWalk_1
+    21300004: PonyOfShadowsWalk_2
+    21300006: PonyOfShadowsWalk_3
+    21300008: PonyOfShadowsWalk_4
+    21300010: PonyOfShadowsWalk_5
+    21300012: PonyOfShadowsWalk_6
+    21300014: PonyOfShadowsWalk_7
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 52
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PonyOfShadowsWalk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c710c177e8b1124f897e8c6e95af6dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PonyOfShadowsWalk_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86443046caed1ba44a658c0bcdfea061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PonyOfShadowsWalk_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a023e039ff04c05498b286355dbdae9c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PonyOfShadowsWalk_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305684165484f184c9e24327f755ee20
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PonyOfShadowsWalk_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3135787bda89fcb40ad563d3e8dbd8d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PonyOfShadowsWalk_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb184f02aba0b84191372d5462ce6c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PonyOfShadowsWalk_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 806d02817a961f1448ec331cd3c2cb30
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PonyOfShadowsWalk_7
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c86d895b9ceb7409f3ec773d58e1eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 881574c9df72efb4a8b5b73d0779eb07
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
