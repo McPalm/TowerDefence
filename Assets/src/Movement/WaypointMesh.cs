@@ -9,6 +9,8 @@ namespace Movement
 {
     public class WaypointMesh : MonoBehaviour
     {
+        public float TrackSpeed = 1f;
+
         public List<GameObject> waypoints;
         public float length;
         public List<GameObject> trackNodes;

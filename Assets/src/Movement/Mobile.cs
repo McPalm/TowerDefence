@@ -19,6 +19,7 @@ namespace Movement
         float stunResistance = 0f;
         public bool Stunned { get { return stun > 0f; } }
 
+
         internal void Stun(float duration)
         {
             if (stunResistance <= 0f)
@@ -97,7 +98,7 @@ namespace Movement
             }
             if (Stunned == false)
             {
-                location += slowFactor * speed / 60f;
+                location += slowFactor * speed * mesh.TrackSpeed / 60f;
                 transform.position = mesh.DistanceToPosition(location);
             }
             else
@@ -113,7 +114,7 @@ namespace Movement
 
         static public int ComparePosition(Mobile a, Mobile b)
         {
-            return a.location > b.location ? -1 : 1;
+            return a.location / a.mesh.length > b.location / b.mesh.length ? -1 : 1;
         }
 
         static public int CompareSlow(Mobile a, Mobile b)
