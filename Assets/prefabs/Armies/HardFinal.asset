@@ -12,7 +12,21 @@ MonoBehaviour:
   m_Name: HardFinal
   m_EditorClassIdentifier: 
   waves:
-  - expectedWealth: 8150
+  - expectedWealth: 11039
+    BackgroundWaves: 0
+    BackgroundQty: 0
+    BackgroundOffset: 0
+    units:
+    - enemy: {fileID: 1478975176095864, guid: 1dc8870633c379b4f8ae0414c5f8d1bf, type: 2}
+      spawnRate: 0
+      qty: 10
+    - enemy: {fileID: 1356871509833846, guid: 42782069cb87e3148bcb35c272c72d29, type: 2}
+      spawnRate: 1
+      qty: 30
+    - enemy: {fileID: 1576808532576044, guid: 0cedd52393d4a7e47a579ffcdb420580, type: 2}
+      spawnRate: 2
+      qty: 60
+  - expectedWealth: 18500
     BackgroundWaves: 0
     BackgroundQty: 0
     BackgroundOffset: 0

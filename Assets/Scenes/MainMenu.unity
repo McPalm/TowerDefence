@@ -1250,7 +1250,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'in-dev
 
-    18-12-29'
+    18-12-30'
 --- !u!222 &939929625
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1905,7 +1905,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.3, y: 0.125}
   m_AnchorMax: {x: 0.7, y: 0.27762368}
-  m_AnchoredPosition: {x: -0.000030517578, y: -19.9}
+  m_AnchoredPosition: {x: -0.000030517578, y: -19.900024}
   m_SizeDelta: {x: 0, y: 46.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1437265011
@@ -2491,7 +2491,7 @@ GameObject:
   - component: {fileID: 1877434883}
   - component: {fileID: 1877434882}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Corner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

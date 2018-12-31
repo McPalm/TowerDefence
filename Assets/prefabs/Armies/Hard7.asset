@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 371888170741b9741829c12f75e6866b, type: 3}
+  m_Name: Hard7
+  m_EditorClassIdentifier: 
+  waves:
+  - expectedWealth: 8150
+    BackgroundWaves: 5
+    BackgroundQty: 1
+    BackgroundOffset: 4.3
+    units:
+    - enemy: {fileID: 1621417221344244, guid: c1b965552a0ffe44b854f92f5b917d94, type: 2}
+      spawnRate: 0
+      qty: 1
+  - expectedWealth: 8749
+    BackgroundWaves: 5
+    BackgroundQty: 2
+    BackgroundOffset: -3.4
+    units:
+    - enemy: {fileID: 1604300603132950, guid: 2781f67ab367ad8498abf224010ec581, type: 2}
+      spawnRate: 0
+      qty: 1
+  - expectedWealth: 9436
+    BackgroundWaves: 5
+    BackgroundQty: 2
+    BackgroundOffset: 0
+    units:
+    - enemy: {fileID: 1518472711653776, guid: d7af4cc6a56f331499f965e15cbcaf1f, type: 2}
+      spawnRate: 0
+      qty: 1
+  - expectedWealth: 9869
+    BackgroundWaves: 5
+    BackgroundQty: 2
+    BackgroundOffset: 0
+    units: []
+  - expectedWealth: 12500
+    BackgroundWaves: 5
+    BackgroundQty: 3
+    BackgroundOffset: -4.9
+    units:
+    - enemy: {fileID: 1621417221344244, guid: c1b965552a0ffe44b854f92f5b917d94, type: 2}
+      spawnRate: -2
+      qty: 3
+    - enemy: {fileID: 1604300603132950, guid: 2781f67ab367ad8498abf224010ec581, type: 2}
+      spawnRate: -2
+      qty: 1
+  - expectedWealth: 15000
+    BackgroundWaves: 0
+    BackgroundQty: 0
+    BackgroundOffset: -10
+    units:
+    - enemy: {fileID: 1351138542337302, guid: eafe7b50aed59b84c9ae9fcd2a5c2c6b, type: 2}
+      spawnRate: -2
+      qty: 1
+    - enemy: {fileID: 1500756144872880, guid: f4d2e45907a5bef49bc5998ea5d0448a, type: 2}
+      spawnRate: 0
+      qty: 30

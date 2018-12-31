@@ -20,17 +20,3 @@ MonoBehaviour:
     - enemy: {fileID: 1005100136391458, guid: 8b09c0d4dd670914db60aaf81bb20af1, type: 2}
       spawnRate: 0
       qty: 10
-  - expectedWealth: 7600
-    BackgroundWaves: 0
-    BackgroundQty: 0
-    BackgroundOffset: 0
-    units:
-    - enemy: {fileID: 1478975176095864, guid: 1dc8870633c379b4f8ae0414c5f8d1bf, type: 2}
-      spawnRate: 0
-      qty: 5
-    - enemy: {fileID: 1356871509833846, guid: 42782069cb87e3148bcb35c272c72d29, type: 2}
-      spawnRate: 1
-      qty: 20
-    - enemy: {fileID: 1576808532576044, guid: 0cedd52393d4a7e47a579ffcdb420580, type: 2}
-      spawnRate: 2
-      qty: 60
