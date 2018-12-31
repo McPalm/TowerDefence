@@ -16,7 +16,7 @@ namespace Movement
             var mobile = GetComponent<Mobile>();
             var mesh = FindObjectOfType<MeshManager>().GetMesh();
 
-            float spawnLocation = (.1f + .7f * Random.value * Random.value) * mesh.length;
+            float spawnLocation = (.1f + .6f * Random.value * Random.value) * mesh.length;
             mobile.location = spawnLocation;
             mobile.mesh = mesh;
             var pos = mesh.DistanceToPosition(spawnLocation);
