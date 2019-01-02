@@ -84,6 +84,7 @@ namespace Building.Upgrades
                     speedRank++;
                     GetComponent<AimedTurret>().speed = 3f + speedRank;
                 },
+                maxRank = speedRank == 5,
             };
         }
 
@@ -102,6 +103,7 @@ namespace Building.Upgrades
                     GetComponent<DirectDamage>().damage = 20 + RankRank(accuracyRank) * 5;
                     GetComponent<DirectDamage>().offTargetDamage = 10 + accuracyRank * 3 + RankRank(damageRank) * 2;
                 },
+                maxRank = accuracyRank == 5,
             };
         }
 
@@ -117,6 +119,7 @@ namespace Building.Upgrades
                     GetComponent<AimedTurret>().piercing = 1f + damageRank * .5f;
                     GetComponent<DirectDamage>().offTargetDamage = 10 + accuracyRank * 3 + RankRank(damageRank) * 2;
                 },
+                maxRank = damageRank == 5,
             };
         }
 
@@ -143,12 +146,10 @@ namespace Building.Upgrades
 
             List<UpgradeFormat> upgrades = new List<UpgradeFormat>();
 
-            if (damageRank < 5)
-                upgrades.Add(DamageUpgrade());
-            if (rangeRank < 5)
-                upgrades.Add(RangeUpgrade());
-            if (speedRank < 5)
-                upgrades.Add(SpeedUpgrade());
+
+            upgrades.Add(DamageUpgrade());
+            upgrades.Add(RangeUpgrade());
+            upgrades.Add(SpeedUpgrade());
             return upgrades.ToArray();
         }
 
@@ -163,6 +164,7 @@ namespace Building.Upgrades
                     speedRank++;
                     GetComponent<Turret>().attackSpeed = .3f + speedRank * .05f;
                 },
+                maxRank = speedRank == 5,
             };
         }
 
@@ -177,8 +179,9 @@ namespace Building.Upgrades
                 Upgrade = () =>
                 {
                     rangeRank++;
-                    GetComponent<Turret>().distance = 4.5f + rangeRank * .6f + ((rangeRank == 5) ? 1f : 0f);
+                    GetComponent<Turret>().distance = 3.5f + rangeRank * .8f + ((rangeRank == 5) ? 1f : 0f);
                 },
+                maxRank = rangeRank == 5,
             };
         }
 
@@ -194,6 +197,7 @@ namespace Building.Upgrades
                     damageRank++;
                     GetComponent<DirectDamage>().damage = 175 + RankRank(damageRank) * 55;
                 },
+                maxRank = damageRank == 5,
             };
         }
 

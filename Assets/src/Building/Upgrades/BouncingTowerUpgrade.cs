@@ -14,7 +14,7 @@ namespace Building.Upgrades
         int critRank = 0;
         int damageRank;
 
-        void Start() => SunkCost = 30;
+        void Start() => SunkCost = 40;
 
         internal override UpgradeFormat[] AvailableUpgrades
         {
@@ -26,13 +26,9 @@ namespace Building.Upgrades
                     return FinalUpgrade();
 
                 var upgrades = new List<UpgradeFormat>();
-
-                if (bounceRank < 5)
-                    upgrades.Add(BounceUpgrade());
-                if (damageRank < 5)
-                    upgrades.Add(DamageUpgrade());
-                if (rangeRank < 5)
-                    upgrades.Add(RangeUpgrade());
+                upgrades.Add(BounceUpgrade());
+                upgrades.Add(DamageUpgrade());
+                upgrades.Add(RangeUpgrade());
                 return upgrades.ToArray();
 
             }
@@ -50,6 +46,7 @@ namespace Building.Upgrades
                     GetComponent<Bouncing>().targets = RankRank(bounceRank) + 3;
                     GetComponent<Bouncing>().bounceSpeed = 12f + RankRank(bounceRank);
                 },
+                maxRank = bounceRank == 5,
             };
         }
 
@@ -64,6 +61,7 @@ namespace Building.Upgrades
                     critRank++;
                     GetComponent<DirectDamage>().critChance = critRank * .05f;
                 },
+                maxRank = critRank == 5,
             };
         }
 
@@ -79,7 +77,8 @@ namespace Building.Upgrades
                     var damage = GetComponent<DirectDamage>();
                     damage.damage = 50 + RankRank(damageRank) * 10;
                     damage.offTargetDamage = 50 + RankRank(damageRank) * 10;
-                }
+                },
+                maxRank = damageRank == 5,
             };
         }
 
@@ -110,6 +109,7 @@ namespace Building.Upgrades
                         stun.frequency = 5;
                         stun.duration = 4f;
                         GetComponent<Turret>().FindEffects();
+                        summary = "Stunning Shield";
                         level++;
                     },
                 },
@@ -126,7 +126,8 @@ namespace Building.Upgrades
                 {
                     rangeRank++;
                     GetComponent<Turret>().distance = 2.5f + rangeRank * .2f;
-                }
+                },
+                maxRank = rangeRank == 5,
             };
         }
     }

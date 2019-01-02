@@ -21,14 +21,11 @@ namespace Building.Upgrades
 
                 var list = new List<UpgradeFormat>();
 
-                if (damageRank < 5)
-                    list.Add(DamageUpgrade());
-                if (rateRank < 5)
-                    list.Add(RateUpgrade());
-                if (explosionRank < 5)
-                    list.Add(ExplosionUpgrade());
+                list.Add(DamageUpgrade());
+                list.Add(RateUpgrade());
+                list.Add(ExplosionUpgrade());
 
-                return list.ToArray();    
+                return list.ToArray();
             }
         }
 
@@ -57,8 +54,9 @@ namespace Building.Upgrades
                 Upgrade = () =>
                 {
                     damageRank++;
-                    GetComponent<MineLayer>().damage = 200  + RankRank(damageRank) * 50;
+                    GetComponent<MineLayer>().damage = 200 + RankRank(damageRank) * 50;
                 },
+                maxRank = damageRank == 5,
             };
         }
 
@@ -75,6 +73,7 @@ namespace Building.Upgrades
                     layer.explosionRadius = 1f + explosionRank * .3f;
                     layer.maxTargets = 2 + RankRank(explosionRank) / 2;
                 },
+                maxRank = explosionRank == 5,
             };
         }
 
@@ -89,6 +88,7 @@ namespace Building.Upgrades
                     rateRank++;
                     GetComponent<MineLayer>().minesPerWave = 3 + rateRank;
                 },
+                maxRank = rateRank == 5,
             };
         }
 

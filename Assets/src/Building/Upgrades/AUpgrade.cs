@@ -14,7 +14,7 @@ namespace Building.Upgrades
         {
             get
             {
-                return summary + "B " + (SunkCost * 80 / 100) + "\n" + Attributes;
+                return summary + "\n" + Attributes;
             }
         }
 
@@ -95,6 +95,7 @@ namespace Building.Upgrades
             internal string name;
             internal int cost;
             internal System.Action Upgrade;
+            internal bool maxRank;
         }
     }
 }

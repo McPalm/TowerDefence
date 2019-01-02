@@ -12,6 +12,7 @@ namespace Building.Upgrades
         public Text description;
 
         public Button[] upgradeButtons;
+        public Button SellButton;
 
         AUpgrade selected;
 
@@ -43,8 +44,27 @@ namespace Building.Upgrades
 
         private void Update()
         {
+            if (Input.GetButtonDown("Upgrade1"))
+            {
+                if (upgradeButtons[0].IsActive() && upgradeButtons[0].interactable)
+                    upgradeButtons[0].onClick.Invoke();
+            }
+            if (Input.GetButtonDown("Upgrade2"))
+            {
+                if (upgradeButtons[1].IsActive() && upgradeButtons[1].interactable)
+                    upgradeButtons[1].onClick.Invoke();
+            }
+            if (Input.GetButtonDown("Upgrade3"))
+            {
+                if (upgradeButtons[2].IsActive() && upgradeButtons[2].interactable)
+                    upgradeButtons[2].onClick.Invoke();
+            }
+
+
             if (Input.GetButtonDown("Cancel"))
                 Deselect();
+
+
         }
 
         void Deselect()
@@ -55,6 +75,7 @@ namespace Building.Upgrades
             displayImage.gameObject.SetActive(false);
             selected = null;
             description.text = "";
+            SellButton.gameObject.SetActive(false);
         }
 
         void Show(AUpgrade target)
@@ -66,6 +87,7 @@ namespace Building.Upgrades
 
             ShowRadius();
             ShowUpgrades();
+            
         }
 
         void ShowRadius()
@@ -87,11 +109,17 @@ namespace Building.Upgrades
             {
                 if (i < upgrades.Length)
                 {
-                    upgradeButtons[i].gameObject.SetActive(true);
-                    upgradeButtons[i].GetComponentInChildren<Text>().text = $"{upgrades[i].name}\n₿ {upgrades[i].cost}";
-                    upgradeButtons[i].onClick.RemoveAllListeners();
+                    var button = upgradeButtons[i];
+                    button.gameObject.SetActive(true);
+                    var max = upgrades[i].maxRank;
+                    if(max)
+                        button.GetComponentInChildren<Text>().text = $"{upgrades[i].name}\n MAX";
+                    else
+                        button.GetComponentInChildren<Text>().text = $"{upgrades[i].name}\n₿ {upgrades[i].cost}";
+                    button.onClick.RemoveAllListeners();
+                    button.interactable = !max;
                     var capture = i;
-                    upgradeButtons[i].onClick.AddListener(() => {
+                    button.onClick.AddListener(() => {
                         selected.DoUpgrade(capture);
                         ShowUpgrades();
                         ShowRadius();
@@ -104,6 +132,8 @@ namespace Building.Upgrades
                 }
             }
             description.text = selected.Description;
+            SellButton.gameObject.SetActive(true);
+            SellButton.GetComponentInChildren<Text>().text = $"Sell ({selected.SunkCost * 80 / 100})";
         }
     }
 }

@@ -17,6 +17,8 @@ namespace ObjectPooling
             available = new HashSet<GameObject>();
         }
 
+        public int ActiveObjects { get { return used.Count; } }
+
         public GameObject Create()
         {
             foreach (var old in available)

@@ -23,9 +23,9 @@ namespace WaveManagement
         // Update is called once per frame
         void Update()
         {
-            if (Input.GetButtonDown("Jump"))
+            if (Input.GetButtonDown("Turbo"))
                 SpeedUp = true;
-            else if (Input.GetButtonUp("Jump"))
+            else if (Input.GetButtonUp("Turbo"))
                 SpeedUp = false;
 
         }

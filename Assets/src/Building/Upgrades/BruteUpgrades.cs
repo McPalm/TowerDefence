@@ -17,18 +17,15 @@ namespace Building.Upgrades
         {
             get
             {
-                if(level == 0)
+                if (level == 0)
                 {
-                    if(critRank == 5 && speedRank == 5 && damageRank == 5)
+                    if (critRank == 5 && speedRank == 5 && damageRank == 5)
                         return FinalUpgrade();
 
                     var upgrades = new List<UpgradeFormat>();
-                    if (critRank < 5)
-                        upgrades.Add(CritUpgrade());
-                    if (speedRank < 5)
-                        upgrades.Add(SpeedUpgrade());
-                    if (damageRank < 5)
-                        upgrades.Add(DamageUpgrade());
+                    upgrades.Add(CritUpgrade());
+                    upgrades.Add(SpeedUpgrade());
+                    upgrades.Add(DamageUpgrade());
                     return upgrades.ToArray();
 
                 }
@@ -49,6 +46,7 @@ namespace Building.Upgrades
                     critRank++;
                     GetComponent<DirectDamage>().critChance = RankRank(critRank) * .05f;
                 },
+                maxRank = critRank == 5,
             };
         }
 
@@ -63,6 +61,7 @@ namespace Building.Upgrades
                     speedRank++;
                     GetComponent<Turret>().attackSpeed = 1f + speedRank * .2f;
                 },
+                maxRank = speedRank == 5,
             };
         }
 
@@ -84,7 +83,8 @@ namespace Building.Upgrades
                 {
                     damageRank++;
                     GetComponent<DirectDamage>().damage = 100 + RankRank(damageRank) * 25;
-                }
+                },
+                maxRank = damageRank == 5,
             };
         }
 

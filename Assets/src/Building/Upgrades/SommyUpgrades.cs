@@ -21,17 +21,14 @@ namespace Building.Upgrades
                     return UltimateUpgrade();
 
                 var list = new List<UpgradeFormat>();
-                if (boostRank < 5)
-                    list.Add(RangeUpgrade());
-                if (speedRank < 5)
-                    list.Add(SpeedUpgrade());
-                if (critRank < 5)
-                    list.Add(CritUpgrade());
+                list.Add(RangeUpgrade());
+                list.Add(SpeedUpgrade());
+                list.Add(CritUpgrade());
                 return list.ToArray();
             }
         }
 
-        void Start() => SunkCost = 25;
+        void Start() => SunkCost = 40;
 
         UpgradeFormat[] Level1()
         {
@@ -84,6 +81,7 @@ namespace Building.Upgrades
                     GetComponent<Turret>().attackSpeed = 1.5f + speedRank * .1f;
                     GetComponent<Buffer>().speed = 1.10f + speedRank * .04f;
                 },
+                maxRank = speedRank == 5,
             };
         }
 
@@ -105,6 +103,7 @@ namespace Building.Upgrades
                     boost.power = 1.6f + RankRank(boostRank) * .2f;
                     boost.audioClip = BoostSound;
                 },
+                maxRank = boostRank == 5,
             };
         }
 
@@ -119,7 +118,8 @@ namespace Building.Upgrades
                     critRank++;
                     var buffer = GetComponent<Buffer>();
                     buffer.crit = .02f * critRank;
-                }
+                },
+                maxRank = critRank == 5,
             };
         }
 

@@ -27,14 +27,12 @@ namespace Building.Upgrades
 
                 var upgrades = new List<UpgradeFormat>();
 
-                if (powerRank < 5)
-                    upgrades.Add(PowerUpgrade());
-                if (frostTower && speedRank < 5)
+                upgrades.Add(PowerUpgrade());
+                if (frostTower)
                     upgrades.Add(SpeedUpgrade());
-                if (!frostTower && splashRank < 5)
+                if (!frostTower)
                     upgrades.Add(SplashUpgrade());
-                if (rangeRank < 5)
-                    upgrades.Add(RangeUpgrade());
+                upgrades.Add(RangeUpgrade());
                 return upgrades.ToArray();
             }
         }
@@ -153,7 +151,8 @@ namespace Building.Upgrades
                         poison.damage = 100 + RankRank(powerRank) * 25;
                         poison.duration = 5f + powerRank * .5f;
                     }
-                }
+                },
+                maxRank = powerRank == 5,
             };
         }
 
@@ -167,7 +166,8 @@ namespace Building.Upgrades
                 {
                     rangeRank++;
                     GetComponent<Turret>().distance = 2.5f + RankRank(rangeRank) * .2f;
-                }
+                },
+                maxRank = rangeRank == 5,
             };
         }
 
@@ -182,7 +182,8 @@ namespace Building.Upgrades
                     splashRank++;
                     var poison = GetComponent<PoisonEffect>();
                     poison.radius = .4f + splashRank * .25f;
-                }
+                },
+                maxRank = splashRank == 5,
             };
         }
 
@@ -200,7 +201,8 @@ namespace Building.Upgrades
                     {
                         slow.duration = 4f + durationRank;
                     }
-                }
+                },
+                maxRank = durationRank == 5,
             };
         }
 
@@ -216,7 +218,8 @@ namespace Building.Upgrades
                     speedRank++;
                     var turret = GetComponent<Turret>();
                     turret.attackSpeed = .65f + RankRank(speedRank) * .07f;
-                }
+                },
+                maxRank = speedRank == 5,
             };
         }
 

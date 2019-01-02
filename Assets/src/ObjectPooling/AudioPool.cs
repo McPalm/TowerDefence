@@ -16,7 +16,7 @@ namespace ObjectPooling
 
         IEnumerator PlaySoundRoutine(Vector3 position, AudioClip clip, float volume, float pitch, bool timescale)
         {
-            if (!mute)
+            if (!mute && ActiveObjects < 32)
             {
                 var masterVolume = Menu.VolumeControl.volume;
                 if (masterVolume > 0f)

@@ -14,6 +14,22 @@ namespace Building
         public GameObject brute;
         public GameObject sommy;
 
+        public void Update()
+        {
+            if (Input.GetButtonDown("Tower1"))
+                BuySniper();
+            if (Input.GetButtonDown("Tower2"))
+                BuyTwiggy();
+            if (Input.GetButtonDown("Tower3"))
+                BuySplash();
+            if (Input.GetButtonDown("Tower4"))
+                BuyMine();
+            if (Input.GetButtonDown("Tower5"))
+                BuyBrute();
+            if (Input.GetButtonDown("Tower6"))
+                BuySommy();
+        }
+
         public void BuyTwiggy()
         {
             if(Wallet.Instance.Money >= 40)

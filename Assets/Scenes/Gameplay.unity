@@ -2929,7 +2929,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Long Range Tower
 
-    x3 damage vs shielded enemies'
+    x2 damage vs shielded enemies'
 --- !u!222 &667114664
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4202,7 +4202,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c45a60cf400f9184c8c75f1f7621d79c, type: 2}
   - {fileID: 11400000, guid: 4397d47f731390547b8a216ab41adc78, type: 2}
   BackgroundWaves: {fileID: 11400000, guid: e9eee47f582b20944b262326012158c7, type: 2}
-  debugStart: 0
+  debugStart: 30
   OnStartWave:
     m_PersistentCalls:
       m_Calls:
@@ -9164,6 +9164,7 @@ MonoBehaviour:
   - {fileID: 226994516}
   - {fileID: 242812385}
   - {fileID: 1499745455}
+  SellButton: {fileID: 1843021284}
 --- !u!114 &1965230159
 MonoBehaviour:
   m_ObjectHideFlags: 0
