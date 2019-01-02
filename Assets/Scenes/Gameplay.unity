@@ -4202,7 +4202,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c45a60cf400f9184c8c75f1f7621d79c, type: 2}
   - {fileID: 11400000, guid: 4397d47f731390547b8a216ab41adc78, type: 2}
   BackgroundWaves: {fileID: 11400000, guid: e9eee47f582b20944b262326012158c7, type: 2}
-  debugStart: 30
+  debugStart: 0
   OnStartWave:
     m_PersistentCalls:
       m_Calls:
