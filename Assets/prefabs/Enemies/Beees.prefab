@@ -447,7 +447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 286a23d75ecc48b4ba6fc75f6cc35487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hits: 12
+  hits: 13
   armor: 0
 --- !u!114 &114623044050980450
 MonoBehaviour:
@@ -474,7 +474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1660050466579086, guid: afae059b5f75ba14fa351f41ef65e86a, type: 2}
-  spawns: 6
+  spawns: 5
 --- !u!114 &114824629394946080
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -487,7 +487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1660050466579086, guid: afae059b5f75ba14fa351f41ef65e86a, type: 2}
-  qty: 5
+  qty: 3
   spread: 0.15
   boost: 1
 --- !u!114 &114840383907841262
