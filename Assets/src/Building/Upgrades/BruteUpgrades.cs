@@ -39,7 +39,7 @@ namespace Building.Upgrades
         {
             return new UpgradeFormat()
             {
-                name = $"+5% Crit Chance ({critRank}/5)",
+                name = $"Crit Chance",
                 cost = 10 * (critRank + 1),
                 Upgrade = () =>
                 {
@@ -94,7 +94,7 @@ namespace Building.Upgrades
             {
                 new UpgradeFormat()
                 {
-                    name = "Devastating Blow",
+                    name = "x2 Damage\n10% Crit",
                     cost = 500,
                     Upgrade = () =>
                     {
