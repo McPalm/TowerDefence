@@ -33,6 +33,7 @@ namespace Menu
                 int score = PlayerPrefs.GetInt(SceneManager.GetActiveScene().name);
                 if(score < (int)DifficultySelector.Difficulty)
                     PlayerPrefs.SetInt(SceneManager.GetActiveScene().name, (int)DifficultySelector.Difficulty);
+                PlayerPrefs.Save();
             }
         }
 
