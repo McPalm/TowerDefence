@@ -16,10 +16,6 @@ public class SpawnRandom : MonoBehaviour {
             o.transform.position = transform.position;
         }
 
-    }
-
-    // Update is called once per frame
-    void Update() {
-
+        Destroy(gameObject);
     }
 }
