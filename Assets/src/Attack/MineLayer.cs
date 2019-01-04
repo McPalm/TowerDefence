@@ -91,7 +91,7 @@ namespace Attack
             mine.maxTargets = maxTargets;
 
             mines.Add(mine);
-            mine.OnExplode.AddListener((m) => mines.Remove(m));
+            mine.OnDestroy.AddListener((m) => mines.Remove(m));
 
             if (animator)
                 animator.SetTrigger("Attack");

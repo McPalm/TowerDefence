@@ -10,11 +10,10 @@ namespace Attack
         public int damage = 100;
         public float radius = 1f;
         public int maxTargets = 1;
-        bool active = true;
         public float lifetime = 60f;
         public float stunDuration = 0f;
 
-        public MineEvent OnExplode;
+        public MineEvent OnDestroy;
 
 
         private void Start()
@@ -32,14 +31,12 @@ namespace Attack
                 if (hit.transform)
                 {
                     var animator = GetComponent<Animator>();
-                    OnExplode.Invoke(this);
+                    
                     if (animator)
                         animator.SetTrigger("Explode");
 
                     if (radius == 0f)
                     {
-                        
-
                         hit.transform.GetComponent<Enemy>().Strike(damage, true);
                         if (stunDuration > 0f)
                             hit.transform.GetComponent<Movement.Mobile>().Stun(stunDuration);
@@ -53,6 +50,7 @@ namespace Attack
                 }
             }
             yield return new WaitForSeconds(.5f);
+            OnDestroy.Invoke(this);
             Destroy(gameObject);
         }
 
