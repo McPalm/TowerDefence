@@ -30,6 +30,12 @@ namespace WaveManagement
             for (int i = 0; i < wave.units.Count; i++)
             {
                 var enemy = wave.units[i].enemy.GetComponent<Attack.Enemy>();
+                if(enemy == false)
+                {
+                    var rando = wave.units[i].enemy.GetComponent<SpawnRandom>();
+                    if (rando)
+                        enemy = rando.prefabs[0].GetComponent<Attack.Enemy>();
+                }
                 images[i].sprite = enemy.GetComponentInChildren<SpriteRenderer>(true).sprite;
                 images[i].gameObject.SetActive(true);
                 var text = images[i].GetComponentInChildren<Text>(true);
