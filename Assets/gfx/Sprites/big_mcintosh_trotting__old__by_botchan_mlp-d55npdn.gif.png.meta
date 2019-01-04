@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: cda4d3616d83eae41be62415c0d5888a
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_0
+    21300002: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_1
+    21300004: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_2
+    21300006: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_3
+    21300008: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_4
+    21300010: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_5
+    21300012: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_6
+    21300014: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_7
+    21300016: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_8
+    21300018: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_9
+    21300020: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_10
+    21300022: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_11
+    21300024: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_12
+    21300026: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_13
+    21300028: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_14
+    21300030: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_15
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 52
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 106
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d0e1ea8ef53ab4ca6ce8b6091c07d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_1
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 128
+        width: 106
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad776f4907a7b51419157d5a1eab3302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_2
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 128
+        width: 106
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 549039620ca79204190e88c70d860270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_3
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 128
+        width: 106
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c07ac78063b016048b803a1c5dbda8d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_4
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 128
+        width: 106
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07561305f020e1d4797dca03165917ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_5
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 128
+        width: 106
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d68501ccf6eecf458595f0105c1d89b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_6
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 128
+        width: 106
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10dcfddc7a45f1469f84d6d49a56cf3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_7
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 128
+        width: 106
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfdd4b94830a4964cb2dfa9b0fc326bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 106
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d502879ede7795f4db93d0be650ce777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_9
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 0
+        width: 106
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 571e32a3f560d484eb355ae05a1cd5d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_10
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 0
+        width: 106
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f9e93765b395f94d933167e12cd14ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_11
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 0
+        width: 106
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3821be96bbca24eaccae4015406ff3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_12
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 0
+        width: 106
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44fe87d59de56894e9352274b2793979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_13
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 0
+        width: 106
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3720c79b81b95d04bad50a779c3802e7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_14
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 0
+        width: 106
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70bc46ba63aef7d4ebb047ff26416282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_mcintosh_trotting__old__by_botchan_mlp-d55npdn.gif_15
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 0
+        width: 106
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abec04d8cf33992488355db9c6593d81
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1d6907d16f0a3894bb6fd210c6a4602e
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: fd72ac42ef638674a9538c76029b6d6f
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_0
+    21300002: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_1
+    21300004: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_2
+    21300006: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_3
+    21300008: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_4
+    21300010: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_5
+    21300012: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_6
+    21300014: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_7
+    21300016: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_8
+    21300018: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_9
+    21300020: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_10
+    21300022: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_11
+    21300024: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_12
+    21300026: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_13
+    21300028: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_14
+    21300030: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_15
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 104
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 94
+        width: 88
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b74c42a3219b014489041d9abc15add
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 94
+        width: 88
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ce41ddc18947f42aec93a2ba7d7171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_2
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 94
+        width: 88
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5dd3a24590ff7f4c88b50fe92329f48
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_3
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 94
+        width: 88
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7724da5d2465b4da64de12d12a31da
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_4
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 94
+        width: 88
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a0d4f5690c41cf408ccb489a2dd3f46
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_5
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 94
+        width: 88
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d16d475845ec7488168c5ffd6e4b5a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_6
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 94
+        width: 88
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46110ca98516a5545b11ac0de790045f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_7
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 94
+        width: 88
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c2aca4cff59b0d42b7d91610bcc09c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 88
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc4ad50b79eb6a049a2e4bc5d0295a3b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_9
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 0
+        width: 88
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34aaa6bc9abefc34e809d0d4d41c0fc8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_10
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 88
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e231c56f78a3759499e546d221d63d0e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_11
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 88
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e77b20461b294b747be413c0d5b3f32d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_12
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 88
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf4b3e575521d6047b3e16610aabd44c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_13
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 0
+        width: 88
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89af5f0571d0e84aa32757612868a20
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_14
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 88
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf02ff798f8d2e41aca4c57d3f2352c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonata_dusk_trotting_by_botchan_mlp-d8s0fkl.gif_15
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 0
+        width: 88
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e146409357da4d4abe1776cb11c131f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 06df6d59cb3265e43aa79c90960aeef6
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
