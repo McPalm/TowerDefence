@@ -76,21 +76,17 @@ namespace WaveManagement
         {
             State = S_Downtime;
             waves = new List<Army.Wave>();
-            foreach (var army in armies)
-            {
-                foreach (var wave in army.waves)
-                {
-                    waves.Add(wave);
-                }
-            }
-
+            int armyCount = armies.Length;
+            
             switch(DifficultySelector.Difficulty)
             {
                 case Difficulty.easy:
                     SpawnRateFactor = 1.35f;
+                    armyCount -= 2;
                     break;
                 case Difficulty.medium:
                     SpawnRateFactor = 1.2f;
+                    armyCount -= 1;
                     break;
                 case Difficulty.hard:
                 default:
@@ -98,7 +94,17 @@ namespace WaveManagement
                     break;
             }
 
+            for (int i = 0; i < armyCount; i++)
+            {
+                var army = armies[i];
+                foreach (var wave in army.waves)
+                {
+                    waves.Add(wave);
+                }
+            }
+#if UNITY_EDITOR
             currentWave = debugStart;
+#endif
         }
 
         void Start()
