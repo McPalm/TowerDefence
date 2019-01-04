@@ -24,13 +24,13 @@ MonoBehaviour:
       spawnRate: -1
       qty: 1
   - expectedWealth: 1600
-    BackgroundWaves: 0
-    BackgroundQty: 0
+    BackgroundWaves: 2
+    BackgroundQty: 1
     BackgroundOffset: 0
     units:
     - enemy: {fileID: 1795535627582716, guid: 6e6c14a85ac40fc46a4187547b6194e8, type: 2}
-      spawnRate: 0
-      qty: 10
+      spawnRate: -1
+      qty: 5
   - expectedWealth: 1800
     BackgroundWaves: 2
     BackgroundQty: 2
