@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 114352265629741218}
   - component: {fileID: 114673061504814900}
   m_Layer: 8
-  m_Name: Guard
+  m_Name: Night Guard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -175,7 +175,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5738e35d39624ea41a4fb06e82c70918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mesh: {fileID: 0}
   speed: 4
   location: 0
 --- !u!114 &114352265629741218
@@ -192,7 +191,8 @@ MonoBehaviour:
   threshold: 0.5
   speed: 2
   armor: 255
-  sprite: {fileID: 21300000, guid: 40cd859632ab44247a92901ecf2c43e9, type: 3}
+  sprite: {fileID: 0}
+  animationFlag: 
 --- !u!114 &114579014142383072
 MonoBehaviour:
   m_ObjectHideFlags: 1
