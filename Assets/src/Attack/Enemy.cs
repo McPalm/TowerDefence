@@ -19,6 +19,7 @@ namespace Attack
         int poisonLeft = 0;
 
         Coroutine poisonRoutine;
+        bool dead = false;
 
         public bool Poisoned => poisonLeft > 0;
 
@@ -120,17 +121,21 @@ namespace Attack
 
         public void Strike(int damage, bool ArmourPiercing = false)
         {
-            if(armor && ArmourPiercing == false) damage /= 2;
-            if (damage <= 0) return;
-            hp -= damage;
-
-            foreach (var item in GetComponents<IOnStruck>())
-                item.OnHurt(damage, HealthPercentage);
-            if (hp <= 0)
+            if (dead == false)
             {
-                foreach (var item in GetComponents<IOnKilled>())
-                    item.OnKilled();
-                Destroy(gameObject);
+                if (armor && ArmourPiercing == false) damage /= 2;
+                if (damage <= 0) return;
+                hp -= damage;
+
+                foreach (var item in GetComponents<IOnStruck>())
+                    item.OnHurt(damage, HealthPercentage);
+                if (hp <= 0)
+                {
+                    foreach (var item in GetComponents<IOnKilled>())
+                        item.OnKilled();
+                    Destroy(gameObject);
+                    dead = true;
+                }
             }
         }
 
