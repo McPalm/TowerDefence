@@ -41,8 +41,6 @@ GameObject:
   - component: {fileID: 114024845415720280}
   - component: {fileID: 114967197456502542}
   - component: {fileID: 114037857234654424}
-  - component: {fileID: 114618930760895556}
-  - component: {fileID: 114277857311341204}
   - component: {fileID: 114034427349212380}
   - component: {fileID: 114526109596610392}
   m_Layer: 0
@@ -209,23 +207,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 286a23d75ecc48b4ba6fc75f6cc35487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hits: 350
+  hits: 450
   armor: 0
---- !u!114 &114277857311341204
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1351138542337302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f224b032612fc6a42a79ea60dbce5fe1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 1518472711653776, guid: d7af4cc6a56f331499f965e15cbcaf1f, type: 2}
-  qty: 1
-  spread: 1
-  boost: 1
 --- !u!114 &114426230462768478
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -249,25 +232,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f224b032612fc6a42a79ea60dbce5fe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1604300603132950, guid: 2781f67ab367ad8498abf224010ec581, type: 2}
+  prefab: {fileID: 0}
   qty: 1
-  spread: 2
+  spread: 1
   boost: 1
---- !u!114 &114618930760895556
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1351138542337302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f224b032612fc6a42a79ea60dbce5fe1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 1621417221344244, guid: c1b965552a0ffe44b854f92f5b917d94, type: 2}
-  qty: 1
-  spread: 0
-  boost: 1
+  moreFabs:
+  - {fileID: 1621417221344244, guid: c1b965552a0ffe44b854f92f5b917d94, type: 2}
+  - {fileID: 1604300603132950, guid: 2781f67ab367ad8498abf224010ec581, type: 2}
+  - {fileID: 1518472711653776, guid: d7af4cc6a56f331499f965e15cbcaf1f, type: 2}
 --- !u!114 &114967197456502542
 MonoBehaviour:
   m_ObjectHideFlags: 1

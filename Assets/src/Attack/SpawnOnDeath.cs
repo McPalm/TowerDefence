@@ -11,6 +11,7 @@ namespace Attack
         public int qty = 3;
         public float spread = 0.1f;
         public float boost = 1f;
+        public GameObject[] moreFabs;
 
         public void OnKilled()
         {
@@ -19,17 +20,35 @@ namespace Attack
             float position = GetComponent<Mobile>().location;
             var mesh = GetComponent<Mobile>().mesh;
 
-            for (int i = 0; i < qty; i++)
+            if (prefab)
             {
-                var fab = Instantiate(prefab);
-                var mobile = fab.GetComponent<Mobile>();
-                if (mobile)
+                for (int i = 0; i < qty; i++)
                 {
-                    mobile.location = position;
-                    mobile.mesh = mesh;
+                    var fab = Instantiate(prefab);
+                    var mobile = fab.GetComponent<Mobile>();
+                    if (mobile)
+                    {
+                        mobile.location = position;
+                        mobile.mesh = mesh;
+                    }
+                    fab.transform.position = transform.position;
+                    position -= spread;
                 }
-                fab.transform.position = transform.position;
-                position -= spread;
+            }
+            if(moreFabs.Length > 0)
+            {
+                foreach (var item in moreFabs)
+                {
+                    var fab = Instantiate(item);
+                    var mobile = fab.GetComponent<Mobile>();
+                    if (mobile)
+                    {
+                        mobile.location = position;
+                        mobile.mesh = mesh;
+                    }
+                    fab.transform.position = transform.position;
+                    position -= spread;
+                }
             }
         }
     }
