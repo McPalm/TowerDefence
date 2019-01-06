@@ -238,6 +238,7 @@ namespace Building.Upgrades
                     {
                         poison.duration = 2.5f;
                         level++;
+                        MarkFinal();
                     },
                 });
             if (slow)
@@ -249,6 +250,7 @@ namespace Building.Upgrades
                     {
                         slow.radius = 1.5f;
                         level++;
+                        MarkFinal();
                     }
                 });
             
@@ -278,6 +280,7 @@ namespace Building.Upgrades
                         }
                         GetComponent<DirectDamage>().damage += 50;
                         level++;
+                        MarkFinal();
                     }
                 });
 

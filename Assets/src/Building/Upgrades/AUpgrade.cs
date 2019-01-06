@@ -9,6 +9,7 @@ namespace Building.Upgrades
     {
         abstract internal UpgradeFormat[] AvailableUpgrades { get; }
         public int SunkCost { set; get; }
+        public GameObject FinalUpgradeMarker;
 
         public string Description
         {
@@ -17,6 +18,8 @@ namespace Building.Upgrades
                 return summary + "\n" + Attributes;
             }
         }
+
+        protected void MarkFinal() => FinalUpgradeMarker.SetActive(true);
 
         protected string summary = "";
         

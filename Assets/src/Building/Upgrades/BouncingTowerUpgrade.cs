@@ -97,6 +97,7 @@ namespace Building.Upgrades
                         bounce.speed *= 1.5f;
                         bounce.bounceSpeed *= 1.5f;
                         level++;
+                        MarkFinal();
                     },
                 },
                 new UpgradeFormat()
@@ -111,6 +112,7 @@ namespace Building.Upgrades
                         GetComponent<Turret>().FindEffects();
                         summary = "Stunning Shield";
                         level++;
+                        MarkFinal();
                     },
                 },
             };

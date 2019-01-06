@@ -213,6 +213,7 @@ namespace Building.Upgrades
                     {
                         GetComponent<Turret>().attackSpeed *= 2f;
                         level++;
+                        MarkFinal();
                     },
 
                 }

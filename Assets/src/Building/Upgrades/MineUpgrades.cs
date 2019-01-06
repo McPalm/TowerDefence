@@ -105,6 +105,7 @@ namespace Building.Upgrades
                         var layer = GetComponent<MineLayer>();
                         layer.stunDuration = 4f;
                         level++;
+                        MarkFinal();
                     },
                 },
             };

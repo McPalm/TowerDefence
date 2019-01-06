@@ -101,6 +101,7 @@ namespace Building.Upgrades
                         GetComponent<DirectDamage>().damage *= 2;
                         GetComponent<DirectDamage>().critChance += .1f;
                         level++;
+                        MarkFinal();
                     },
                 },
                 new UpgradeFormat()
@@ -115,6 +116,7 @@ namespace Building.Upgrades
                         shock.prefab = ShockEffect;
                         GetComponent<Turret>().FindEffects();
                         level++;
+                        MarkFinal();
                     },
                 },
             };

@@ -129,7 +129,7 @@ namespace Building.Upgrades
             {
                 new UpgradeFormat()
                 {
-                    name = "Buff Radius",
+                    name = "+1 Buff Radius",
                     cost = 500,
                     Upgrade = () =>
                     {
@@ -137,17 +137,19 @@ namespace Building.Upgrades
                         buffer.range = 2.5f;
 
                         level++;
+                        MarkFinal();
                     }
                 },
                 new UpgradeFormat()
                 {
-                    name = "Proc speed bost",
+                    name = "Proc speed boost",
                     cost = 500,
                     Upgrade = () =>
                     {
                         GetComponent<HyperSpeed>().procChance = .15f;
                         GetComponent<Turret>().FindEffects();
                         level++;
+                        MarkFinal();
                     },
                 }
             };

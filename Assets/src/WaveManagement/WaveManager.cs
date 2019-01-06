@@ -112,7 +112,7 @@ namespace WaveManagement
             var wallet = FindObjectOfType<Score.Wallet>();
             wallet.Add(waves[currentWave].expectedWealth - wallet.Money);
             OnStartDowntime.AddListener(() => {
-                Debug.Log("Expected Worth - Total Worth = " + (waves[currentWave].expectedWealth - wallet.TotalWorth) + " (" + WaveName + ")");
+                // Debug.Log("Expected Worth - Total Worth = " + (waves[currentWave].expectedWealth - wallet.TotalWorth) + " (" + WaveName + ")");
                 wallet.Add(waves[currentWave].expectedWealth - wallet.TotalWorth);
                 });
         }
