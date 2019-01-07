@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 95121678662472700}
   - component: {fileID: 114118877433210170}
   m_Layer: 8
-  m_Name: Regen
+  m_Name: Vampony
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -193,7 +193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5738e35d39624ea41a4fb06e82c70918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 2.9
   location: 0
 --- !u!114 &114342640441639770
 MonoBehaviour:
@@ -256,7 +256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 286a23d75ecc48b4ba6fc75f6cc35487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hits: 12
+  hits: 11
   armor: 0
 --- !u!212 &212164804911928404
 SpriteRenderer:

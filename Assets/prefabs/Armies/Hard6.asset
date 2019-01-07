@@ -18,5 +18,5 @@ MonoBehaviour:
     BackgroundOffset: 0
     units:
     - enemy: {fileID: 1005100136391458, guid: 8b09c0d4dd670914db60aaf81bb20af1, type: 2}
-      spawnRate: 0
-      qty: 10
+      spawnRate: -1
+      qty: 9

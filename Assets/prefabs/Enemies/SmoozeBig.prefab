@@ -31,7 +31,7 @@ GameObject:
   - component: {fileID: 95206156364135210}
   - component: {fileID: 114259461369555126}
   m_Layer: 8
-  m_Name: SmoozeBig
+  m_Name: Big Smooze
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -251,6 +251,7 @@ MonoBehaviour:
   qty: 3
   spread: 0.2
   boost: 1
+  moreFabs: []
 --- !u!114 &114640370717510034
 MonoBehaviour:
   m_ObjectHideFlags: 1

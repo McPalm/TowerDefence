@@ -29,7 +29,7 @@ GameObject:
   - component: {fileID: 114913286201932020}
   - component: {fileID: 114879142245950966}
   m_Layer: 8
-  m_Name: SmoozeSmol
+  m_Name: Small Smooze
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

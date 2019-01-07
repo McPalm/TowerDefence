@@ -65,7 +65,7 @@ GameObject:
   - component: {fileID: 114097564388758208}
   - component: {fileID: 114230142266860828}
   m_Layer: 8
-  m_Name: SmoozeMedium
+  m_Name: Medium Smooze
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -255,6 +255,7 @@ MonoBehaviour:
   qty: 10
   spread: 0.15
   boost: 1
+  moreFabs: []
 --- !u!114 &114571582861736696
 MonoBehaviour:
   m_ObjectHideFlags: 1
