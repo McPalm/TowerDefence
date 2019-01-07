@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stage3.unity
     guid: 70833c5ddf9296440b9013b537519a44
+  - enabled: 1
+    path: Assets/Scenes/TouchGameplay.unity
+    guid: fd4aee15b9bdff54cb3831897142d393
   m_configObjects: {}

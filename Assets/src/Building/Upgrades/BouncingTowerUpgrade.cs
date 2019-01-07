@@ -38,7 +38,7 @@ namespace Building.Upgrades
         {
             return new UpgradeFormat()
             {
-                name = "Bounce " + (bounceRank + 1),
+                name = "Bounce",
                 cost = 10 * (bounceRank + 1),
                 Upgrade = () =>
                 {

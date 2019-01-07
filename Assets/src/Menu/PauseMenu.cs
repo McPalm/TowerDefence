@@ -57,9 +57,7 @@ namespace Menu
 
         public void ReloadScene()
         {
-            var scene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(scene.buildIndex);
-            SceneManager.LoadScene("Gameplay", LoadSceneMode.Additive);
+            Reset.ReloadScene();
         }
     }
 }

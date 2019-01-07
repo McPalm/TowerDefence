@@ -16,10 +16,14 @@ public class Reset : MonoBehaviour
         }
 	}
 
-    public void ReloadScene()
+    static public void ReloadScene()
     {
         var scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.buildIndex);
+#if UNITY_ANDROID
+        SceneManager.LoadScene("TouchGameplay", LoadSceneMode.Additive);
+#else
         SceneManager.LoadScene("Gameplay", LoadSceneMode.Additive);
+#endif
     }
 }

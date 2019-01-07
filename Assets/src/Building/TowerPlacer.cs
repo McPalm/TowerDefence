@@ -80,10 +80,19 @@ namespace Building
 
         void Place()
         {
-            var fab = Instantiate(prefab);
-            fab.transform.position = preview.transform.position;
-            Score.Wallet.Instance.Spend(cost);
-            fab.AddComponent<Obstruction>();
+            Place(prefab, preview.transform.position, cost);
+        }
+
+        static public void Place(GameObject tower, Vector3 position, int price)
+        {
+            position = new Vector3(Mathf.Round(position.x + .5f) - .5f, Mathf.Round(position.y + .5f) - .5f);
+            if (Score.Wallet.Instance.Money >= price && FindObjectOfType<BuildGrid>().SpaceAvailable(position))
+            {
+                var fab = Instantiate(tower);
+                fab.transform.position = position;
+                Score.Wallet.Instance.Spend(price);
+                fab.AddComponent<Obstruction>();
+            }
         }
     }
 }

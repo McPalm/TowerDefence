@@ -10,6 +10,7 @@ namespace Attack.Aura
         public GameObject UIObject;
         public Text cooldownDisplay;
         public float abilityCooldown;
+        public bool TextIsAlsoTimer = false;
 
         Button button;
         float cooldown;
@@ -24,8 +25,10 @@ namespace Attack.Aura
             {
                 if (Input.GetButtonDown("Boost"))
                     Activate();
-                cooldownDisplay.gameObject.SetActive(false);
+                cooldownDisplay.gameObject.SetActive(TextIsAlsoTimer);
                 button.enabled = true;
+                if (TextIsAlsoTimer)
+                    cooldownDisplay.text = "Boost";
             }
             else if (!downtime)
             {
@@ -33,6 +36,7 @@ namespace Attack.Aura
                 cooldownDisplay.gameObject.SetActive(true);
                 cooldownDisplay.text = ((int)cooldown + 1) + "s";
                 button.enabled = false;
+                
             }
         }
 

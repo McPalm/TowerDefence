@@ -36,7 +36,11 @@ namespace Menu
         public void StartGame()
         {
             SceneManager.LoadScene(selectedStage);
+#if UNITY_ANDROID
+            SceneManager.LoadScene("TouchGameplay", LoadSceneMode.Additive);
+#else
             SceneManager.LoadScene(1, LoadSceneMode.Additive);
+#endif
         }
     }
 }

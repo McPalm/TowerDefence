@@ -44,7 +44,7 @@ namespace Menu
 
         public void Retry()
         {
-            FindObjectOfType<PauseMenu>().ReloadScene();
+            Reset.ReloadScene();
         }
 
         IEnumerator ShowAfterSeconds(GameObject o, float seconds)

@@ -39,13 +39,16 @@ namespace WaveManagement
                 images[i].sprite = enemy.GetComponentInChildren<SpriteRenderer>(true).sprite;
                 images[i].gameObject.SetActive(true);
                 var text = images[i].GetComponentInChildren<Text>(true);
-                var tooltip = $"<b>{wave.units[i].qty}x {enemy.name}</b> ({enemy.hits * hpMult} hp)";
-                if (enemy.GetComponent<Attack.Enemy>().armor)
-                    tooltip += "\nArmor: \u00BD Physical Damage.";
-                var regen = enemy.GetComponent<Attack.Regeration>();
-                if (regen)
-                    tooltip += $"\nRegeneration: {regen.hpPerSecond} hp/seconds.";
-                text.text = tooltip;
+                if (text)
+                {
+                    var tooltip = $"<b>{wave.units[i].qty}x {enemy.name}</b> ({enemy.hits * hpMult} hp)";
+                    if (enemy.GetComponent<Attack.Enemy>().armor)
+                        tooltip += "\nArmor: \u00BD Physical Damage.";
+                    var regen = enemy.GetComponent<Attack.Regeration>();
+                    if (regen)
+                        tooltip += $"\nRegeneration: {regen.hpPerSecond} hp/seconds.";
+                    text.text = tooltip;
+                }
             }
         }
 
