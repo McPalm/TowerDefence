@@ -65,7 +65,7 @@ GameObject:
   - component: {fileID: 114097564388758208}
   - component: {fileID: 114230142266860828}
   m_Layer: 8
-  m_Name: Medium Smooze
+  m_Name: SmoozeMedium
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 95121678662472700}
   - component: {fileID: 114118877433210170}
   m_Layer: 8
-  m_Name: Vampony
+  m_Name: Regen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
