@@ -11,6 +11,16 @@ namespace Attack
 
         public Text priorityText;
 
+        public Button First;
+        public Button Last;
+        public Button Strong;
+        public Button Weak;
+        public Button Random;
+        public Button Lock;
+
+        public Color LockColor;
+        public Color UnLockColor;
+
         Turret selected;
 
         private void Start()
@@ -19,6 +29,12 @@ namespace Attack
             select.OnSelect.AddListener(OnSelect);
             select.OnDeselect.AddListener(Hide);
             Hide();
+            First.onClick.AddListener(SetFirst);
+            Last.onClick.AddListener(SetLast);
+            Strong.onClick.AddListener(SetStrong);
+            Weak.onClick.AddListener(SetWeak);
+            Random.onClick.AddListener(SetRandom);
+            Lock.onClick.AddListener(ToggleLock);
         }
 
         private void Update()
@@ -49,7 +65,13 @@ namespace Attack
 
         void FormatThing()
         {
-            priorityText.text = selected.targetPriority.ToString() + (selected.LockTarget ? "(lock)" : "");
+            //   priorityText.text = selected.targetPriority.ToString() + (selected.LockTarget ? "(lock)" : "");
+            First.interactable = selected.targetPriority != Turret.TargetPriority.first;
+            Last.interactable = selected.targetPriority != Turret.TargetPriority.last;
+            Strong.interactable = selected.targetPriority != Turret.TargetPriority.strongest;
+            Weak.interactable = selected.targetPriority != Turret.TargetPriority.weakest;
+            Random.interactable = selected.targetPriority != Turret.TargetPriority.random;
+            Lock.GetComponent<Image>().color = selected.LockTarget ? LockColor : UnLockColor;
         }
 
         void Hide()
