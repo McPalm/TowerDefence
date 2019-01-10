@@ -210,7 +210,7 @@ MonoBehaviour:
   prefab: {fileID: 1415635094261844, guid: 2bb3c3ba84af9c94681744bb8311771a, type: 2}
   speed: 20
   fireSound: {fileID: 8300000, guid: 24a73b74a87f6d44bb0beaf583b8d14d, type: 3}
-  volume: 0.207
+  volume: 0.116
 --- !u!114 &114230968707758506
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -226,6 +226,10 @@ MonoBehaviour:
   critChance: 0
   armorPiercing: 0
   offTargetDamage: 50
+  HitSound: {fileID: 0}
+  hitVolume: 0
+  CritSound: {fileID: 0}
+  critVolume: 0
 --- !u!114 &114278372345373214
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -238,7 +242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FinalUpgradeMarker: {fileID: 1510411580518124}
-  BoostSound: {fileID: 8300000, guid: 46132cde87140a643a98d77f19a497ae, type: 3}
+  BoostSound: {fileID: 8300000, guid: a2e01f71eaa4dca43ad2770b907c0dd6, type: 3}
 --- !u!114 &114501538758112042
 MonoBehaviour:
   m_ObjectHideFlags: 1

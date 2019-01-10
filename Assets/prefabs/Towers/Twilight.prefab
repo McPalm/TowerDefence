@@ -269,10 +269,11 @@ MonoBehaviour:
   targets: 3
   greedyBounce: 0
   returnToSender: 1
-  twang: {fileID: 8300000, guid: 62039ac6c4bd87140b3d46dce78a7a86, type: 3}
-  smack: {fileID: 8300000, guid: a849b9b09d3ad9b4693df0f8b7dc1e23, type: 3}
-  twangVolume: 0.4
-  smackVolume: 1
+  twang:
+  - {fileID: 8300000, guid: 28921da38d755864c940ba462d29118a, type: 3}
+  smack: {fileID: 8300000, guid: 28921da38d755864c940ba462d29118a, type: 3}
+  twangVolume: 0.662
+  smackVolume: 0.294
 --- !u!114 &114845492679725336
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -288,6 +289,10 @@ MonoBehaviour:
   critChance: 0
   armorPiercing: 0
   offTargetDamage: 50
+  HitSound: {fileID: 0}
+  hitVolume: 0.627
+  CritSound: {fileID: 0}
+  critVolume: 0.601
 --- !u!212 &212037968285512976
 SpriteRenderer:
   m_ObjectHideFlags: 1

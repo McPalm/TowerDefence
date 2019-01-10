@@ -227,6 +227,7 @@ MonoBehaviour:
   HitSound:
   - {fileID: 8300000, guid: fa3034b0506950146876bac588348353, type: 3}
   - {fileID: 8300000, guid: eec133f545d961240bc2a0db6f8b205f, type: 3}
+  - {fileID: 8300000, guid: 6466836398036c34d84049502b4fa634, type: 3}
   SecondaryHitSound: []
   volume: 0.74
   secondaryVolume: 1
@@ -273,6 +274,10 @@ MonoBehaviour:
   critChance: 0
   armorPiercing: 0
   offTargetDamage: 50
+  HitSound: {fileID: 0}
+  hitVolume: 0
+  CritSound: {fileID: 0}
+  critVolume: 0
 --- !u!114 &114828223584520698
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -16,7 +16,7 @@ namespace Attack.Projectile
         public bool greedyBounce = false;
         public bool returnToSender = false;
 
-        public AudioClip twang;
+        public AudioClip[] twang;
         public AudioClip smack;
         [Range(0f, 1f)]
         public float twangVolume = .5f;
@@ -96,6 +96,7 @@ namespace Attack.Projectile
                 float distance = (source - end).magnitude;
                 var progress = 0f;
                 var localSpeed = bounce == 0 ? speed : bounceSpeed;
+                var twang = this.twang[UnityEngine.Random.Range(0, this.twang.Length)];
                 projectile.transform.right = end - source;
 
                 while (progress < 1f)
