@@ -21,6 +21,7 @@ namespace Menu
             {
                 lost = true;
                 BadBackground.SetActive(true);
+                FindObjectOfType<MusicPlayer>().Stop();
             }
         }
 
@@ -51,6 +52,7 @@ namespace Menu
         {
             yield return new WaitForSeconds(seconds);
             o.SetActive(true);
+            FindObjectOfType<MusicPlayer>().Stop();
         }
     }
 }
