@@ -73,7 +73,7 @@ namespace Building
                 if(false == Input.GetButton("Queue"))
                     Deselect();
             }
-            else if (Input.GetButtonDown("Cancel"))
+            else if (Input.GetButtonDown("Cancel") || Input.GetMouseButtonDown(1))
                 Deselect();
         }
         void Idle() { }

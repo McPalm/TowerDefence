@@ -51,7 +51,7 @@ namespace Building.Selection
         {
             if (Blocked)
                 return;
-            if(Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0))
             {
                 var o = FindObjectOfType<BuildGrid>().ObjectAt(MousePosition);
                 if (o)
@@ -60,6 +60,8 @@ namespace Building.Selection
                     OnDeselect.Invoke();
 
             }
+            else if (Input.GetMouseButtonDown(1))
+                OnDeselect.Invoke();
         }
     }
 }
