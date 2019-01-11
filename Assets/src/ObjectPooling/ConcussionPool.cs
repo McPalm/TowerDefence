@@ -10,15 +10,19 @@ namespace ObjectPooling
 
         void Start() => _instance = this;
 
-        static public void Spawn(Vector3 position, float duration) => _instance.ISpawn(position, duration);
+        static public void Spawn(GameObject target, float duration) => _instance.ISpawn(target, duration);
 
-        void ISpawn(Vector3 position, float duration) => StartCoroutine(SpawnRoutine(position, duration));
+        void ISpawn(GameObject target, float duration) => StartCoroutine(SpawnRoutine(target, duration));
 
-        IEnumerator SpawnRoutine(Vector3 position, float duration)
+        IEnumerator SpawnRoutine(GameObject target, float duration)
         {
             var o = Create();
-            o.transform.position = position;
-            yield return new WaitForSeconds(duration);
+            o.transform.position = target.transform.position;
+            var killTime = Time.timeSinceLevelLoad + duration;
+            while(Time.timeSinceLevelLoad < killTime && target)
+            {
+                yield return null;
+            }
             Dispose(o);
         }
     }

@@ -165,7 +165,7 @@ namespace WaveManagement
                 State = S_RunningWave;
                 OnStartWave.Invoke();
             }
-            FindObjectOfType<MusicPlayer>().Play();
+            // FindObjectOfType<MusicPlayer>().Play();
         }
 
         IEnumerator SpawnWave(float startDelay, Army.Wave wave, float waveGap = 0f, int repetitions = 1)
