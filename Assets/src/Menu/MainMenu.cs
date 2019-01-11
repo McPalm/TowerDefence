@@ -11,6 +11,7 @@ namespace Menu
         public GameObject Map1;
         public GameObject Map2;
         public GameObject Map3;
+        public GameObject Map4;
 
         int selectedStage;
         public int SelectedStage
@@ -20,6 +21,7 @@ namespace Menu
                 Map1.SetActive(value == 2);
                 Map2.SetActive(value == 3);
                 Map3.SetActive(value == 4);
+                Map4.SetActive(value == 5);
                 selectedStage = value;
             }
             get
