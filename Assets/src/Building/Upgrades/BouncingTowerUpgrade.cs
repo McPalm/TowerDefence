@@ -102,15 +102,12 @@ namespace Building.Upgrades
                 },
                 new UpgradeFormat()
                 {
-                    name = "Stunning",
+                    name = "+2 Range",
                     cost = 500,
                     Upgrade = () =>
                     {
-                        var stun = gameObject.AddComponent<Stun>();
-                        stun.frequency = 5;
-                        stun.duration = 4f;
-                        GetComponent<Turret>().FindEffects();
-                        summary = "Stunning Shield";
+                        var turrent = GetComponent<Turret>();
+                        turrent.distance += 2f;
                         level++;
                         MarkFinal();
                     },

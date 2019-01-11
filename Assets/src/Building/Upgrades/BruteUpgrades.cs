@@ -94,27 +94,26 @@ namespace Building.Upgrades
             {
                 new UpgradeFormat()
                 {
-                    name = "x2 Damage\n10% Crit",
+                    name = "Double Damage",
                     cost = 500,
                     Upgrade = () =>
                     {
                         GetComponent<DirectDamage>().damage *= 2;
-                        GetComponent<DirectDamage>().critChance += .1f;
                         level++;
                         MarkFinal();
                     },
                 },
                 new UpgradeFormat()
                 {
-                    name = "Shockwave",
+                    name = "Stunning Blow",
                     cost = 500,
                     Upgrade = () =>
                     {
-                        var shock = gameObject.AddComponent<Shockwave>();
-                        shock.damage = 300;
-                        shock.size = .9f;
-                        shock.prefab = ShockEffect;
+                        var stun = gameObject.AddComponent<Stun>();
+                        stun.frequency = 4;
+                        stun.duration = 5f;
                         GetComponent<Turret>().FindEffects();
+                        summary = "Stunning Blow";
                         level++;
                         MarkFinal();
                     },
