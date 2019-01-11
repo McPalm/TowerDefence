@@ -19,20 +19,11 @@
 			var w;
 			var h;
 
-			if(scaleToFit){
+			
 				w = window.innerWidth;
 				h = window.innerHeight;
 
-				var r = %UNITY_HEIGHT%/%UNITY_WIDTH%;
-
-				if(w * r > window.innerHeight){
-					w = Math.min(w, Math.ceil(h / r));
-				}
-				h = Math.floor(w * r);
-			}else{
-				w=%UNITY_WIDTH%;
-				h=%UNITY_HEIGHT%;
-			}
+				
 
 			container.style.width = canvas.style.width = w + "px";
 			container.style.height = canvas.style.height = h + "px";
