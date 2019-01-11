@@ -64,7 +64,7 @@ namespace Building.Upgrades
         {
             return new UpgradeFormat()
             {
-                name = "Area",
+                name = "Splash",
                 cost = 10 * (explosionRank + 1),
                 Upgrade = () =>
                 {
