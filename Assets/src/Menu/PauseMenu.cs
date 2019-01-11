@@ -30,11 +30,15 @@ namespace Menu
         private void Start()
         {
             var selection = FindObjectOfType<Building.Selection.SelectTower>();
-            selection.OnSelect.AddListener(o => {
-                if (o.GetComponent<Building.Upgrades.AUpgrade>())
-                    selectionStack = true;
-            });
-            selection.OnDeselect.AddListener(() => { selectionStack = false; });
+            if (selection)
+            {
+                selection.OnSelect.AddListener(o =>
+                {
+                    if (o.GetComponent<Building.Upgrades.AUpgrade>())
+                        selectionStack = true;
+                });
+                selection.OnDeselect.AddListener(() => { selectionStack = false; });
+            }
         }
 
         public bool Paused

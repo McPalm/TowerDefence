@@ -13405,6 +13405,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UiRoot: {fileID: 908668279}
   priorityText: {fileID: 1321971890}
+  First: {fileID: 0}
+  Last: {fileID: 0}
+  Strong: {fileID: 0}
+  Weak: {fileID: 0}
+  Random: {fileID: 0}
+  Lock: {fileID: 0}
+  LockColor: {r: 0, g: 0, b: 0, a: 0}
+  UnLockColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &1965230160
 MonoBehaviour:
   m_ObjectHideFlags: 0

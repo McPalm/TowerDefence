@@ -256,28 +256,15 @@ namespace Building.Upgrades
             
                 list.Add(new UpgradeFormat()
                 {
-                    name = "Express Delivery",
+                    name = "+2 Range\nx2 Speed",
                     cost = 500,
                     Upgrade = () =>
                     {
                         var turret = GetComponent<Turret>();
                         turret.attackSpeed *= 2f;
-                        turret.distance = 5.5f;
-                        var lerp = GetComponent<Attack.Projectile.Lerp>();
-                        lerp.speed *= 2f;
+                        turret.distance += 2f;
+                        
 
-                        if (slow)
-                        {
-                            slow.speedFactor = .5f;
-                            slow.radius = .1f;
-                        }
-                        else
-                        {
-                            poison.radius += 1f;
-                            poison.damage += 30;
-                            turret.distance += 1f;
-                            
-                        }
                         GetComponent<DirectDamage>().damage += 50;
                         level++;
                         MarkFinal();
