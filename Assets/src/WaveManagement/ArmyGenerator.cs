@@ -20,17 +20,23 @@ namespace WaveManagement
             {
                 if(i == 0)
                 {
-                    var list = new List<ArmyCell>(Enemies.Where(cell => cell.complexity == 0));
+                    var list = new List<ArmyCell>(Enemies
+                        .Where(cell => cell.complexity == 0)
+                        .Where(cell => cell.minimumLevel <= level));
                     options.Add(list[rng.Next(list.Count)]);
                 }
                 else if(i == complexity - 1)
                 {
-                    var list = new List<ArmyCell>(Enemies.Where(cell => cell.complexity > 0));
+                    var list = new List<ArmyCell>(Enemies
+                        .Where(cell => cell.complexity > 0)
+                        .Where(cell => cell.minimumLevel <= level + waves / 3 && cell.minimumLevel > 1));
                     options.Add(list[rng.Next(list.Count)]);
                 }
                 else
                 {
-                    var list = new List<ArmyCell>(Enemies.Where(cell => cell.complexity < 2));
+                    var list = new List<ArmyCell>(Enemies
+                        .Where(cell => cell.complexity < 2)
+                        .Where(cell => cell.minimumLevel <= level));
                     options.Add(list[rng.Next(list.Count)]);
                 }
             }

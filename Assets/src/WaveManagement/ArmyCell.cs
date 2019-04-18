@@ -12,6 +12,7 @@ namespace WaveManagement
         public GameObject EnemyPrefab;
         [Range(0, 2)]
         public int complexity;
+        public int minimumLevel = 1;
 
         public Army.Unit GetUnit(int level)
         {
