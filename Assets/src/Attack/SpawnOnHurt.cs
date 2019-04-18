@@ -26,6 +26,7 @@ namespace Attack
             var fab = Instantiate(prefab);
             fab.GetComponent<Mobile>().location = GetComponent<Mobile>().location;
             fab.GetComponent<Mobile>().mesh = GetComponent<Mobile>().mesh;
+            fab.GetComponent<Enemy>().Level = GetComponent<Enemy>().Level;
             fab.transform.position = transform.position;
             spawnCounter++;
         }
