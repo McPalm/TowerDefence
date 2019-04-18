@@ -23,5 +23,37 @@ namespace WaveManagement
                 level = level
             };
         }
+
+        public Army.Unit GetUnit(int level, int modifier)
+        {
+            var ret = new Army.Unit
+            {
+                enemy = EnemyPrefab,
+                qty = qty,
+                spawnRate = spawnRate,
+                level = level
+            };
+            switch (modifier % 4)
+            {
+                case 0:
+                    if (level < 3)
+                        break;
+                    ret.qty *= 2;
+                    ret.level -= 2;
+                    if ((int)ret.spawnRate < 2)
+                        ret.spawnRate++;
+                    break;
+                case 1:
+                    if (qty < 2)
+                        break;
+                    ret.qty /= 2;
+                    ret.level += 2;
+                    if ((int)ret.spawnRate > -2)
+                        ret.spawnRate--;
+                    break;
+            }
+
+            return ret;
+        }
     }
 }
