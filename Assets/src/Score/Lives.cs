@@ -32,6 +32,8 @@ namespace Score
             }
         }
 
+        void Start() => OnChangeLife.Invoke(HP);
+
         [System.Serializable]
         public class LifeEvent : UnityEvent<int> { }
     }

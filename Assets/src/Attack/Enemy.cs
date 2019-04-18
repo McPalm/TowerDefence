@@ -28,6 +28,7 @@ namespace Attack
 
         int hploss;
         int maxhp;
+        public int MaxHP => maxhp;
         public int HP => maxhp - hploss;
         public float HealthPercentage => (float)HP / (float)maxhp;
 

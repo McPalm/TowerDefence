@@ -47,7 +47,7 @@ namespace WaveManagement
                         tooltip += "\nArmor: \u00BD Physical Damage.";
                     var regen = enemy.GetComponent<Attack.Regeration>();
                     if (regen)
-                        tooltip += $"\nRegeneration: {regen.hpPerSecond} hp/seconds.";
+                        tooltip += $"\nRegeneration 30% per second";
                     text.text = tooltip;
                 }
             }
