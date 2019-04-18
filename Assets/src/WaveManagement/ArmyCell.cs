@@ -13,13 +13,14 @@ namespace WaveManagement
         [Range(0, 2)]
         public int complexity;
 
-        public Army.Unit GetUnit()
+        public Army.Unit GetUnit(int level)
         {
             return new Army.Unit
             {
                 enemy = EnemyPrefab,
                 qty = qty,
-                spawnRate = spawnRate
+                spawnRate = spawnRate,
+                level = level
             };
         }
     }

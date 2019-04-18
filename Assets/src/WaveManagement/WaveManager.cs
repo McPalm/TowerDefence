@@ -8,7 +8,6 @@ namespace WaveManagement
     public class WaveManager : MonoBehaviour
     {
         public Army[] armies;
-        public Army BackgroundWaves;
         List<Army.Wave> waves;
         public ArmyGenerator generator;
 
@@ -97,16 +96,6 @@ namespace WaveManagement
 #endif
         }
 
-        void Start()
-        {
-            var wallet = FindObjectOfType<Score.Wallet>();
-            wallet.Add(waves[currentWave].expectedWealth - wallet.Money);
-            OnStartDowntime.AddListener(() => {
-                // Debug.Log("Expected Worth - Total Worth = " + (waves[currentWave].expectedWealth - wallet.TotalWorth) + " (" + WaveName + ")");
-                wallet.Add(waves[currentWave].expectedWealth - wallet.TotalWorth);
-                });
-        }
-
         void Update()
         {
             State();
@@ -143,14 +132,6 @@ namespace WaveManagement
             {
                 var wave = waves[currentWave];
                 StartCoroutine(SpawnWave(-wave.BackgroundOffset, wave)); // Main Wave
-                if (wave.BackgroundWaves >= 0 && wave.BackgroundQty > 0)
-                {
-
-                    if(wave.BackgroundWaves < BackgroundWaves.waves.Count)    
-                        StartCoroutine(SpawnWave(wave.BackgroundOffset, BackgroundWaves.waves[wave.BackgroundWaves], .7f, wave.BackgroundQty));
-                    else
-                        StartCoroutine(SpawnWave(wave.BackgroundOffset, BackgroundWaves.waves[BackgroundWaves.waves.Count-1], .7f, wave.BackgroundQty));
-                }
                 currentWave++;
                 State = S_RunningWave;
                 OnStartWave.Invoke();
@@ -173,6 +154,7 @@ namespace WaveManagement
                     {
                         var enemy = Instantiate(unit.enemy);
                         enemy.transform.position = new Vector3(-25, -25);
+                        enemy.GetComponent<Attack.Enemy>().Level = unit.level;
                         yield return new WaitForSeconds(delayFor(unit.spawnRate) * SpawnRateFactor);
                     }
                     if (waveGap > 0f)

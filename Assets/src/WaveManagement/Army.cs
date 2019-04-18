@@ -40,6 +40,7 @@ namespace WaveManagement
             public GameObject enemy;
             public SpawnRate spawnRate;
             public int qty;
+            public int level;
             public int Bounty { get
                 {
                     if (enemy != null)

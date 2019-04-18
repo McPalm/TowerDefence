@@ -37,7 +37,7 @@ namespace WaveManagement
                 var max = i+1 < complexity ? i+1 : complexity;
                 var wave = new Army.Wave();
                 
-                wave.units.Add(options[rng.Next(max)].GetUnit());
+                wave.units.Add(options[rng.Next(max)].GetUnit(level + i / 3));
                 army.waves.Add(wave);
             }
             return army;

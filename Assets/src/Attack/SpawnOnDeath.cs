@@ -25,11 +25,16 @@ namespace Attack
                 for (int i = 0; i < qty; i++)
                 {
                     var fab = Instantiate(prefab);
+                    var enemy = fab.GetComponent<Enemy>();
                     var mobile = fab.GetComponent<Mobile>();
                     if (mobile)
                     {
                         mobile.location = position;
                         mobile.mesh = mesh;
+                    }
+                    if(enemy)
+                    {
+                        enemy.Level = GetComponent<Enemy>().Level;
                     }
                     fab.transform.position = transform.position;
                     position -= spread;
