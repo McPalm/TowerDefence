@@ -1,0 +1,457 @@
+fileFormatVersion: 2
+guid: d5c1dba95003eed48b83e66e41d462f7
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_0
+    21300002: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_1
+    21300004: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_2
+    21300006: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_3
+    21300008: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_4
+    21300010: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_5
+    21300012: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_6
+    21300014: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_7
+    21300016: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_8
+    21300018: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_9
+    21300020: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_10
+    21300022: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_11
+    21300024: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_12
+    21300026: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_13
+    21300028: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_14
+    21300030: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_15
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 104
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1645363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77163e1007910cd4f9c81d11c2c67d0b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_1
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 100
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1645363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5da40e564b048b4c8b20972d6c09f55
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_2
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 100
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1645363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 852330cbf5fc6f146845bb4380f0043a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_3
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 100
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1645363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c5137fc1b01ca341a3f148fd1a82ce0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_4
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 100
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1645363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f2588801bcd0447b734f023a3928ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_5
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 100
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1645363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256230ba6d84c2642bb254158a4d2a5d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_6
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 100
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1645363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06631089000136c49b40d8311e25b405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_7
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 100
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1645363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf1edfc9df37d7448b3fd8cc42bdd40
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1645363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d8bc10ee26eef47983336194995cc0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_9
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 0
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1645363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f847dfa80f72754c9b920666e2d3a38
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_10
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 0
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1645363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf99845f1b42a894298c456a498c5126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_11
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 0
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1645363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9840f09347a3a7c4eaf27929323f3c54
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_12
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 0
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1645363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a109cfdf329ab74a9ea2ab63a0e9b43
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_13
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 0
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1645363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7be31ff7bf647544597e2d95cae8c1ee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_14
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 0
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1645363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e1194b3a30e804c9c903585aee26ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 188194__safe_artist-colon-botchan-dash-mlp_animated_changeling_desktop+ponies_pixel+art_simple+background_solo_sprite_transparent+background_trotting_w.gif_15
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 0
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1645363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a8469f1c32c94489cc6d1a14e31515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f3929c2100113c146b2bdd710471842d
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: baddie
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

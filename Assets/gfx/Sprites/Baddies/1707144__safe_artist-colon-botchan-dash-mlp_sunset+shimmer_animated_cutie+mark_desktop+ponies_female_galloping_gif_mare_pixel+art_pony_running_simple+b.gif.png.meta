@@ -1,0 +1,373 @@
+fileFormatVersion: 2
+guid: 623a688550c2edf418e251de5e63c19f
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 1707144__safe_artist-colon-botchan-dash-mlp_sunset+shimmer_animated_cutie+mark_desktop+ponies_female_galloping_gif_mare_pixel+art_pony_running_simple+b.gif_0
+    21300002: 1707144__safe_artist-colon-botchan-dash-mlp_sunset+shimmer_animated_cutie+mark_desktop+ponies_female_galloping_gif_mare_pixel+art_pony_running_simple+b.gif_1
+    21300004: 1707144__safe_artist-colon-botchan-dash-mlp_sunset+shimmer_animated_cutie+mark_desktop+ponies_female_galloping_gif_mare_pixel+art_pony_running_simple+b.gif_2
+    21300006: 1707144__safe_artist-colon-botchan-dash-mlp_sunset+shimmer_animated_cutie+mark_desktop+ponies_female_galloping_gif_mare_pixel+art_pony_running_simple+b.gif_3
+    21300008: 1707144__safe_artist-colon-botchan-dash-mlp_sunset+shimmer_animated_cutie+mark_desktop+ponies_female_galloping_gif_mare_pixel+art_pony_running_simple+b.gif_4
+    21300010: 1707144__safe_artist-colon-botchan-dash-mlp_sunset+shimmer_animated_cutie+mark_desktop+ponies_female_galloping_gif_mare_pixel+art_pony_running_simple+b.gif_5
+    21300012: 1707144__safe_artist-colon-botchan-dash-mlp_sunset+shimmer_animated_cutie+mark_desktop+ponies_female_galloping_gif_mare_pixel+art_pony_running_simple+b.gif_6
+    21300014: 1707144__safe_artist-colon-botchan-dash-mlp_sunset+shimmer_animated_cutie+mark_desktop+ponies_female_galloping_gif_mare_pixel+art_pony_running_simple+b.gif_7
+    21300016: 1707144__safe_artist-colon-botchan-dash-mlp_sunset+shimmer_animated_cutie+mark_desktop+ponies_female_galloping_gif_mare_pixel+art_pony_running_simple+b.gif_8
+    21300018: 1707144__safe_artist-colon-botchan-dash-mlp_sunset+shimmer_animated_cutie+mark_desktop+ponies_female_galloping_gif_mare_pixel+art_pony_running_simple+b.gif_9
+    21300020: 1707144__safe_artist-colon-botchan-dash-mlp_sunset+shimmer_animated_cutie+mark_desktop+ponies_female_galloping_gif_mare_pixel+art_pony_running_simple+b.gif_10
+    21300022: 1707144__safe_artist-colon-botchan-dash-mlp_sunset+shimmer_animated_cutie+mark_desktop+ponies_female_galloping_gif_mare_pixel+art_pony_running_simple+b.gif_11
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 104
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 1707144__safe_artist-colon-botchan-dash-mlp_sunset+shimmer_animated_cutie+mark_desktop+ponies_female_galloping_gif_mare_pixel+art_pony_running_simple+b.gif_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 82
+        width: 118
+        height: 82
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c1ae3dec68db74da55c0f0250813b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1707144__safe_artist-colon-botchan-dash-mlp_sunset+shimmer_animated_cutie+mark_desktop+ponies_female_galloping_gif_mare_pixel+art_pony_running_simple+b.gif_1
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 82
+        width: 118
+        height: 82
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa468d4159e9fd74bbd8ecd2f1ff96a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1707144__safe_artist-colon-botchan-dash-mlp_sunset+shimmer_animated_cutie+mark_desktop+ponies_female_galloping_gif_mare_pixel+art_pony_running_simple+b.gif_2
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 82
+        width: 118
+        height: 82
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c972f72718830041a9dd9308de7382d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1707144__safe_artist-colon-botchan-dash-mlp_sunset+shimmer_animated_cutie+mark_desktop+ponies_female_galloping_gif_mare_pixel+art_pony_running_simple+b.gif_3
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 82
+        width: 118
+        height: 82
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a606751f6e10a0446b75f2a4af278feb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1707144__safe_artist-colon-botchan-dash-mlp_sunset+shimmer_animated_cutie+mark_desktop+ponies_female_galloping_gif_mare_pixel+art_pony_running_simple+b.gif_4
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 82
+        width: 118
+        height: 82
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79e9a9ac156c53428ecd211ce9dbf70
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1707144__safe_artist-colon-botchan-dash-mlp_sunset+shimmer_animated_cutie+mark_desktop+ponies_female_galloping_gif_mare_pixel+art_pony_running_simple+b.gif_5
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 82
+        width: 118
+        height: 82
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b103e8818d2014a93fcb5dba8792a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1707144__safe_artist-colon-botchan-dash-mlp_sunset+shimmer_animated_cutie+mark_desktop+ponies_female_galloping_gif_mare_pixel+art_pony_running_simple+b.gif_6
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 82
+        width: 118
+        height: 82
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11dbe91f0ddeab44aca8ab4385ef5f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1707144__safe_artist-colon-botchan-dash-mlp_sunset+shimmer_animated_cutie+mark_desktop+ponies_female_galloping_gif_mare_pixel+art_pony_running_simple+b.gif_7
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 82
+        width: 118
+        height: 82
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4365c99e962e58d47b7356cd48ff0cf1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1707144__safe_artist-colon-botchan-dash-mlp_sunset+shimmer_animated_cutie+mark_desktop+ponies_female_galloping_gif_mare_pixel+art_pony_running_simple+b.gif_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 118
+        height: 82
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32acae442967e94a848515cc1e71f65
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1707144__safe_artist-colon-botchan-dash-mlp_sunset+shimmer_animated_cutie+mark_desktop+ponies_female_galloping_gif_mare_pixel+art_pony_running_simple+b.gif_9
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 0
+        width: 118
+        height: 82
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d0a982746563eb4080969a03e0c33e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1707144__safe_artist-colon-botchan-dash-mlp_sunset+shimmer_animated_cutie+mark_desktop+ponies_female_galloping_gif_mare_pixel+art_pony_running_simple+b.gif_10
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 0
+        width: 118
+        height: 82
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a058aeaa478b7f41b3965f4852644c4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1707144__safe_artist-colon-botchan-dash-mlp_sunset+shimmer_animated_cutie+mark_desktop+ponies_female_galloping_gif_mare_pixel+art_pony_running_simple+b.gif_11
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 0
+        width: 118
+        height: 82
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b238514137e5744b2208ada6f69d54
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 882403776f0642a498cc17bcc777f24e
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: baddie
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

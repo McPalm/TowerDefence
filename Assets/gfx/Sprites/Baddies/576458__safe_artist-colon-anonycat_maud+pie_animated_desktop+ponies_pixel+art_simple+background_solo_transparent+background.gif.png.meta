@@ -1,0 +1,352 @@
+fileFormatVersion: 2
+guid: 264f73dee8a9eb14eb94c75cd8584b06
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 576458__safe_artist-colon-anonycat_maud+pie_animated_desktop+ponies_pixel+art_simple+background_solo_transparent+background.gif_0
+    21300002: 576458__safe_artist-colon-anonycat_maud+pie_animated_desktop+ponies_pixel+art_simple+background_solo_transparent+background.gif_1
+    21300004: 576458__safe_artist-colon-anonycat_maud+pie_animated_desktop+ponies_pixel+art_simple+background_solo_transparent+background.gif_2
+    21300006: 576458__safe_artist-colon-anonycat_maud+pie_animated_desktop+ponies_pixel+art_simple+background_solo_transparent+background.gif_3
+    21300008: 576458__safe_artist-colon-anonycat_maud+pie_animated_desktop+ponies_pixel+art_simple+background_solo_transparent+background.gif_4
+    21300010: 576458__safe_artist-colon-anonycat_maud+pie_animated_desktop+ponies_pixel+art_simple+background_solo_transparent+background.gif_5
+    21300012: 576458__safe_artist-colon-anonycat_maud+pie_animated_desktop+ponies_pixel+art_simple+background_solo_transparent+background.gif_6
+    21300014: 576458__safe_artist-colon-anonycat_maud+pie_animated_desktop+ponies_pixel+art_simple+background_solo_transparent+background.gif_7
+    21300016: 576458__safe_artist-colon-anonycat_maud+pie_animated_desktop+ponies_pixel+art_simple+background_solo_transparent+background.gif_8
+    21300018: 576458__safe_artist-colon-anonycat_maud+pie_animated_desktop+ponies_pixel+art_simple+background_solo_transparent+background.gif_9
+    21300020: 576458__safe_artist-colon-anonycat_maud+pie_animated_desktop+ponies_pixel+art_simple+background_solo_transparent+background.gif_10
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 104
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 576458__safe_artist-colon-anonycat_maud+pie_animated_desktop+ponies_pixel+art_simple+background_solo_transparent+background.gif_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 106
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd082dfd7f57234d86825aa5a6fecdf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 576458__safe_artist-colon-anonycat_maud+pie_animated_desktop+ponies_pixel+art_simple+background_solo_transparent+background.gif_1
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 96
+        width: 106
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d5a57e6119f13a41940c601dd4ce139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 576458__safe_artist-colon-anonycat_maud+pie_animated_desktop+ponies_pixel+art_simple+background_solo_transparent+background.gif_2
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 96
+        width: 106
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a603d2d251dde0f4ca1e32c44f377a65
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 576458__safe_artist-colon-anonycat_maud+pie_animated_desktop+ponies_pixel+art_simple+background_solo_transparent+background.gif_3
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 96
+        width: 106
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf334d900d05184986a5ff29baab2c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 576458__safe_artist-colon-anonycat_maud+pie_animated_desktop+ponies_pixel+art_simple+background_solo_transparent+background.gif_4
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 96
+        width: 106
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60dc8fd2ff6a5e4e88b874e635a63ee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 576458__safe_artist-colon-anonycat_maud+pie_animated_desktop+ponies_pixel+art_simple+background_solo_transparent+background.gif_5
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 96
+        width: 106
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2b9aeeb05b52a478c2fecedd26c111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 576458__safe_artist-colon-anonycat_maud+pie_animated_desktop+ponies_pixel+art_simple+background_solo_transparent+background.gif_6
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 96
+        width: 106
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07db3704e5c2c694794e3f9840540f96
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 576458__safe_artist-colon-anonycat_maud+pie_animated_desktop+ponies_pixel+art_simple+background_solo_transparent+background.gif_7
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 96
+        width: 106
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d61af5a6e4414544a89c1d2c1cb6ccb2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 576458__safe_artist-colon-anonycat_maud+pie_animated_desktop+ponies_pixel+art_simple+background_solo_transparent+background.gif_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 106
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1530b19053f58745928d9a50769adb7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 576458__safe_artist-colon-anonycat_maud+pie_animated_desktop+ponies_pixel+art_simple+background_solo_transparent+background.gif_9
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 0
+        width: 106
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44516d85123ce64d9912da3368abc9a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 576458__safe_artist-colon-anonycat_maud+pie_animated_desktop+ponies_pixel+art_simple+background_solo_transparent+background.gif_10
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 0
+        width: 106
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93926b6ff9f000d4c8c16360bd615552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4377103371d20a94098d56fab4d49371
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: baddie
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

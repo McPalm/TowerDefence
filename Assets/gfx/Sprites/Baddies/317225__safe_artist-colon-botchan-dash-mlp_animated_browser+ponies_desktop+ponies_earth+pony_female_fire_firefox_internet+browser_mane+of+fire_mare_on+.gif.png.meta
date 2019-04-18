@@ -1,0 +1,457 @@
+fileFormatVersion: 2
+guid: 0e2450bdf00071b4ca9d9cd222feab72
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_0
+    21300002: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_1
+    21300004: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_2
+    21300006: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_3
+    21300008: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_4
+    21300010: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_5
+    21300012: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_6
+    21300014: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_7
+    21300016: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_8
+    21300018: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_9
+    21300020: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_10
+    21300022: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_11
+    21300024: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_12
+    21300026: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_13
+    21300028: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_14
+    21300030: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_15
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 104
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fefdd60425eb15c4b9d520bfea320a27
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_1
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 100
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe83ee10347f26e41b3e19771527b40a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_2
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 100
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0c09194ee8bb1458740fb80e700409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_3
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 100
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa412dcb78d98445995f89d3fa83f22
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_4
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 100
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56b2dffccae7a98418ef6f97d521b284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_5
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 100
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c287812abf3bbcd4ea6760f882c831c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_6
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 100
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee0af9a36f35514d93b79d88f02c41e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_7
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 100
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25477cd84e9cb574296f4b7f7600f8fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f13cb0f15a935498c0f8df66e85739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_9
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 0
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd16561732ad8b64081cb5edc3e22e4a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_10
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 0
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6d00520c90d2b40a516c9154b8a9fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_11
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 0
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e053680c94a3fb04599d2c8b72d3611e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_12
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 0
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43859b8559b355a439738593e629ab71
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_13
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 0
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677969c51b427784ebdc9f27ec91175f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_14
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 0
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e8082549844b04d8d4934eee732454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 317225__safe_artist-colon-botchan-dash-mlp_animated_browser+ponies_desktop+ponies_earth+pony_female_fire_firefox_internet+browser_mane+of+fire_mare_on+.gif_15
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 0
+        width: 110
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69092be92ef020e489901fff0c947508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: fc5f4c8ce2bc250429b3c31421585212
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: baddie
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,373 @@
+fileFormatVersion: 2
+guid: 27bb3951b637e524da123e5eef9174f7
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 1384987__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_desktop+ponies_gif_open+mouth_pixel+art_running_screaming_simple+background_solo_.gif_0
+    21300002: 1384987__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_desktop+ponies_gif_open+mouth_pixel+art_running_screaming_simple+background_solo_.gif_1
+    21300004: 1384987__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_desktop+ponies_gif_open+mouth_pixel+art_running_screaming_simple+background_solo_.gif_2
+    21300006: 1384987__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_desktop+ponies_gif_open+mouth_pixel+art_running_screaming_simple+background_solo_.gif_3
+    21300008: 1384987__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_desktop+ponies_gif_open+mouth_pixel+art_running_screaming_simple+background_solo_.gif_4
+    21300010: 1384987__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_desktop+ponies_gif_open+mouth_pixel+art_running_screaming_simple+background_solo_.gif_5
+    21300012: 1384987__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_desktop+ponies_gif_open+mouth_pixel+art_running_screaming_simple+background_solo_.gif_6
+    21300014: 1384987__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_desktop+ponies_gif_open+mouth_pixel+art_running_screaming_simple+background_solo_.gif_7
+    21300016: 1384987__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_desktop+ponies_gif_open+mouth_pixel+art_running_screaming_simple+background_solo_.gif_8
+    21300018: 1384987__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_desktop+ponies_gif_open+mouth_pixel+art_running_screaming_simple+background_solo_.gif_9
+    21300020: 1384987__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_desktop+ponies_gif_open+mouth_pixel+art_running_screaming_simple+background_solo_.gif_10
+    21300022: 1384987__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_desktop+ponies_gif_open+mouth_pixel+art_running_screaming_simple+background_solo_.gif_11
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 104
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 1384987__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_desktop+ponies_gif_open+mouth_pixel+art_running_screaming_simple+background_solo_.gif_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 126
+        height: 96
+      alignment: 9
+      pivot: {x: 0.6, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e912dccb4f110d46b105c9e2bea1997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1384987__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_desktop+ponies_gif_open+mouth_pixel+art_running_screaming_simple+background_solo_.gif_1
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 96
+        width: 126
+        height: 96
+      alignment: 9
+      pivot: {x: 0.6, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 012f3a96e009fcc4e868d2efce389c0a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1384987__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_desktop+ponies_gif_open+mouth_pixel+art_running_screaming_simple+background_solo_.gif_2
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 95
+        width: 126
+        height: 96
+      alignment: 9
+      pivot: {x: 0.6, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf3f70b63d9a9e148995aa186021da94
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1384987__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_desktop+ponies_gif_open+mouth_pixel+art_running_screaming_simple+background_solo_.gif_3
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 96
+        width: 126
+        height: 96
+      alignment: 9
+      pivot: {x: 0.6, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba34d130320d26f4c8f21abe79c8ec63
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1384987__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_desktop+ponies_gif_open+mouth_pixel+art_running_screaming_simple+background_solo_.gif_4
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 96
+        width: 126
+        height: 96
+      alignment: 9
+      pivot: {x: 0.6, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac39e5fc13a91684b81a70da3f95c973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1384987__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_desktop+ponies_gif_open+mouth_pixel+art_running_screaming_simple+background_solo_.gif_5
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 96
+        width: 126
+        height: 96
+      alignment: 9
+      pivot: {x: 0.6, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ba233a5fe17fe47aebdca45b514793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1384987__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_desktop+ponies_gif_open+mouth_pixel+art_running_screaming_simple+background_solo_.gif_6
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 96
+        width: 126
+        height: 96
+      alignment: 9
+      pivot: {x: 0.6, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df27155e8480bff40b002f6cfbaf7375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1384987__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_desktop+ponies_gif_open+mouth_pixel+art_running_screaming_simple+background_solo_.gif_7
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 96
+        width: 126
+        height: 96
+      alignment: 9
+      pivot: {x: 0.6, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e409c0221744fed4b92ab2b117f37390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1384987__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_desktop+ponies_gif_open+mouth_pixel+art_running_screaming_simple+background_solo_.gif_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 126
+        height: 96
+      alignment: 9
+      pivot: {x: 0.6, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd47f861830129449538949260ec8d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1384987__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_desktop+ponies_gif_open+mouth_pixel+art_running_screaming_simple+background_solo_.gif_9
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 0
+        width: 126
+        height: 96
+      alignment: 9
+      pivot: {x: 0.6, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1111867325cf014683772f5c2165caf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1384987__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_desktop+ponies_gif_open+mouth_pixel+art_running_screaming_simple+background_solo_.gif_10
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 0
+        width: 126
+        height: 96
+      alignment: 9
+      pivot: {x: 0.6, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7d8f59413d2e24da00972c544a4341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1384987__safe_artist-colon-botchan-dash-mlp_lily_lily+valley_animated_desktop+ponies_gif_open+mouth_pixel+art_running_screaming_simple+background_solo_.gif_11
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 0
+        width: 126
+        height: 96
+      alignment: 9
+      pivot: {x: 0.6, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f3e7e7601693a45ae71342b6462b0d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 612b4ec1254d2eb4e8b91050e6da50a8
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: baddie
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
