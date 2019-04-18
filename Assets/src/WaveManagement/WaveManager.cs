@@ -10,6 +10,7 @@ namespace WaveManagement
         public Army[] armies;
         public Army BackgroundWaves;
         List<Army.Wave> waves;
+        public ArmyGenerator generator;
 
         float SpawnRateFactor = 1f;
 
@@ -74,25 +75,14 @@ namespace WaveManagement
 
         void Awake()
         {
+            if (generator)
+            {
+                armies = new Army[] { generator.GetArmy(1, 3, 6, 1) };
+            }
+
             State = S_Downtime;
             waves = new List<Army.Wave>();
             int armyCount = armies.Length;
-            
-            switch(DifficultySelector.Difficulty)
-            {
-                case Difficulty.easy:
-                    SpawnRateFactor = 1.35f;
-                    armyCount -= 2;
-                    break;
-                case Difficulty.medium:
-                    SpawnRateFactor = 1.2f;
-                    armyCount -= 1;
-                    break;
-                case Difficulty.hard:
-                default:
-                    SpawnRateFactor = 1f;
-                    break;
-            }
 
             for (int i = 0; i < armyCount; i++)
             {
