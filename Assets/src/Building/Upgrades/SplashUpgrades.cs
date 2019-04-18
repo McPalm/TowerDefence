@@ -263,6 +263,9 @@ namespace Building.Upgrades
                         var turret = GetComponent<Turret>();
                         turret.attackSpeed *= 2f;
                         turret.distance += 2f;
+
+                        var lerp = GetComponent<Attack.Projectile.Lerp>();
+                        lerp.speed *= 2f;
                         
 
                         GetComponent<DirectDamage>().damage += 50;
