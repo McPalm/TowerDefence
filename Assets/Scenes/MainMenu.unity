@@ -2317,15 +2317,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Special Thanks to the Desktop Pony team.
+  m_Text: 'Special Thanks to the Desktop Pony team and Botchan.
 
     Sprites by Botchan, Anonycat, Spritefag, M00nlightmagic, hazimaitsuru, emeralddarkness,
     nightguardian800.
 
-    Sounds by Jett Rifkin, rhumphires, bizniss, snardin42, sandyrb, hodomostvarujemritam,
-    suspensiondigital etc.
+    Sounds from Freesounds, Soundbank, and Soundbible.
 
-    <size=11>(and also some shit stolen from starwars)</size>
+    Playtest: Krinen, RytchTheMad, Petak86 and more.
 
     This is some non-profit shenangians, plz be nice.'
 --- !u!222 &1437265012
@@ -2781,7 +2780,7 @@ Prefab:
     - target: {fileID: 224588708723525974, guid: 071b56a9c0d5a144a8ffc51e7e45fdcd,
         type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 224588708723525974, guid: 071b56a9c0d5a144a8ffc51e7e45fdcd,
         type: 2}
