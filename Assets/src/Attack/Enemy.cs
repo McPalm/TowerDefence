@@ -9,12 +9,26 @@ namespace Attack
     {
         private static HashSet<Enemy> enemies;
 
-
+        int level = 1;
+        public int Level
+        {
+            get
+            {
+                return level;
+            }
+            set
+            {
+                level = value;
+                CalculateMaxHP();
+            }
+        }
         public int hits = 2;
         public bool armor;
 
-        int hp;
+        int hploss;
         int maxhp;
+        public int HP => maxhp - hploss;
+        public float HealthPercentage => (float)HP / (float)maxhp;
 
         int poisonLeft = 0;
 
@@ -34,8 +48,8 @@ namespace Attack
 
         internal void Heal(int heal)
         {
-            hp += heal;
-            if (hp > maxhp) hp = maxhp;
+            hploss -= heal;
+            hploss = hploss < 0 ? 0 : hploss;
         }
 
         public IEnumerator PoisonTick(int totalDamage, float duration)
@@ -59,21 +73,7 @@ namespace Attack
             }
         }
 
-        public float HealthPercentage
-        {
-            get
-            {
-                return (float)hp / (float)maxhp;
-            }
-        }
-
-        public int HP
-        {
-            get
-            {
-                return hp;
-            }
-        }
+        
 
         internal static HashSet<Enemy> Enemies
         {
@@ -88,22 +88,10 @@ namespace Attack
         // Use this for initialization
         protected void Start()
         {
-            switch(DifficultySelector.Difficulty)
-            {
-                case Difficulty.easy:
-                    hp = hits * 70;
-                    break;
-                case Difficulty.medium:
-                    hp = hits * 80;
-                    break;
-                case Difficulty.hard:
-                default:
-                    hp = hits * 100;
-                    break;
-            }
-            
-            maxhp = hp;
+            CalculateMaxHP();
         }
+
+        void CalculateMaxHP() => maxhp = (int)(hits * Mathf.Pow(1.2f, level-1) * 100);
 
         public void Boost(float factor)
         {
@@ -125,11 +113,11 @@ namespace Attack
             {
                 if (armor && ArmourPiercing == false) damage /= 2;
                 if (damage <= 0) return;
-                hp -= damage;
+                hploss += damage;
 
                 foreach (var item in GetComponents<IOnStruck>())
                     item.OnHurt(damage, HealthPercentage);
-                if (hp <= 0)
+                if (hploss >= maxhp)
                 {
                     foreach (var item in GetComponents<IOnKilled>())
                         item.OnKilled();
@@ -139,15 +127,8 @@ namespace Attack
             }
         }
 
-        private void OnEnable()
-        {
-            Enemies.Add(this);
-        }
-
-        private void OnDisable()
-        {
-            Enemies.Remove(this);
-        }
+        private void OnEnable() =>Enemies.Add(this);
+        private void OnDisable() => Enemies.Remove(this);
 
         public interface IOnStruck
         {
