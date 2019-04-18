@@ -29,6 +29,7 @@ namespace WaveManagement
             Hide();
             for (int i = 0; i < wave.units.Count; i++)
             {
+                
                 var enemy = wave.units[i].enemy.GetComponent<Attack.Enemy>();
                 if(enemy == false)
                 {
@@ -41,7 +42,7 @@ namespace WaveManagement
                 var text = images[i].GetComponentInChildren<Text>(true);
                 if (text)
                 {
-                    var tooltip = $"<b>{wave.units[i].qty}x {enemy.name}</b> ({enemy.hits * hpMult} hp)";
+                    var tooltip = $"<b>{wave.units[i].qty}x lvl {wave.units[i].level} {enemy.name}</b> ({Attack.Enemy.HPFor(enemy.hits, wave.units[i].level)} hp)";
                     if (enemy.GetComponent<Attack.Enemy>().armor)
                         tooltip += "\nArmor: \u00BD Physical Damage.";
                     var regen = enemy.GetComponent<Attack.Regeration>();

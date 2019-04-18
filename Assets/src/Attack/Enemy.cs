@@ -8,6 +8,7 @@ namespace Attack
     public class Enemy : MonoBehaviour
     {
         private static HashSet<Enemy> enemies;
+        static public int HPFor(int hits, int level) => (int)(hits * Mathf.Pow(1.2f, level - 1) * 100);
 
         int level = 1;
         public int Level
@@ -85,13 +86,15 @@ namespace Attack
             }
         }
 
+        public int Danger => Mathf.CeilToInt(hits * HealthPercentage);
+
         // Use this for initialization
         protected void Start()
         {
             CalculateMaxHP();
         }
 
-        void CalculateMaxHP() => maxhp = (int)(hits * Mathf.Pow(1.2f, level-1) * 100);
+        void CalculateMaxHP() => maxhp = HPFor(hits, level);
 
         public void Boost(float factor)
         {
