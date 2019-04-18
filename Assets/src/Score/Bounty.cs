@@ -37,18 +37,32 @@ namespace Score
 
         public void OnKilled()
         {
+            int level = GetComponent<Attack.Enemy>().Level;
+
+            float worth = this.worth;
             if (nickle)
+                worth += .5f;
+            worth *= Mathf.Pow(1.15f, level-1) * 2f * Random.value;
+            worth += Random.value;
+            if (worth < 1f)
             {
-                if (odd)
-                    odd = false;
-                else
-                {
-                    FindObjectOfType<Wallet>().Add(1);
-                    odd = true;
-                }
+                this.worth = 0;
+                nickle = true;
             }
             else
-                FindObjectOfType<Wallet>().Add(worth);
+            {
+                this.worth = Mathf.RoundToInt(worth);
+                nickle = false;
+            }
+
+            if (nickle)
+            {
+                odd = !odd;
+                if(!odd)
+                    FindObjectOfType<Wallet>().Add(1);
+            }
+            else
+                FindObjectOfType<Wallet>().Add(this.worth);
         }
     }
 
