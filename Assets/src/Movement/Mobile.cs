@@ -11,6 +11,10 @@ namespace Movement
         [Range(0.2f, 6f)]
         public float speed = 1f;
         public float location = 0f;
+        public int Danger => GetComponent<Attack.Enemy>().Danger;
+
+
+
 
         float slowFactor = 1f;
         float slowDuration = 0f;
@@ -107,7 +111,7 @@ namespace Movement
             if(location > mesh.length)
             {
                 Destroy(gameObject);
-                FindObjectOfType<Score.Lives>().HP -= 1;
+                FindObjectOfType<Score.Lives>().HP -= Danger;
             }
 
         }

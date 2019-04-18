@@ -9,17 +9,9 @@ namespace Score
     {
 
         [SerializeField]
-        int lives = 10;
+        int lives = 25;
 
         public LifeEvent OnChangeLife;
-
-        private void Start()
-        {
-            if (DifficultySelector.Difficulty == Difficulty.easy)
-                HP *= 2;
-            if (DifficultySelector.Difficulty == Difficulty.medium)
-                HP = HP * 3 / 2;
-        }
 
         public int HP
         {

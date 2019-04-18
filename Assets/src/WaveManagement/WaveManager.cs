@@ -76,7 +76,7 @@ namespace WaveManagement
         {
             if (generator)
             {
-                armies = new Army[] { generator.GetArmy(1, 3, 6, 1) };
+                armies = new Army[] { generator.GetArmy(1, 4, 10, Random.Range(0, int.MaxValue)) };
             }
 
             State = S_Downtime;
@@ -155,6 +155,7 @@ namespace WaveManagement
                         var enemy = Instantiate(unit.enemy);
                         enemy.transform.position = new Vector3(-25, -25);
                         enemy.GetComponent<Attack.Enemy>().Level = unit.level;
+                        
                         yield return new WaitForSeconds(delayFor(unit.spawnRate) * SpawnRateFactor);
                     }
                     if (waveGap > 0f)
