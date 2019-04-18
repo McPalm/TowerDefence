@@ -195,6 +195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   location: 0
+  danger: 1
 --- !u!114 &114589832222322734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,8 +267,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   frequency: 3
-  MinSpeed: 1.5
-  MaxSpeed: 5
+  MinSpeed: 1.75
+  MaxSpeed: 6
   slowSprite: {fileID: 0}
   fastSprite: {fileID: 0}
 --- !u!95 &95454008926606952
