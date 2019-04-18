@@ -41,6 +41,19 @@ namespace Movement
             }
         }
 
+        public void Add(Vector3 position)
+        {
+            var go = new GameObject("waypoint");
+            go.transform.position = position;
+            waypoints.Add(go);
+            if (waypoints.Count > 1)
+            {
+                var path = new Path(length, waypoints[waypoints.Count - 2].transform.position, go.transform.position);
+                length = path.endDistance;
+                paths.Add(path);
+            }
+            go.transform.SetParent(transform);
+        }
 
         public Vector3 DistanceToPosition(float distance)
         {
