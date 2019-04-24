@@ -11,6 +11,7 @@ namespace Progression
         public TextMeshProUGUI ExperienceText;
 
         static public WaveManagement.Army Army { get; set; }
+        HashSet<Vector2Int> Adjacent = new HashSet<Vector2Int>();
 
         void Start()
         {
@@ -29,6 +30,10 @@ namespace Progression
                 else if (camera.MinX > location.x - 1) camera.MinX = location.x - 1;
                 if (camera.MaxY < location.y + 2) camera.MaxY = location.y + 2;
                 else if (camera.MinY > location.y - 1) camera.MinY = location.y + 1;
+                Adjacent.Add(location + Vector2Int.up);
+                Adjacent.Add(location + Vector2Int.down);
+                Adjacent.Add(location + Vector2Int.right);
+                Adjacent.Add(location + Vector2Int.left);
             }
             ExperienceText.text = $"Level: {save.PlayerLevel}, Experience:{save.Experience}/{save.ExperienceToNext}";
         }
@@ -48,21 +53,28 @@ namespace Progression
         void Click(Vector2 location)
         {
             var tile = Map.Instance.Get(location);
-            if (tile)
+            if (Adjacent.Contains(tile.Position))
             {
-                if (SaveData.Current.Unlocked.Contains(tile.Position))
-                    SaveData.Current.ExperienceForWin = 25 + tile.Level * 20;
-                else
-                    SaveData.Current.ExperienceForWin = 250 + tile.Level * 100;
-                SaveData.Current.Location = tile.Position;
-                // tile.GetComponent<SpriteRenderer>().color = new Color(Random.value, Random.value, Random.value);
+                if (tile)
+                {
+                    if (SaveData.Current.Unlocked.Contains(tile.Position))
+                        SaveData.Current.ExperienceForWin = 25 + tile.Level * 20;
+                    else
+                        SaveData.Current.ExperienceForWin = 250 + tile.Level * 100;
+                    SaveData.Current.Location = tile.Position;
+                    // tile.GetComponent<SpriteRenderer>().color = new Color(Random.value, Random.value, Random.value);
 
-                Army = tile.Army;
-                if (false == tile.Controlled && tile is EventTile)
-                    SaveData.Current.UnlockOnWin = ((EventTile)tile).Unlocks;
-                else
-                    SaveData.Current.UnlockOnWin = Unlock.none;
-                StartStage(tile.Stage);
+                    Army = tile.Army;
+                    if (false == tile.Controlled && tile is EventTile)
+                        SaveData.Current.UnlockOnWin = ((EventTile)tile).Unlocks;
+                    else
+                        SaveData.Current.UnlockOnWin = Unlock.none;
+                    StartStage(tile.Stage);
+                }
+            }
+            else
+            {
+                Debug.Log("Out of Range!");
             }
         }
 
