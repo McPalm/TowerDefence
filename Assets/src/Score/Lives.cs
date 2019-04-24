@@ -12,6 +12,7 @@ namespace Score
         int lives = 25;
 
         public LifeEvent OnChangeLife;
+        bool alive = true;
 
         public int HP
         {
@@ -24,15 +25,20 @@ namespace Score
             {
                 lives = value;
                 OnChangeLife.Invoke(value);
-                if (lives == 0)
+                if (alive && lives <= 0)
                 {
                     Debug.Log("GAME OVER " + FindObjectOfType<WaveManagement.WaveManager>().CurrentWave);
                     FindObjectOfType<Menu.GameOver>().Lose();
+                    alive = false;
                 }
             }
         }
 
-        void Start() => OnChangeLife.Invoke(HP);
+        void Start()
+        {
+            HP = SaveData.Current.PlayerLevel * 2 + 8;
+            OnChangeLife.Invoke(HP);
+        }
 
         [System.Serializable]
         public class LifeEvent : UnityEvent<int> { }

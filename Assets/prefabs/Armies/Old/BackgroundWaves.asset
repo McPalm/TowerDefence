@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 371888170741b9741829c12f75e6866b, type: 3}
+  m_Name: BackgroundWaves
+  m_EditorClassIdentifier: 
+  waves:
+  - expectedWealth: 0
+    BackgroundWaves: 0
+    BackgroundQty: 1
+    BackgroundOffset: 0
+    units:
+    - enemy: {fileID: 1763959516369846, guid: 1b209bf0b3c94a04c836acc03b9da937, type: 3}
+      spawnRate: 0
+      qty: 5
+      level: 0
+  - expectedWealth: 0
+    BackgroundWaves: 0
+    BackgroundQty: 1
+    BackgroundOffset: 0
+    units:
+    - enemy: {fileID: 1763959516369846, guid: 1b209bf0b3c94a04c836acc03b9da937, type: 3}
+      spawnRate: 0
+      qty: 5
+      level: 0
+    - enemy: {fileID: 1734584432153892, guid: 16fed13b8e4a2b94d99c909946b06b41, type: 3}
+      spawnRate: 0
+      qty: 5
+      level: 0
+  - expectedWealth: 0
+    BackgroundWaves: 0
+    BackgroundQty: 1
+    BackgroundOffset: 0
+    units:
+    - enemy: {fileID: 1734584432153892, guid: 16fed13b8e4a2b94d99c909946b06b41, type: 3}
+      spawnRate: 0
+      qty: 5
+      level: 0
+    - enemy: {fileID: 1993780316250558, guid: f4aef2edff36fb146ba60e4bdef1ed0b, type: 3}
+      spawnRate: 0
+      qty: 5
+      level: 0
+    - enemy: {fileID: 1060707410076018, guid: 243b7c41150d7d74ba550718f76d45c7, type: 3}
+      spawnRate: 0
+      qty: 5
+      level: 0
+  - expectedWealth: 0
+    BackgroundWaves: 0
+    BackgroundQty: 1
+    BackgroundOffset: 0
+    units:
+    - enemy: {fileID: 1060707410076018, guid: 243b7c41150d7d74ba550718f76d45c7, type: 3}
+      spawnRate: 0
+      qty: 7
+      level: 0
+    - enemy: {fileID: 1060707410076018, guid: 243b7c41150d7d74ba550718f76d45c7, type: 3}
+      spawnRate: 1
+      qty: 7
+      level: 0
+  - expectedWealth: 0
+    BackgroundWaves: 0
+    BackgroundQty: 1
+    BackgroundOffset: 0
+    units:
+    - enemy: {fileID: 1045474355256696, guid: 80b8c90eb49583c4abe40d56158488f5, type: 3}
+      spawnRate: -1
+      qty: 5
+      level: 0
+    - enemy: {fileID: 1865833684371742, guid: e81cd35106d6a754395109dd65702a69, type: 3}
+      spawnRate: 1
+      qty: 15
+      level: 0
+  - expectedWealth: 0
+    BackgroundWaves: 0
+    BackgroundQty: 1
+    BackgroundOffset: 0
+    units:
+    - enemy: {fileID: 1045474355256696, guid: 80b8c90eb49583c4abe40d56158488f5, type: 3}
+      spawnRate: -1
+      qty: 5
+      level: 0
+    - enemy: {fileID: 1865833684371742, guid: e81cd35106d6a754395109dd65702a69, type: 3}
+      spawnRate: 2
+      qty: 15
+      level: 0
+    - enemy: {fileID: 1060707410076018, guid: 243b7c41150d7d74ba550718f76d45c7, type: 3}
+      spawnRate: 1
+      qty: 10
+      level: 0
+    - enemy: {fileID: 1500756144872880, guid: f4d2e45907a5bef49bc5998ea5d0448a, type: 3}
+      spawnRate: 0
+      qty: 10
+      level: 0

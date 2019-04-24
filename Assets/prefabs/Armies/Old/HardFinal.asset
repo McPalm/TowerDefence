@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 371888170741b9741829c12f75e6866b, type: 3}
+  m_Name: HardFinal
+  m_EditorClassIdentifier: 
+  waves:
+  - expectedWealth: 11039
+    BackgroundWaves: 0
+    BackgroundQty: 0
+    BackgroundOffset: 0
+    units:
+    - enemy: {fileID: 1478975176095864, guid: 1dc8870633c379b4f8ae0414c5f8d1bf, type: 3}
+      spawnRate: 0
+      qty: 10
+      level: 0
+    - enemy: {fileID: 1356871509833846, guid: 42782069cb87e3148bcb35c272c72d29, type: 3}
+      spawnRate: 1
+      qty: 30
+      level: 0
+    - enemy: {fileID: 1576808532576044, guid: 0cedd52393d4a7e47a579ffcdb420580, type: 3}
+      spawnRate: 2
+      qty: 60
+      level: 0
+  - expectedWealth: 18500
+    BackgroundWaves: 0
+    BackgroundQty: 0
+    BackgroundOffset: 0
+    units:
+    - enemy: {fileID: 1332296728842358, guid: 877d5d9ac9335ae4ea4f39caf32559b1, type: 3}
+      spawnRate: 0
+      qty: 1
+      level: 0

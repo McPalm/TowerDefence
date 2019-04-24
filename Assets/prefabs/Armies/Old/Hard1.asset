@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 371888170741b9741829c12f75e6866b, type: 3}
+  m_Name: Hard1
+  m_EditorClassIdentifier: 
+  waves:
+  - expectedWealth: 150
+    BackgroundWaves: 0
+    BackgroundQty: 0
+    BackgroundOffset: 0
+    units:
+    - enemy: {fileID: 1763959516369846, guid: 1b209bf0b3c94a04c836acc03b9da937, type: 3}
+      spawnRate: 0
+      qty: 20
+      level: 0
+    - enemy: {fileID: 1763959516369846, guid: 1b209bf0b3c94a04c836acc03b9da937, type: 3}
+      spawnRate: 1
+      qty: 20
+      level: 0
+  - expectedWealth: 190
+    BackgroundWaves: 0
+    BackgroundQty: 0
+    BackgroundOffset: 0
+    units:
+    - enemy: {fileID: 1817454947198148, guid: e43fbaa9fd2d3ad49a2fdcec08244f09, type: 3}
+      spawnRate: -1
+      qty: 10
+      level: 0
+  - expectedWealth: 230
+    BackgroundWaves: 0
+    BackgroundQty: 4
+    BackgroundOffset: -3
+    units:
+    - enemy: {fileID: 1250082699791306, guid: a048dd96f94047d4fa717e5751a6749c, type: 3}
+      spawnRate: 0
+      qty: 10
+      level: 0
+  - expectedWealth: 270
+    BackgroundWaves: 0
+    BackgroundQty: 3
+    BackgroundOffset: -2.3
+    units:
+    - enemy: {fileID: 1234060311863718, guid: ba91b3ca643cc594a819da34816dc001, type: 3}
+      spawnRate: -1
+      qty: 10
+      level: 0
+  - expectedWealth: 300
+    BackgroundWaves: 1
+    BackgroundQty: 1
+    BackgroundOffset: 2.8
+    units:
+    - enemy: {fileID: 1019525618218050, guid: 3a93a35089ade9e49b01606873d8c9d7, type: 3}
+      spawnRate: 0
+      qty: 10
+      level: 0
+  - expectedWealth: 320
+    BackgroundWaves: 0
+    BackgroundQty: 1
+    BackgroundOffset: 0
+    units:
+    - enemy: {fileID: 1324174833363512, guid: cc6e39228a52bfc4395d87fc21e2761b, type: 3}
+      spawnRate: 0
+      qty: 10
+      level: 0
+  - expectedWealth: 410
+    BackgroundWaves: 1
+    BackgroundQty: 0
+    BackgroundOffset: 2.7
+    units:
+    - enemy: {fileID: 1234085038953300, guid: 10bf8c80f3658af418eef24dd36467bd, type: 3}
+      spawnRate: -2
+      qty: 1
+      level: 0
+    - enemy: {fileID: 1905626125706302, guid: e6942a0e415379a4a9da9de13a7add6e, type: 3}
+      spawnRate: -2
+      qty: 1
+      level: 0
+    - enemy: {fileID: 1190051949743836, guid: 60fa1f4185019964986615f874de78b7, type: 3}
+      spawnRate: -2
+      qty: 1
+      level: 0

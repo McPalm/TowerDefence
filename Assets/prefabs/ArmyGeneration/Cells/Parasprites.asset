@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 730a7eb48c07f1d45a0d208a741fc7f2, type: 3}
   m_Name: Parasprites
   m_EditorClassIdentifier: 
-  qty: 0
-  spawnRate: 0
-  EnemyPrefab: {fileID: 0}
+  qty: 40
+  spawnRate: 2
+  EnemyPrefab: {fileID: 1763959516369846, guid: 1b209bf0b3c94a04c836acc03b9da937,
+    type: 3}
   complexity: 0
+  minimumLevel: -99

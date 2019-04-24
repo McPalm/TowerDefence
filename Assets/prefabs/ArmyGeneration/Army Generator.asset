@@ -12,4 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1c90637b8884eb4880c7122e08b4dd6, type: 3}
   m_Name: Army Generator
   m_EditorClassIdentifier: 
-  Enemies: []
+  Enemies:
+  - {fileID: 11400000, guid: 193af79e2b900e94e89c55de1d0a68d0, type: 2}
+  - {fileID: 11400000, guid: c6c140a07c76458429e82e255b210c01, type: 2}
+  - {fileID: 11400000, guid: e16ce14780fc6b9409539226e323a93b, type: 2}
+  - {fileID: 11400000, guid: 8ef6d1c4f39c38a4bb81d728c35f4a18, type: 2}
+  - {fileID: 11400000, guid: 6710cc923c4810b448ae220e4b9ede3c, type: 2}
+  - {fileID: 11400000, guid: a0aca1e73b04176458dbd2e87e005ee3, type: 2}
+  - {fileID: 11400000, guid: 0e8e8e395634f3a448af2f8e4b8c7325, type: 2}
+  - {fileID: 11400000, guid: 3533fb6e4e598eb4990572a6a795f72a, type: 2}
+  - {fileID: 11400000, guid: f5dd59f3c3298e54494b4199ea84a816, type: 2}
+  - {fileID: 11400000, guid: eb19841fd71032a4789347bc7da80a55, type: 2}
+  - {fileID: 11400000, guid: 3f19868b333ab9e4d97860e33fb64357, type: 2}
+  - {fileID: 11400000, guid: f5b71c30db4280c4985d3f49efd2f3ba, type: 2}
+  - {fileID: 11400000, guid: 0b5889a02bfe13f4da1dd5472bb57bd8, type: 2}
+  - {fileID: 11400000, guid: 1c25385ece833074e96b450cbcb17368, type: 2}
+  - {fileID: 11400000, guid: 02ca4098111afe64f9147c1a84c31cc2, type: 2}
+  - {fileID: 11400000, guid: a9d08779e272a1b43885f40cc2f7f3e4, type: 2}

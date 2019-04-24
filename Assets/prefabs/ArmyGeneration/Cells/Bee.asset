@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 730a7eb48c07f1d45a0d208a741fc7f2, type: 3}
   m_Name: Bee
   m_EditorClassIdentifier: 
-  qty: 0
-  spawnRate: 0
-  EnemyPrefab: {fileID: 0}
+  qty: 25
+  spawnRate: 1
+  EnemyPrefab: {fileID: 1660050466579086, guid: afae059b5f75ba14fa351f41ef65e86a,
+    type: 3}
   complexity: 0
+  minimumLevel: 3

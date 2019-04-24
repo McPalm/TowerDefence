@@ -15,8 +15,8 @@ namespace Attack
             var enemy = GetComponent<Enemy>();
             while (true)
             {
-                yield return new WaitForSeconds(.1f);
-                enemy.Heal(enemy.MaxHP / 30);
+                yield return new WaitForSeconds(.33f);
+                enemy.Heal(enemy.MaxHP / 20);
             }
         }
     }

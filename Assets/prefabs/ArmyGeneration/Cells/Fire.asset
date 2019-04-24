@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 730a7eb48c07f1d45a0d208a741fc7f2, type: 3}
   m_Name: Fire
   m_EditorClassIdentifier: 
-  qty: 0
+  qty: 10
   spawnRate: 0
-  EnemyPrefab: {fileID: 0}
-  complexity: 0
+  EnemyPrefab: {fileID: 1794608086430166, guid: 51f3b2453b929424cb4563e0c82ac0dc,
+    type: 3}
+  complexity: 1
+  minimumLevel: 7

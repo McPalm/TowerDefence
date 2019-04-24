@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a043ac9bdb6ee5f44905ca5674abd845, type: 3}
+  m_Name: Grasslands
+  m_EditorClassIdentifier: 
+  MapSprite: {fileID: 21300008, guid: 0e258d9355b990d47987ff5b621ccfc5, type: 3}
+  UISprite: {fileID: 21300000, guid: dc8278e8dce079748aa510b60b8837d3, type: 3}
+  SceneName: Grasslands

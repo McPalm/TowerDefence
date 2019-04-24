@@ -30,7 +30,13 @@ namespace WaveManagement
                     var list = new List<ArmyCell>(Enemies
                         .Where(cell => cell.complexity > 0)
                         .Where(cell => cell.minimumLevel <= level + waves / 3 && cell.minimumLevel > 1));
-                    options.Add(list[rng.Next(list.Count)]);
+                    if (list.Count > 0)
+                        options.Add(list[rng.Next(list.Count)]);
+                    else
+                        options.Add(Enemies
+                            .Where(cell => cell.complexity > 0)
+                            .Where(cell => cell.minimumLevel <= level)
+                            .First());
                 }
                 else
                 {
@@ -46,9 +52,7 @@ namespace WaveManagement
             for(int i = 0; i < waves; i++)
             {
                 int waveLevel = level + i / 2;
-                var max = i+1 < complexity-1 ? i+1 : complexity-1;
-                if (i < waves / 2 && max == complexity - 1)
-                    max--;
+                var max = i < waves / 2 ? options.Count - 1 : options.Count;
                 var wave = new Army.Wave();
                 if (i == waves - 1)
                 {

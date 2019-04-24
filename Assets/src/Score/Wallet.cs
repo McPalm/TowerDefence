@@ -38,6 +38,7 @@ namespace Score
         void Start()
         {
             Instance = this;
+            money = 101 + SaveData.Current.PlayerLevel * 25;
             TotalWorth = money;
         }
 

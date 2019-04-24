@@ -74,7 +74,10 @@ namespace WaveManagement
 
         void Awake()
         {
-            if (generator)
+            var army = Progression.Challenger.Army;
+            if (army)
+                armies = new Army[] { army };
+            else if (generator)
             {
                 armies = new Army[] { generator.GetArmy(1, 4, 10, Random.Range(0, int.MaxValue)) };
             }
@@ -85,7 +88,7 @@ namespace WaveManagement
 
             for (int i = 0; i < armyCount; i++)
             {
-                var army = armies[i];
+                army = armies[i];
                 foreach (var wave in army.waves)
                 {
                     waves.Add(wave);

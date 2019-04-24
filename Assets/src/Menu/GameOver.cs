@@ -35,12 +35,13 @@ namespace Menu
                 if(score < (int)DifficultySelector.Difficulty)
                     PlayerPrefs.SetInt(SceneManager.GetActiveScene().name, (int)DifficultySelector.Difficulty);
                 PlayerPrefs.Save();
+                SaveData.Current.Win();
             }
         }
 
         public void QuitToMain()
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(2);
         }
 
         public void Retry()
@@ -52,7 +53,7 @@ namespace Menu
         {
             yield return new WaitForSeconds(seconds);
             o.SetActive(true);
-            FindObjectOfType<MusicPlayer>().Stop();
+            FindObjectOfType<MusicPlayer>()?.Stop();
         }
     }
 }
