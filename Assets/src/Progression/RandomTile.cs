@@ -18,7 +18,7 @@ namespace Progression
 
         static int Rando(Vector2Int v2)
         {
-            return (int)(Mathf.PerlinNoise(v2.x * .5f + 50 + .5f, v2.y * .5f + 50 + .5f) * 5f);
+            return (int)(Mathf.PerlinNoise(v2.x * .1f + 50 + .50001f, v2.y * .1f + 50 + .50001f) * 25f);
         }
 
     }
