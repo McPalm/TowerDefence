@@ -70,7 +70,7 @@ namespace Progression
                     else
                         SaveData.Current.UnlockOnWin = Unlock.none;
 
-                    FindObjectOfType<StagePreview>().Show(tile.Army, Map.Instance.ScenedataFor(tile.Stage), tile.Level, () => StartStage(tile.Stage));
+                    FindObjectOfType<StagePreview>().Show(tile, () => StartStage(tile.Stage));
                     // StartStage(tile.Stage);
                 }
             }

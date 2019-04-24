@@ -12,17 +12,18 @@ namespace Progression
         public GameObject Images;
         public TextMeshProUGUI Text;
         public Image Minimap;
+        public GameObject MapMarker;
 
         public System.Action OnConfirm;
 
-        public void Show(WaveManagement.Army army, ProgressionTileData tile, int level, System.Action OnConfirm)
+        public void Show(Tile tile, System.Action OnConfirm)
         {
             var enemies = new List<GameObject>();
-            foreach (var wave in army.waves)
+            foreach (var wave in tile.Army.waves)
             {
                 foreach (var unit in wave.units)
                 {
-                    if(enemies.Contains(unit.enemy) == false)
+                    if (enemies.Contains(unit.enemy) == false)
                         enemies.Add(unit.enemy);
                 }
             }
@@ -47,13 +48,20 @@ namespace Progression
                     images[i].gameObject.SetActive(false);
                 }
             }
-            Minimap.sprite = tile.UISprite;
-            Text.text = $"Level {level}";
+            var info = Map.Instance.ScenedataFor(tile.Stage);
+            Minimap.sprite = info.UISprite;
+            Text.text = $"Level {tile.Level}";
             Background.SetActive(true);
             this.OnConfirm = OnConfirm;
+            MapMarker.transform.position = tile.transform.position;
+            MapMarker.SetActive(true);
         }
 
-        public void Hide() => Background.SetActive(false);
+        public void Hide()
+        {
+            Background.SetActive(false);
+            MapMarker.SetActive(false);
+        }
 
         public void Confirm() => OnConfirm?.Invoke();
     }
