@@ -39,8 +39,6 @@ public class SaveData
                 Unlocks[UnlockOnWin] = 1;
             }
         }
-        else
-            Debug.Log("No Luck :< " + UnlockOnWin);
     }
 
     public int PlayerLevel { get; set; } = 1;
