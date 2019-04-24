@@ -19,11 +19,16 @@ namespace Progression
             {
                 save.Unlocked.Add(Vector2Int.zero);
             }
+            var camera = FindObjectOfType<CameraDrag>();
             foreach (var location in save.Unlocked)
             {
                 var tile = Map.Instance.Get(location);
                 tile.GetComponent<SpriteRenderer>().color = new Color(.24f, .96f, .2f);
                 tile.Controlled = true;
+                if (camera.MaxX < location.x + 2) camera.MaxX = location.x + 2;
+                else if (camera.MinX > location.x - 1) camera.MinX = location.x - 1;
+                if (camera.MaxY < location.y + 2) camera.MaxY = location.y + 2;
+                else if (camera.MinY > location.y - 1) camera.MinY = location.y + 1;
             }
             ExperienceText.text = $"Level: {save.PlayerLevel}, Experience:{save.Experience}/{save.ExperienceToNext}";
         }
