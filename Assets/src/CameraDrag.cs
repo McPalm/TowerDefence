@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System;
 using UnityEngine.EventSystems;
 using UnityEngine.Events;
@@ -13,6 +13,11 @@ public class CameraDrag : MonoBehaviour {
 
 	public UnityEvent EventStartDrag;
 	public UnityEvent EventStopDrag;
+
+    public float MaxX;
+    public float MinX;
+    public float MaxY;
+    public float MinY;
 
 	public static CameraDrag Instance 	{ get { return _instance; } }
 
@@ -57,7 +62,8 @@ public class CameraDrag : MonoBehaviour {
 
 	void Dragging()
 	{
-		transform.position = cameraLocationOnClick + (clickPosition - Input.mousePosition) * Camera.main.orthographicSize / Camera.main.pixelHeight * 2f;
+        var p = cameraLocationOnClick + (clickPosition - Input.mousePosition) * Camera.main.orthographicSize / Camera.main.pixelHeight * 2f;
+        transform.position = new Vector3(Mathf.Clamp(p.x, MinX, MaxX), Mathf.Clamp(p.y, MinY, MaxY), p.z);
 		if (Input.GetMouseButtonUp(1)) State = TransitionToNeutral;
 	}
 
